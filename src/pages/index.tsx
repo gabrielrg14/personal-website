@@ -9,7 +9,7 @@ import {
     AvatarImage,
     PillText,
     BlackPillText,
-    Info
+    Info,
 } from "../styles/index";
 
 const Home: React.FC = (): JSX.Element => {
