@@ -1,8 +1,8 @@
 import { useState, useCallback, useEffect } from "react";
-import { UserContextData, UserContext } from '../../contexts/user';
+import { UserContextData, UserContext } from "../../contexts/user";
 
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from "../Header";
+import Footer from "../Footer";
 
 import { LayoutWrapper, Main } from "./styles";
 

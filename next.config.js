@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: ['avatars.githubusercontent.com'],
     remotePatterns: [
@@ -10,10 +9,6 @@ const nextConfig = {
         hostname: 'avatars.githubusercontent.com',
       },
     ],
-  },
-  compiler: {
-    // Enables the styled-components SWC transform
-    styledComponents: true
   }
 }
 

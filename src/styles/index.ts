@@ -21,6 +21,7 @@ export const AvatarImage = styled(Image)`
     width: 100%;
     border-radius: 100%;
     margin-bottom: 20px;
+    animation: appear-on-screen 1s;
 `;
 
 export const PillText = styled.div`
@@ -29,6 +30,7 @@ export const PillText = styled.div`
     border-radius: 50px;
     padding: 10px;
     width: 50%;
+    animation: appear-on-screen 1.5s;
 
     ${media.lessThan("tablet")`
         width: 80%;

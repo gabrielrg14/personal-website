@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import media from "../utils/mediaQueries";
 
+import { StyledIconBase } from "@styled-icons/styled-icon";
+
 export const Wrapper = styled.div`
     max-width: 60vw;
     margin: auto;
@@ -44,6 +46,25 @@ export const Project = styled.li`
     
 export const ProjectTitle = styled.h2`
     font-size: 1.5rem;
+`;
+    
+export const ProjectWebsite = styled.h3`
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1em;
+    
+    a:hover {
+        transition: 0.5s ease-out;
+        color: #18a330;
+        text-decoration: none;
+    }
+`;
+    
+export const Icon = styled.span`
+    ${StyledIconBase} {
+        width: 20px;
+        margin-bottom: 5px;
+    }
 `;
 
 export const ProjectDescription = styled.span`

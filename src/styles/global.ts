@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     a:hover {
-        transition: 0.5 ease-out;
+        transition: 0.5s ease-out;
         text-decoration: 3px underline #18a330;
     }
     
@@ -66,6 +66,15 @@ const GlobalStyle = createGlobalStyle`
     .btn-default:hover {
         background-color: #18a330;
         color: #f7fcfe;
+    }
+
+    @keyframes appear-on-screen {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
     }
 `;
 

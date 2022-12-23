@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import type { AppProps } from "next/app";
+import { useEffect } from "react";
+import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 
-import * as gtag from '../lib/gtag';
-import Analytics from '../components/Analytics';
+import * as gtag from "../lib/gtag";
+import Analytics from "../components/Analytics";
 
 import GlobalStyle from "../styles/global";
 import Layout from "../components/Layout";

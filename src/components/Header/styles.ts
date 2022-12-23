@@ -25,7 +25,7 @@ export const NavLink = styled(Link)`
     justify-content: center;
     align-items: flex-end;
     color: #F7FCFE;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     
     :hover {
         transition: 0.5s;

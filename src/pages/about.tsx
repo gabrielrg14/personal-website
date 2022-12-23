@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from '../contexts/user';
+import { UserContext } from "../contexts/user";
 
 import Head from 'next/head';
 
@@ -10,8 +10,8 @@ import {
     TechsLists,
 } from "../styles/about";
 
-import TechList from '../components/TechList';
-import TechCard from '../components/TechCard';
+import TechList from "../components/TechList";
+import TechCard from "../components/TechCard";
 
 import known from "../utils/knownTechs";
 import knowledge from "../utils/knowledgeTechs";

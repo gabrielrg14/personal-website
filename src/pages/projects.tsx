@@ -7,19 +7,24 @@ import {
     ProjectsList,
     Project,
     ProjectTitle,
+    ProjectWebsite,
+    Icon,
     ProjectDescription,
 } from "../styles/projects";
 
-import TechList from '../components/TechList';
-import TechCard from '../components/TechCard';
+import TechList from "../components/TechList";
+import TechCard from "../components/TechCard";
 
 import techs from "../utils/techProjects";
+
+import { ExternalLink } from "@styled-icons/remix-line/ExternalLink";
 
 interface Repository {
     id: number,
     name: string,
     description: string,
     language: string,
+    homepage: string,
     topics: string[],
     owner: Object,
     html_url: string,
@@ -53,9 +58,11 @@ const Projects: React.FC<ProjectsProps> = ({ repositories }): JSX.Element => {
             <ProjectsList>
                 {repositories?.map(repository => (
                     <Project key={repository.id}>
-                        <Link href={repository.html_url} target="_blank" rel="noreferrer">
-                            <ProjectTitle>{repository.name}</ProjectTitle>
-                        </Link>
+                        <ProjectTitle>
+                            <Link href={repository.html_url} target="_blank" rel="noreferrer">
+                                {repository.name}
+                            </Link>
+                        </ProjectTitle>
 
                         <TechList>
                             {techs.map(({ icon, label, identifier }) => 
@@ -64,6 +71,14 @@ const Projects: React.FC<ProjectsProps> = ({ repositories }): JSX.Element => {
                                 )
                             )}
                         </TechList>
+
+                        {repository.homepage &&
+                            <ProjectWebsite>
+                                <Link href={repository.homepage} target="_blank" rel="noreferrer">
+                                    Go to website <Icon><ExternalLink /></Icon>
+                                </Link>
+                            </ProjectWebsite>
+                        }
 
                         <ProjectDescription>{repository.description}</ProjectDescription>
                     </Project>

@@ -29,11 +29,11 @@ export const Icon = styled.div`
     ${StyledIconBase} {
         color: #f7fcfe;
         width: 20px;
-    }
-    
-    && :hover {
-        transition: 0.5s ease-out;
-        color: #18a330;
+
+        :hover {
+            transition: 0.5s ease-out;
+            color: #18a330;
+        }
     }
 `;
 
