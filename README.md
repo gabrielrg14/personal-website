@@ -1,6 +1,6 @@
-# Gabriel Rapucci Gonzalez - Portfolio
+# Gabriel Rapucci Gonzalez - Personal Website
 
-Personal Portfolio website.
+My Personal Portfolio website.
 
 Developed using:
 
