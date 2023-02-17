@@ -6,7 +6,7 @@ import {
     Wordpress,
 } from "@styled-icons/simple-icons/";
   
-const knownTechs = [
+const knowledgeTechs = [
     {
         icon: <Vuedotjs />,
         label: "Vue.js",
@@ -29,4 +29,4 @@ const knownTechs = [
     },
 ];
   
-export default knownTechs;
+export default knowledgeTechs;

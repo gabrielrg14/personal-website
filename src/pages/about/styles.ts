@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../utils/mediaQueries";
+import media from "../../utils/mediaQueries";
 
 export const Wrapper = styled.div`
     background-color: #161817;

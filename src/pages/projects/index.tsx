@@ -10,12 +10,12 @@ import {
     ProjectWebsite,
     Icon,
     ProjectDescription,
-} from "../styles/projects";
+} from "./styles";
 
-import TechList from "../components/TechList";
-import TechCard from "../components/TechCard";
+import TechList from "../../components/TechList";
+import TechCard from "../../components/TechCard";
 
-import techs from "../utils/techProjects";
+import techs from "../../utils/techProjects";
 
 import { ExternalLink } from "@styled-icons/remix-line/ExternalLink";
 

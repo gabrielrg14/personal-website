@@ -6,7 +6,7 @@ import {
     Error,
     Info,
     NoContent,
-} from "../styles/404";
+} from "./styles";
 
 const PageNotFound: React.FC = (): JSX.Element => {
     return (

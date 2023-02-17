@@ -20,7 +20,7 @@ import {
     Graphql,
 } from "@styled-icons/simple-icons/";
   
-const knownTechs = [
+const techProjects = [
     {
         icon: <Html5 />,
         label: "HTML",
@@ -118,4 +118,4 @@ const knownTechs = [
     },
 ];
   
-export default knownTechs;
+export default techProjects;
