@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../../contexts/user";
+import { UserContext } from "../../common/contexts/user";
 
 import Head from 'next/head';
 
@@ -8,15 +8,15 @@ import {
     Bio,
     TitleList,
     TechsLists,
-} from "./styles";
+} from "../../common/styles/pages/about";
 
 import TechList from "../../components/TechList";
 import TechCard from "../../components/TechCard";
 
-import known from "../../utils/knownTechs";
-import knowledge from "../../utils/knowledgeTechs";
-import studying from "../../utils/studyingTechs";
-import potential from "../../utils/potentialTechs";
+import known from "../../common/utils/knownTechs";
+import knowledge from "../../common/utils/knowledgeTechs";
+import studying from "../../common/utils/studyingTechs";
+import potential from "../../common/utils/potentialTechs";
 
 const About: React.FC = (): JSX.Element => {
     const user = useContext(UserContext);

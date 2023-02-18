@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/user";
+import { UserContext } from "../common/contexts/user";
 
 import Head from 'next/head';
 
@@ -10,7 +10,7 @@ import {
     PillText,
     BlackPillText,
     Info,
-} from "../styles/index";
+} from "../common/styles/pages/index";
 
 const Home: React.FC = (): JSX.Element => {
     const user = useContext(UserContext);

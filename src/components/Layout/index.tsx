@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
-import { UserContextData, UserContext } from "../../contexts/user";
+import { UserContextData, UserContext } from "../../common/contexts/user";
 
 import Header from "../Header";
 import Footer from "../Footer";

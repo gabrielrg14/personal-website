@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 
-import * as gtag from "../lib/gtag";
+import * as gtag from "../common/lib/gtag";
 import Analytics from "../components/Analytics";
 
-import GlobalStyle from "../styles/global";
+import GlobalStyle from "../common/styles/global";
 import Layout from "../components/Layout";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {

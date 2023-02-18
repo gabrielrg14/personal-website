@@ -5,7 +5,7 @@ import { Navbar, NavList, NavLink } from "./styles";
 
 import Logo from "public/images/logo/logo-32.png";
 
-import links from "../../utils/headerLinks";
+import links from "../../common/utils/headerLinks";
 
 const Header: React.FC = (): JSX.Element => {
     const router = useRouter();

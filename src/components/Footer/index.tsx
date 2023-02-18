@@ -1,6 +1,6 @@
 import { FooterTag, DivIcons, Icon, SpanText } from "./styles";
 
-import socialMedias from "../../utils/socialMedias";
+import socialMedias from "../../common/utils/socialMedias";
 
 import Link from 'next/link';
 
