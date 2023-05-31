@@ -2,14 +2,10 @@ import {
     ReactLogo,
     Tailwindcss,
     Nodedotjs,
-    Jest,
+    Graphql,
 } from "@styled-icons/simple-icons/";
   
 const potentialTechs = [
-    {
-        icon: <Jest />,
-        label: "Jest",
-    },
     {
         icon: <Tailwindcss />,
         label: "Tailwind",
@@ -21,6 +17,10 @@ const potentialTechs = [
     {
         icon: <Nodedotjs />,
         label: "Node.js",
+    },
+    {
+        icon: <Graphql />,
+        label: "GraphQL",
     },
 ];
   
