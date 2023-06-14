@@ -14,6 +14,7 @@ import {
     Nodedotjs,
     Express,
     Jest,
+    Testinglibrary,
     Mongodb,
     Postgresql,
     Mysql,
@@ -95,6 +96,11 @@ const techProjects = [
         icon: <Jest />,
         label: "Jest",
         identifier: "jest",
+    },
+    {
+        icon: <Testinglibrary />,
+        label: "Testing Library",
+        identifier: "testing-library",
     },
     {
         icon: <Mongodb />,
