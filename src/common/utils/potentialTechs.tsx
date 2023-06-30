@@ -1,8 +1,8 @@
 import {
     ReactLogo,
     Tailwindcss,
-    Nodedotjs,
-    Graphql,
+    Docker,
+    Kubernetes,
 } from "@styled-icons/simple-icons/";
   
 const potentialTechs = [
@@ -15,12 +15,12 @@ const potentialTechs = [
         label: "React Native",
     },
     {
-        icon: <Nodedotjs />,
-        label: "Node.js",
+        icon: <Docker />,
+        label: "Docker",
     },
     {
-        icon: <Graphql />,
-        label: "GraphQL",
+        icon: <Kubernetes />,
+        label: "Kubernetes",
     },
 ];
   

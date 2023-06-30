@@ -35,7 +35,7 @@ const knownTechs = [
     },
     {
         icon: <Github />,
-        label: "Github",
+        label: "GitHub",
     },
 ];
   

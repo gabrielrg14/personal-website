@@ -2,8 +2,9 @@ import {
     Nextdotjs,
     Typescript,
     Styledcomponents,
+    Graphql,
     Jest,
-    Testinglibrary
+    Testinglibrary,
 } from "@styled-icons/simple-icons/";
   
 const studyingTechs = [
@@ -18,6 +19,10 @@ const studyingTechs = [
     {
         icon: <Styledcomponents />,
         label: "Styled Components",
+    },
+    {
+        icon: <Graphql />,
+        label: "GraphQL",
     },
     {
         icon: <Jest />,

@@ -19,6 +19,8 @@ import {
     Postgresql,
     Mysql,
     Graphql,
+    Git,
+    Github,
 } from "@styled-icons/simple-icons/";
   
 const techProjects = [
@@ -121,6 +123,16 @@ const techProjects = [
         icon: <Graphql />,
         label: "GraphQL",
         identifier: "graphql",
+    },
+    {
+        icon: <Git />,
+        label: "Git",
+        identifier: "git",
+    },
+    {
+        icon: <Github />,
+        label: "GitHub",
+        identifier: "github",
     },
 ];
   
