@@ -35,6 +35,7 @@ class MyDocument extends Document {
                     <link rel="icon" href="/favicon.ico" />
                     <link rel="apple-touch-icon" href="images/logo/logo-192.png" />
                     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+                    <meta name="google-site-verification" content="11r8K6MLmUAgq8eTWLXk49GhEiZuybZx1h8kIyO6PX8" />
                     <meta name="google" content="notranslate" />
                     <meta name="theme-color" content="#18a330" />
                     <meta name="keywords" 
