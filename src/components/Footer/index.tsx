@@ -9,8 +9,8 @@ const Footer: React.FC = (): JSX.Element => {
         <FooterTag>
             <SpanText>Made with ❤️ by Gabriel Rapucci Gonzalez</SpanText>
             <DivIcons>
-                {socialMedias.map(({ icon, link }) => (
-                    <Link key={link} href={link} target="_blank" rel="noreferrer">
+                {socialMedias.map(({ name, icon, link }) => (
+                    <Link key={link} href={link} target="_blank" rel="noreferrer" aria-label={name}>
                         <Icon>{icon}</Icon>
                     </Link>
                 ))}

@@ -1,0 +1,29 @@
+{
+    "name": "Gabriel Rapucci Gonzalez - Personal Website",
+    "short_name": "Personal Website",
+    "icons": [
+        {
+            "src": "/images/logo/logo-32.png",
+            "type": "image/png",
+            "sizes": "32x32",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/logo/logo-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/logo/logo-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "background_color": "#161817",
+    "description": "My personal website, here you will learn a little more about me, the technologies I have knowledge of, the ones I use and know well, the ones I'm currently studying and also the projects I've developed.",
+    "display": "fullscreen",
+    "start_url": "/",
+    "theme_color": "#18a330"
+}

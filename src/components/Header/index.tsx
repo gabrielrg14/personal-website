@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-import { Navbar, NavList, NavLink } from "./styles";
+import { Navbar, NavList, NavItem, NavLink } from "./styles";
 
 import Logo from "public/images/logo/logo-32.png";
 
@@ -23,12 +23,14 @@ const Header: React.FC = (): JSX.Element => {
 
                 <NavList>
                     {links.map(({ href, label }) => (
-                        <NavLink 
-                            key={label} href={href} 
-                            style={{ textDecoration: router.pathname === href ? "2px underline #18a330" : undefined }}
-                        >
-                            {label}
-                        </NavLink>
+                        <NavItem>
+                            <NavLink 
+                                key={label} href={href} 
+                                style={{ textDecoration: router.pathname === href ? "2px underline #18a330" : undefined }}
+                            >
+                                {label}
+                            </NavLink>
+                        </NavItem>
                     ))}
                 </NavList>
             </Navbar>

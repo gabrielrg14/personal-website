@@ -20,6 +20,10 @@ export const NavList = styled.ul`
     align-items: center;
 `;
 
+export const NavItem = styled.li`
+    list-style: none;
+`;
+
 export const NavLink = styled(Link)`
     display: flex;
     justify-content: center;
