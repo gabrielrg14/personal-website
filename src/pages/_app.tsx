@@ -8,6 +8,7 @@ import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 
 import GlobalStyle from "../common/styles/global";
 import Layout from "../components/Layout";
+import NextNProgress from 'nextjs-progressbar'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
     const router = useRouter();
@@ -26,10 +27,11 @@ const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
 
     return (
         <>
+            <GoogleAnalytics />
+            <VercelAnalytics />
             <GlobalStyle />
             <Layout>
-                <GoogleAnalytics />
-                <VercelAnalytics />
+                <NextNProgress color="#18a330" />
                 <Component {...pageProps} />
             </Layout>
         </>

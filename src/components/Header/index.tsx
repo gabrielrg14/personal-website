@@ -23,9 +23,8 @@ const Header: React.FC = (): JSX.Element => {
 
                 <NavList>
                     {links.map(({ href, label }) => (
-                        <NavItem>
-                            <NavLink 
-                                key={label} href={href} 
+                        <NavItem key={label}>
+                            <NavLink href={href} 
                                 style={{ textDecoration: router.pathname === href ? "2px underline #18a330" : undefined }}
                             >
                                 {label}
