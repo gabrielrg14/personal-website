@@ -35,7 +35,11 @@ const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
             <VercelAnalytics />
             <GlobalStyle />
             <Layout>
-                <NextNProgress color="#18a330" />
+                <NextNProgress
+                    color="#18a330"
+                    height={5}
+                    options={{ showSpinner: false }}
+                />
                 <Component {...pageProps} />
             </Layout>
         </>

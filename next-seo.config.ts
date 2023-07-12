@@ -3,16 +3,17 @@ import { DefaultSeoProps } from 'next-seo'
 const siteUrl = process.env.SITE_URL || "https://personal-website-gabrielrg.vercel.app/"
 
 const config: DefaultSeoProps = {
-    titleTemplate: '<%s />',
-    defaultTitle: "<Gabriel - Frontend Developer />",
+    titleTemplate: "<%s />",
+    defaultTitle: "Gabriel - Frontend Developer",
     canonical: siteUrl,
     themeColor: "#18a330",
     additionalLinkTags: [{
-        rel: 'icon',
-        href: '/favicon.ico',
+        rel: "icon",
+        href: "/favicon.ico"
     }, {
         rel: "shortcut icon",
         href: "images/logo/logo-512.png",
+        sizes: "512x512"
     }, {
         rel: "apple-touch-icon",
         href: "images/logo/logo-512.png",

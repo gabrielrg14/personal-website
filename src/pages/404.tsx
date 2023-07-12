@@ -11,7 +11,7 @@ import {
 const PageNotFound: React.FC = (): JSX.Element => {
     return (
         <>
-            <NextSeo title="Error 404" />
+            <NextSeo title="404 Error" />
 
             <Wrapper>
                 <Error>404 Error</Error>
