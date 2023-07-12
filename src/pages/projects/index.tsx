@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
 import { 
@@ -46,45 +46,50 @@ export async function getStaticProps() {
 
 const Projects: React.FC<ProjectsProps> = ({ repositories }): JSX.Element => {
     return (
-        <Wrapper>
-            <Head>
-                <title>{`<Projects />`}</title>
-                <meta name="keywords" content="Projects, Dev Frontend, Frontend Projects, Web Projects" />
-                <meta name="description" content="Showing projects developed by a Frontend Developer" />
-            </Head>
-            
-            <SupportText>Click on the project title to be redirected to the repository on Github</SupportText>
+        <>
+            <NextSeo
+                title="Projects"
+                description="Main projects developed and published by me on GitHub throughout my career as a Frontend Developer."
+                additionalMetaTags={[{
+                    name: "keywords",
+                    content: "GitHub, Projects, Dev Projects, Web Projects, Frontend Projects, React Projects, Frontend Developer"
+                }]}
+            />
 
-            <ProjectsList>
-                {repositories?.map(repository => (
-                    <Project key={repository.id}>
-                        <ProjectTitle>
-                            <Link href={repository.html_url} target="_blank" rel="noreferrer">
-                                {repository.name}
-                            </Link>
-                        </ProjectTitle>
+            <Wrapper>
+                <SupportText>Click on the project title to be redirected to the repository on Github</SupportText>
 
-                        <TechList>
-                            {techs.map(({ icon, label, identifier }) => 
-                                repository.topics.includes(identifier) && (
-                                    <TechCard key={label} label={label} icon={icon} />
-                                )
-                            )}
-                        </TechList>
-
-                        {repository.homepage &&
-                            <ProjectWebsite>
-                                <Link href={repository.homepage} target="_blank" rel="noreferrer">
-                                    Go to website <Icon><ExternalLink /></Icon>
+                <ProjectsList>
+                    {repositories?.map(repository => (
+                        <Project key={repository.id}>
+                            <ProjectTitle>
+                                <Link href={repository.html_url} target="_blank" rel="noreferrer">
+                                    {repository.name}
                                 </Link>
-                            </ProjectWebsite>
-                        }
+                            </ProjectTitle>
 
-                        <ProjectDescription>{repository.description}</ProjectDescription>
-                    </Project>
-                ))}
-            </ProjectsList>
-        </Wrapper>
+                            <TechList>
+                                {techs.map(({ icon, label, identifier }) => 
+                                    repository.topics.includes(identifier) && (
+                                        <TechCard key={label} label={label} icon={icon} />
+                                    )
+                                )}
+                            </TechList>
+
+                            {repository.homepage &&
+                                <ProjectWebsite>
+                                    <Link href={repository.homepage} target="_blank" rel="noreferrer">
+                                        Go to website <Icon><ExternalLink /></Icon>
+                                    </Link>
+                                </ProjectWebsite>
+                            }
+
+                            <ProjectDescription>{repository.description}</ProjectDescription>
+                        </Project>
+                    ))}
+                </ProjectsList>
+            </Wrapper>
+        </>
     )
 }
 

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "../../common/contexts/user";
 
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { 
     Wrapper,
@@ -22,45 +22,50 @@ const About: React.FC = (): JSX.Element => {
     const user = useContext(UserContext);
 
     return (
-        <Wrapper>
-            <Head>
-                <title>{`<About me />`}</title>
-                <meta name="keywords" content="About me, About, Dev, Frontend" />
-                <meta name="description" content="A little more about who Gabriel Rapucci Gonzalez is" />
-            </Head>
+        <>
+            <NextSeo
+                title="About me"
+                description="A little more about who Gabriel is, the technologies he uses daily, which he has knowledge, which he is currently studying and which he intends to study in the future."
+                additionalMetaTags={[{
+                    name: "keywords",
+                    content: "About, About me, About Gabriel, Technologies, Used Technologies, Technologies with Knowledge, Technologies Studied"
+                }]}
+            />
 
-            <Bio>{user.bio}</Bio>
-            
-            <TechsLists>
-                <TitleList>Known and used technologies:</TitleList>
-                <TechList>
-                    {known.map(({ icon, label }) => (
-                        <TechCard key={label} label={label} icon={icon} />
-                    ))}
-                </TechList>
+            <Wrapper>
+                <Bio>{user.bio}</Bio>
+                
+                <TechsLists>
+                    <TitleList>Known and used technologies:</TitleList>
+                    <TechList>
+                        {known.map(({ icon, label }) => (
+                            <TechCard key={label} label={label} icon={icon} />
+                        ))}
+                    </TechList>
 
-                <TitleList>Technologies with basic knowledge:</TitleList>
-                <TechList>
-                    {knowledge.map(({ icon, label }) => (
-                        <TechCard key={label} label={label} icon={icon} />
-                    ))}
-                </TechList>
+                    <TitleList>Technologies with basic knowledge:</TitleList>
+                    <TechList>
+                        {knowledge.map(({ icon, label }) => (
+                            <TechCard key={label} label={label} icon={icon} />
+                        ))}
+                    </TechList>
 
-                <TitleList>Technologies being studied:</TitleList>
-                <TechList>
-                    {studying.map(({ icon, label }) => (
-                        <TechCard key={label} label={label} icon={icon} />
-                    ))}
-                </TechList>
+                    <TitleList>Technologies being studied:</TitleList>
+                    <TechList>
+                        {studying.map(({ icon, label }) => (
+                            <TechCard key={label} label={label} icon={icon} />
+                        ))}
+                    </TechList>
 
-                <TitleList>Potential technologies to be studied:</TitleList>
-                <TechList>
-                    {potential.map(({ icon, label }) => (
-                        <TechCard key={label} label={label} icon={icon} />
-                    ))}
-                </TechList>
-            </TechsLists>
-        </Wrapper>
+                    <TitleList>Potential technologies to be studied:</TitleList>
+                    <TechList>
+                        {potential.map(({ icon, label }) => (
+                            <TechCard key={label} label={label} icon={icon} />
+                        ))}
+                    </TechList>
+                </TechsLists>
+            </Wrapper>
+        </>
     )
 }
 
