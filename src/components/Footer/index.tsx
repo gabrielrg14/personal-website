@@ -1,22 +1,21 @@
-import { FooterTag, DivIcons, Icon, SpanText } from "./styles";
-
-import socialMedias from "../../common/utils/socialMedias";
-
+import * as S from "./styles";
 import Link from 'next/link';
 
-const Footer: React.FC = (): JSX.Element => {
+import socialMedias from "common/utils/socialMedias";
+
+const Footer = () => {
     return (
-        <FooterTag>
-            <SpanText>Made with ❤️ by Gabriel Rapucci Gonzalez</SpanText>
-            <DivIcons>
+        <S.FooterTag>
+            <S.SpanText>Made with ❤️ by Gabriel Rapucci Gonzalez</S.SpanText>
+            <S.DivIcons>
                 {socialMedias.map(({ name, icon, link }) => (
                     <Link key={link} href={link} target="_blank" rel="noreferrer" aria-label={name}>
-                        <Icon>{icon}</Icon>
+                        <S.Icon>{icon}</S.Icon>
                     </Link>
                 ))}
-            </DivIcons>
-            <SpanText>{new Date().getFullYear()} ©️ All rights reserved</SpanText>
-        </FooterTag>
+            </S.DivIcons>
+            <S.SpanText>{new Date().getFullYear()} ©️ All rights reserved</S.SpanText>
+        </S.FooterTag>
     )
 }
 

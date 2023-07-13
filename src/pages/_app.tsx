@@ -5,15 +5,15 @@ import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import SEO from "../../next-seo.config";
 
-import * as gtag from "../common/lib/gtag";
-import GoogleAnalytics from "../components/Analytics";
+import * as gtag from "common/lib/gtag";
+import GoogleAnalytics from "components/Analytics";
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 
-import GlobalStyle from "../common/styles/global";
-import Layout from "../components/Layout";
+import GlobalStyle from "styles/global";
+import Layout from "components/Layout";
 import NextNProgress from 'nextjs-progressbar';
 
-const App: React.FC<AppProps> = ({ Component, pageProps }): JSX.Element => {
+const App = ({ Component, pageProps }: AppProps) => {
     const router = useRouter();
 
     useEffect(() => {

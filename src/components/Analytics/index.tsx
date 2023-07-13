@@ -1,7 +1,7 @@
 import Script from 'next/script';
-import { GA_TRACKING_ID } from "../../common/lib/gtag";
+import { GA_TRACKING_ID } from "common/lib/gtag";
 
-const Analytics = (): JSX.Element => (
+const Analytics = () => (
     <>
         <Script
             strategy="afterInteractive"

@@ -1,16 +1,16 @@
 import { useState, useCallback, useEffect } from "react";
-import { UserContextData, UserContext } from "../../common/contexts/user";
+import { UserContextData, UserContext } from "common/contexts/user";
 
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
-import { LayoutWrapper, Main } from "./styles";
+import * as S from "./styles";
 
-interface LayoutProps {
+type LayoutProps = {
     children: React.ReactNode
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }): JSX.Element => {
+const Layout = ({ children }: LayoutProps) => {
     const [user, setUser] = useState<UserContextData>({} as UserContextData);
 
     const getUserData = useCallback(async () => {
@@ -25,11 +25,11 @@ const Layout: React.FC<LayoutProps> = ({ children }): JSX.Element => {
 
     return (
         <UserContext.Provider value={user}>
-            <LayoutWrapper>
+            <S.LayoutWrapper>
                 <Header />
-                <Main>{children}</Main>
+                <S.Main>{children}</S.Main>
                 <Footer />
-            </LayoutWrapper>
+            </S.LayoutWrapper>
         </UserContext.Provider>
     )
 }

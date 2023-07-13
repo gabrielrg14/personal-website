@@ -1,16 +1,16 @@
-import { Wrapper, Icon } from "./styles";
+import * as S from "./styles";
 
-interface TechCardProps {
+type TechCardProps = {
     icon: React.ReactNode,
     label: string,
 }
 
-const TechCard: React.FC<TechCardProps> = ({ icon, label }): JSX.Element => {
+const TechCard = ({ icon, label }: TechCardProps) => {
     return (
-        <Wrapper>
-            <Icon>{icon}</Icon>
+        <S.Wrapper>
+            <S.Icon>{icon}</S.Icon>
             <p>{label}</p>
-        </Wrapper>
+        </S.Wrapper>
     )
 }
 

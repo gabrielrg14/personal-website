@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import media from "../../utils/mediaQueries";
+import media from "common/utils/mediaQueries";
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 export const Wrapper = styled.div`
     display: flex;

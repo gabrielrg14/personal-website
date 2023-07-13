@@ -1,14 +1,14 @@
-import { Wrapper } from "./styles";
+import * as S from "./styles";
 
-interface TechListProps {
+type TechListProps = {
     children: React.ReactNode,
 }
 
-const TechList: React.FC<TechListProps> = ({ children }): JSX.Element => {
+const TechList = ({ children }: TechListProps) => {
     return (
-        <Wrapper>
+        <S.Wrapper>
             {children}
-        </Wrapper>
+        </S.Wrapper>
     )
 }
 

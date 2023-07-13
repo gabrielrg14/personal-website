@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../common/utils/mediaQueries";
+import media from "common/utils/mediaQueries";
 
 import { StyledIconBase } from "@styled-icons/styled-icon";
 
