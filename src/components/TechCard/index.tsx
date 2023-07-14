@@ -1,8 +1,8 @@
 import * as S from "./styles";
 
 type TechCardProps = {
-    icon: React.ReactNode,
-    label: string,
+    icon: React.ReactNode
+    label: string
 }
 
 const TechCard = ({ icon, label }: TechCardProps) => {

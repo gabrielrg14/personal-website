@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 type TechListProps = {
-    children: React.ReactNode,
+    children: React.ReactNode
 }
 
 const TechList = ({ children }: TechListProps) => {

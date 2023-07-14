@@ -1,10 +1,9 @@
 import { useState, useCallback, useEffect } from "react";
 import { UserContextData, UserContext } from "common/contexts/user";
 
+import * as S from "./styles";
 import Header from "components/Header";
 import Footer from "components/Footer";
-
-import * as S from "./styles";
 
 type LayoutProps = {
     children: React.ReactNode

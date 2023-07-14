@@ -7,7 +7,7 @@ import SEO from "../../next-seo.config";
 
 import * as gtag from "common/lib/gtag";
 import GoogleAnalytics from "components/Analytics";
-import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 
 import GlobalStyle from "styles/global";
 import Layout from "components/Layout";

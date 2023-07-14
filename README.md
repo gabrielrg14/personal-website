@@ -6,6 +6,6 @@
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Styled-components](https://styled-components.com/)
+- [Styled Components](https://styled-components.com/)
 - [Styled Icons](https://styled-icons.dev/)
 - [Vercel](https://www.vercel.com)

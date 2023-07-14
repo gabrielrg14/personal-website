@@ -20,7 +20,7 @@ type Repository = {
     created_at: Date
 }
 
-export type ProjectsTemplateProps = {
+export interface ProjectsTemplateProps {
     repositories: Repository[]
 }
 
