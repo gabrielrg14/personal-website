@@ -5,7 +5,6 @@ const siteUrl = process.env.SITE_URL || "https://personal-website-gabrielrg.verc
 const config: DefaultSeoProps = {
     titleTemplate: "<%s />",
     defaultTitle: "Gabriel - Frontend Developer",
-    canonical: siteUrl,
     themeColor: "#18a330",
     additionalLinkTags: [{
         rel: "icon",
