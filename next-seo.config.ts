@@ -1,7 +1,5 @@
 import { DefaultSeoProps } from 'next-seo';
 
-const siteUrl = process.env.SITE_URL || "https://personal-website-gabrielrg.vercel.app/"
-
 const config: DefaultSeoProps = {
     titleTemplate: "<%s />",
     defaultTitle: "Gabriel - Frontend Developer",
@@ -31,7 +29,7 @@ const config: DefaultSeoProps = {
     openGraph: {
         type: "website",
         locale: "en",
-        url: siteUrl,
+        url: process.env.NEXT_PUBLIC_SITE_URL,
         siteName: "Gabriel Rapucci Gonzalez - Personal Website"
     }
 }

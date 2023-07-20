@@ -21,6 +21,7 @@ import {
     Graphql,
     Git,
     Github,
+    Vercel,
 } from "@styled-icons/simple-icons/";
   
 const techProjects = [
@@ -133,6 +134,11 @@ const techProjects = [
         icon: <Github />,
         label: "GitHub",
         identifier: "github",
+    },
+    {
+        icon: <Vercel />,
+        label: "Vercel",
+        identifier: "vercel",
     },
 ];
   

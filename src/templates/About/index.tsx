@@ -25,6 +25,7 @@ const AboutTemplate = ({ user }: AboutTemplateProps) => {
                     name: "keywords",
                     content: "About, About me, About Gabriel, Technologies, Used Technologies, Technologies with Knowledge, Technologies Studied"
                 }]}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/about`}
             />
 
             <S.Wrapper>

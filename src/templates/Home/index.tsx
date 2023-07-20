@@ -18,6 +18,7 @@ const HomeTemplate = ({ user }: HomeTemplateProps) => {
                     name: "keywords",
                     content: "Gabriel, Gabriel Rapucci, Gabriel Rapucci Gonzalez, Campinas, Brazil, Dev, Web Dev, Frontend, Dev Frontend, Developer, Frontend Developer, React Developer, JavaScript Developer, Portfolio, Resume, Project"
                 }]}
+                canonical={process.env.NEXT_PUBLIC_SITE_URL}
             />
             
             <S.Wrapper>

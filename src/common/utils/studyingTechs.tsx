@@ -1,5 +1,6 @@
 import {
     Nextdotjs,
+    Vercel,
     Typescript,
     Styledcomponents,
     Graphql,
@@ -11,6 +12,10 @@ const studyingTechs = [
     {
         icon: <Nextdotjs />,
         label: "Next.js",
+    },
+    {
+        icon: <Vercel />,
+        label: "Vercel",
     },
     {
         icon: <Typescript />,

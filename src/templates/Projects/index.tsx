@@ -34,6 +34,7 @@ const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                     name: "keywords",
                     content: "GitHub, Projects, Dev Projects, Web Projects, Frontend Projects, React Projects, Frontend Developer"
                 }]}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/projects`}
             />
 
             <S.Wrapper>
