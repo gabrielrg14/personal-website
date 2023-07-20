@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://personal-website-gabrielrg.vercel.app
+Host: https://gabrielrapucci.com.br
 
 # Sitemaps
-Sitemap: https://personal-website-gabrielrg.vercel.app/sitemap.xml
+Sitemap: https://gabrielrapucci.com.br/sitemap.xml
