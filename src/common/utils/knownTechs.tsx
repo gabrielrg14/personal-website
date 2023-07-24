@@ -5,38 +5,38 @@ import {
     ReactLogo,
     Bootstrap,
     Git,
-    Github,
-} from "@styled-icons/simple-icons/";
-  
+    Github
+} from "@styled-icons/simple-icons/"
+
 const knownTechs = [
     {
         icon: <Html5 />,
-        label: "HTML",
+        label: "HTML"
     },
     {
         icon: <Css3 />,
-        label: "CSS",
+        label: "CSS"
     },
     {
         icon: <Javascript />,
-        label: "JavaScript",
+        label: "JavaScript"
     },
     {
         icon: <ReactLogo />,
-        label: "React.js",
+        label: "React.js"
     },
     {
         icon: <Bootstrap />,
-        label: "Bootstrap",
+        label: "Bootstrap"
     },
     {
         icon: <Git />,
-        label: "Git",
+        label: "Git"
     },
     {
         icon: <Github />,
-        label: "GitHub",
-    },
-];
-  
-export default knownTechs;
+        label: "GitHub"
+    }
+]
+
+export default knownTechs

@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import Link from 'next/link';
+import Link from "next/link"
 
 export const Navbar = styled.nav`
     display: flex;
@@ -10,7 +10,7 @@ export const Navbar = styled.nav`
     padding: 15px;
     font-size: 1.2em;
     background-color: #161817;
-`;
+`
 
 export const NavList = styled.ul`
     display: flex;
@@ -18,22 +18,22 @@ export const NavList = styled.ul`
     gap: 1rem;
     justify-content: center;
     align-items: center;
-`;
+`
 
 export const NavItem = styled.li`
     list-style: none;
-`;
+`
 
 export const NavLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: #F7FCFE;
+    color: #f7fcfe;
     line-height: 1.5rem;
-    
+
     :hover {
         transition: 0.5s;
         color: #18a330;
         text-decoration: none;
     }
-`;
+`

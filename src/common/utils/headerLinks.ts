@@ -1,12 +1,12 @@
 const headerLinks = [
     {
         href: "/about",
-        label: "About me",
+        label: "About me"
     },
     {
         href: "/projects",
-        label: "Projects",
-    },
-];
-  
-export default headerLinks;
+        label: "Projects"
+    }
+]
+
+export default headerLinks

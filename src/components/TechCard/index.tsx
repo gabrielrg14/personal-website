@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from "./styles"
 
 type TechCardProps = {
     icon: React.ReactNode
@@ -14,4 +14,4 @@ const TechCard = ({ icon, label }: TechCardProps) => {
     )
 }
 
-export default TechCard;
+export default TechCard

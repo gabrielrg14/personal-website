@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://gabrielrapucci.com.br
+Host: https://gabrielrapucci.com.br/
 
 # Sitemaps
 Sitemap: https://gabrielrapucci.com.br/sitemap.xml

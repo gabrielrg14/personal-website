@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import media from "common/utils/mediaQueries";
+import styled from "styled-components"
+import media from "common/utils/mediaQueries"
 
-import { StyledIconBase } from "@styled-icons/styled-icon";
+import { StyledIconBase } from "@styled-icons/styled-icon"
 
 export const FooterTag = styled.footer`
     display: flex;
@@ -18,12 +18,12 @@ export const FooterTag = styled.footer`
         flex-direction: column;
         justify-content: center;
     `}
-`;
+`
 
 export const DivIcons = styled.div`
     display: flex;
     gap: 1rem;
-`;
+`
 
 export const Icon = styled.div`
     ${StyledIconBase} {
@@ -35,8 +35,8 @@ export const Icon = styled.div`
             color: #18a330;
         }
     }
-`;
+`
 
 export const SpanText = styled.span`
     text-align: center;
-`;
+`

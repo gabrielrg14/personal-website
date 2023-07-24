@@ -2,26 +2,26 @@ import {
     ReactLogo,
     Tailwindcss,
     Docker,
-    Kubernetes,
-} from "@styled-icons/simple-icons/";
-  
+    Kubernetes
+} from "@styled-icons/simple-icons/"
+
 const potentialTechs = [
     {
         icon: <Tailwindcss />,
-        label: "Tailwind",
+        label: "Tailwind"
     },
     {
         icon: <ReactLogo />,
-        label: "React Native",
+        label: "React Native"
     },
     {
         icon: <Docker />,
-        label: "Docker",
+        label: "Docker"
     },
     {
         icon: <Kubernetes />,
-        label: "Kubernetes",
-    },
-];
-  
-export default potentialTechs;
+        label: "Kubernetes"
+    }
+]
+
+export default potentialTechs

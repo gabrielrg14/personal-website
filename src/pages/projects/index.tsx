@@ -1,15 +1,17 @@
-import { GetStaticProps } from 'next';
+import { GetStaticProps } from "next"
 
-import ProjectsTemplate, { ProjectsTemplateProps } from "templates/Projects";
+import ProjectsTemplate, { ProjectsTemplateProps } from "templates/Projects"
 
 export const getStaticProps: GetStaticProps = async () => {
-    const respApi = await fetch('https://api.github.com/users/gabrielrg14/starred')
+    const respApi = await fetch(
+        "https://api.github.com/users/gabrielrg14/starred"
+    )
     const repositories = await respApi.json()
 
     return {
         revalidate: 60,
-        props: { 
-            repositories 
+        props: {
+            repositories
         }
     }
 }
@@ -18,4 +20,4 @@ const Projects = ({ repositories }: ProjectsTemplateProps) => {
     return <ProjectsTemplate repositories={repositories} />
 }
 
-export default Projects;
+export default Projects

@@ -1,8 +1,8 @@
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo"
 
-import * as S from "./styles";
+import * as S from "./styles"
 
-import { UserContextData } from "common/contexts/user";
+import { UserContextData } from "common/contexts/user"
 
 type HomeTemplateProps = {
     user: UserContextData
@@ -14,21 +14,25 @@ const HomeTemplate = ({ user }: HomeTemplateProps) => {
             <NextSeo
                 title="Gabriel - Frontend Developer"
                 description="Welcome to my personal website. Here you will learn a little more about me, the technologies I have knowledge of, the ones I use and know well, the ones I'm currently studying and also the projects I've developed."
-                additionalMetaTags={[{
-                    name: "keywords",
-                    content: "Gabriel, Gabriel Rapucci, Gabriel Rapucci Gonzalez, Campinas, Brazil, Dev, Web Dev, Frontend, Dev Frontend, Developer, Frontend Developer, React Developer, JavaScript Developer, Portfolio, Resume, Project"
-                }]}
-                canonical={process.env.NEXT_PUBLIC_SITE_URL}
+                additionalMetaTags={[
+                    {
+                        name: "keywords",
+                        content:
+                            "Gabriel, Gabriel Rapucci, Gabriel Rapucci Gonzalez, Campinas, Brazil, Dev, Web Dev, Frontend, Dev Frontend, Developer, Frontend Developer, React Developer, JavaScript Developer, Portfolio, Resume, Project"
+                    }
+                ]}
+                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
             />
-            
+
             <S.Wrapper>
                 <S.Avatar>
                     {user.avatar_url && (
-                        <S.AvatarImage 
+                        <S.AvatarImage
                             src={user.avatar_url}
-                            height={250} width={250}
+                            height={250}
+                            width={250}
                             priority
-                            alt="Gabriel's avatar image" 
+                            alt="Gabriel's avatar image"
                         />
                     )}
                 </S.Avatar>
@@ -46,4 +50,4 @@ const HomeTemplate = ({ user }: HomeTemplateProps) => {
     )
 }
 
-export default HomeTemplate;
+export default HomeTemplate

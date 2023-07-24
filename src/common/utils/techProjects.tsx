@@ -21,125 +21,125 @@ import {
     Graphql,
     Git,
     Github,
-    Vercel,
-} from "@styled-icons/simple-icons/";
-  
+    Vercel
+} from "@styled-icons/simple-icons/"
+
 const techProjects = [
     {
         icon: <Html5 />,
         label: "HTML",
-        identifier: "html",
+        identifier: "html"
     },
     {
         icon: <Css3 />,
         label: "CSS",
-        identifier: "css",
+        identifier: "css"
     },
     {
         icon: <Javascript />,
         label: "JavaScript",
-        identifier: "javascript",
+        identifier: "javascript"
     },
     {
         icon: <Typescript />,
         label: "TypeScript",
-        identifier: "typescript",
+        identifier: "typescript"
     },
     {
         icon: <ReactLogo />,
         label: "React.js",
-        identifier: "react",
+        identifier: "react"
     },
     {
         icon: <Redux />,
         label: "Redux",
-        identifier: "redux",
+        identifier: "redux"
     },
     {
         icon: <Vuedotjs />,
         label: "Vue.js",
-        identifier: "vuejs",
+        identifier: "vuejs"
     },
     {
         icon: <Nextdotjs />,
         label: "Next.js",
-        identifier: "nextjs",
+        identifier: "nextjs"
     },
     {
         icon: <Wordpress />,
         label: "Wordpress",
-        identifier: "wordpress",
+        identifier: "wordpress"
     },
     {
         icon: <Bootstrap />,
         label: "Bootstrap",
-        identifier: "bootstrap",
+        identifier: "bootstrap"
     },
     {
         icon: <Styledcomponents />,
         label: "Styled Components",
-        identifier: "styled-components",
+        identifier: "styled-components"
     },
     {
         icon: <Tailwindcss />,
         label: "Tailwind",
-        identifier: "tailwindcss",
+        identifier: "tailwindcss"
     },
     {
         icon: <Nodedotjs />,
         label: "Node.js",
-        identifier: "nodejs",
+        identifier: "nodejs"
     },
     {
         icon: <Express />,
         label: "Express.js",
-        identifier: "expressjs",
+        identifier: "expressjs"
     },
     {
         icon: <Jest />,
         label: "Jest",
-        identifier: "jest",
+        identifier: "jest"
     },
     {
         icon: <Testinglibrary />,
         label: "Testing Library",
-        identifier: "testing-library",
+        identifier: "testing-library"
     },
     {
         icon: <Mongodb />,
         label: "MongoDB",
-        identifier: "mongodb",
+        identifier: "mongodb"
     },
     {
         icon: <Postgresql />,
         label: "PostgreSQL",
-        identifier: "postgresql",
+        identifier: "postgresql"
     },
     {
         icon: <Mysql />,
         label: "MySQL",
-        identifier: "mysql",
+        identifier: "mysql"
     },
     {
         icon: <Graphql />,
         label: "GraphQL",
-        identifier: "graphql",
+        identifier: "graphql"
     },
     {
         icon: <Git />,
         label: "Git",
-        identifier: "git",
+        identifier: "git"
     },
     {
         icon: <Github />,
         label: "GitHub",
-        identifier: "github",
+        identifier: "github"
     },
     {
         icon: <Vercel />,
         label: "Vercel",
-        identifier: "vercel",
-    },
-];
-  
-export default techProjects;
+        identifier: "vercel"
+    }
+]
+
+export default techProjects

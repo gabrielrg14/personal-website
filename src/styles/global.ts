@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -21,11 +21,11 @@ const GlobalStyle = createGlobalStyle`
     body::-webkit-scrollbar {
         width: 15px;
     }
-    
+
     body::-webkit-scrollbar-track {
         background-color: #f7fcfe;
     }
-    
+
     body::-webkit-scrollbar-thumb {
         background-color: #161817;
         border-radius: 15px;
@@ -44,12 +44,12 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: #f7fcfe;
     }
-    
+
     a:hover {
         transition: 0.5s ease-out;
         text-decoration: 3px underline #18a330;
     }
-    
+
     .btn-default {
         border-radius: 30px;
         padding: 10px 30px;
@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
         text-align: center;
         transition: all .3s ease;
     }
-    
+
     .btn-default:hover {
         background-color: #18a330;
         color: #f7fcfe;
@@ -76,6 +76,6 @@ const GlobalStyle = createGlobalStyle`
             transform: scale(1);
         }
     }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

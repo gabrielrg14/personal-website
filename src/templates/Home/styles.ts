@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import media from "common/utils/mediaQueries";
+import styled from "styled-components"
+import media from "common/utils/mediaQueries"
 
-import Image from 'next/image';
+import Image from "next/image"
 
 export const Wrapper = styled.div`
     display: flex;
@@ -10,11 +10,11 @@ export const Wrapper = styled.div`
     align-items: center;
     text-align: center;
     margin: auto 1rem;
-`;
+`
 
 export const Avatar = styled.div`
     display: flex;
-`;
+`
 
 export const AvatarImage = styled(Image)`
     height: 100%;
@@ -22,10 +22,10 @@ export const AvatarImage = styled(Image)`
     border-radius: 100%;
     margin-bottom: 20px;
     animation: appear-on-screen 1s;
-`;
+`
 
 export const PillText = styled.div`
-    background-color: #F7FCFE;
+    background-color: #f7fcfe;
     color: #161817;
     border-radius: 50px;
     padding: 10px;
@@ -39,14 +39,14 @@ export const PillText = styled.div`
     ${media.lessThan("mobile")`
         width: 100%;
     `}
-`;
+`
 
 export const BlackPillText = styled(PillText)`
     background-color: #161817;
-    color: #F7FCFE;
-`;
+    color: #f7fcfe;
+`
 
 export const Info = styled.h2`
     font-size: 1.2rem;
     line-height: 1.2;
-`;
+`

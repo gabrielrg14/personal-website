@@ -3,30 +3,30 @@ import {
     Redux,
     Nodedotjs,
     Express,
-    Wordpress,
-} from "@styled-icons/simple-icons/";
-  
+    Wordpress
+} from "@styled-icons/simple-icons/"
+
 const knowledgeTechs = [
     {
         icon: <Vuedotjs />,
-        label: "Vue.js",
+        label: "Vue.js"
     },
     {
         icon: <Redux />,
-        label: "Redux",
+        label: "Redux"
     },
     {
         icon: <Nodedotjs />,
-        label: "Node.js",
+        label: "Node.js"
     },
     {
         icon: <Express />,
-        label: "Express.js",
+        label: "Express.js"
     },
     {
         icon: <Wordpress />,
-        label: "Wordpress",
-    },
-];
-  
-export default knowledgeTechs;
+        label: "Wordpress"
+    }
+]
+
+export default knowledgeTechs

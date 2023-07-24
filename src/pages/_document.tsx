@@ -1,18 +1,24 @@
-import Document, { DocumentContext , Html, Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from "styled-components";
+import Document, {
+    DocumentContext,
+    Html,
+    Head,
+    Main,
+    NextScript
+} from "next/document"
+import { ServerStyleSheet } from "styled-components"
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
         const sheet = new ServerStyleSheet()
         const originalRenderPage = ctx.renderPage
-    
+
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
                     enhanceApp: (App) => (props) =>
-                    sheet.collectStyles(<App {...props} />),
+                        sheet.collectStyles(<App {...props} />)
                 })
-    
+
             const initialProps = await Document.getInitialProps(ctx)
             return {
                 ...initialProps,
@@ -21,7 +27,7 @@ class MyDocument extends Document {
                         {initialProps.styles}
                         {sheet.getStyleElement()}
                     </>
-                ),
+                )
             }
         } finally {
             sheet.seal()
@@ -32,11 +38,13 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <link rel="preload"
+                    <link
+                        rel="preload"
                         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Montserrat:wght@600&display=swap"
                         as="style"
                     />
-                    <link rel="stylesheet"
+                    <link
+                        rel="stylesheet"
                         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Montserrat:wght@600&display=swap"
                     />
                 </Head>
@@ -49,4 +57,4 @@ class MyDocument extends Document {
     }
 }
 
-export default MyDocument;
+export default MyDocument

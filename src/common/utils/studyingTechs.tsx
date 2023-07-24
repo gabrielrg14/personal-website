@@ -5,38 +5,38 @@ import {
     Styledcomponents,
     Graphql,
     Jest,
-    Testinglibrary,
-} from "@styled-icons/simple-icons/";
-  
+    Testinglibrary
+} from "@styled-icons/simple-icons/"
+
 const studyingTechs = [
     {
         icon: <Nextdotjs />,
-        label: "Next.js",
+        label: "Next.js"
     },
     {
         icon: <Vercel />,
-        label: "Vercel",
+        label: "Vercel"
     },
     {
         icon: <Typescript />,
-        label: "TypeScript",
+        label: "TypeScript"
     },
     {
         icon: <Styledcomponents />,
-        label: "Styled Components",
+        label: "Styled Components"
     },
     {
         icon: <Graphql />,
-        label: "GraphQL",
+        label: "GraphQL"
     },
     {
         icon: <Jest />,
-        label: "Jest",
+        label: "Jest"
     },
     {
         icon: <Testinglibrary />,
-        label: "Testing Library",
-    },
-];
-  
-export default studyingTechs;
+        label: "Testing Library"
+    }
+]
+
+export default studyingTechs

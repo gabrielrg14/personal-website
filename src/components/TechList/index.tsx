@@ -1,15 +1,11 @@
-import * as S from "./styles";
+import * as S from "./styles"
 
 type TechListProps = {
     children: React.ReactNode
 }
 
 const TechList = ({ children }: TechListProps) => {
-    return (
-        <S.Wrapper>
-            {children}
-        </S.Wrapper>
-    )
+    return <S.Wrapper>{children}</S.Wrapper>
 }
 
-export default TechList;
+export default TechList
