@@ -11,6 +11,7 @@ const Footer = () => {
                 {socialMedias.map(({ name, icon, link }) => (
                     <Link
                         key={link}
+                        title={name}
                         href={link}
                         target="_blank"
                         rel="noreferrer"
