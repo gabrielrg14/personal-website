@@ -14,7 +14,7 @@ const PageNotFoundTemplate = () => {
                 <S.NoContent>
                     But the content for that page was not found! 🤔
                 </S.NoContent>
-                <Link href="/">
+                <Link href="/" aria-label="Go to Home">
                     <div className="btn-default">Go to Home</div>
                 </Link>
             </S.Wrapper>

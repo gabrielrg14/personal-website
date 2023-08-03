@@ -13,9 +13,9 @@ const Footer = () => {
                         key={link}
                         title={name}
                         href={link}
+                        aria-label={name}
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={name}
                     >
                         <S.Icon>{icon}</S.Icon>
                     </Link>

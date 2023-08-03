@@ -14,6 +14,7 @@ const Header = () => {
             <S.Navbar>
                 <S.NavLink
                     href="/"
+                    aria-label="Go to Home"
                     style={{
                         color: router.pathname === "/" ? "#18a330" : undefined
                     }}
@@ -28,6 +29,7 @@ const Header = () => {
                         <S.NavItem key={label}>
                             <S.NavLink
                                 href={href}
+                                aria-label={`Go to ${label} page`}
                                 style={{
                                     textDecoration:
                                         router.pathname === href

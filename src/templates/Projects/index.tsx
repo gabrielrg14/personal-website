@@ -52,6 +52,7 @@ const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                             <S.ProjectTitle>
                                 <Link
                                     href={repository.html_url}
+                                    aria-label={repository.name}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -78,6 +79,7 @@ const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                 <S.ProjectWebsite>
                                     <Link
                                         href={repository.homepage}
+                                        aria-label="Go to website"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

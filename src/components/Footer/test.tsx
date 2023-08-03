@@ -12,7 +12,7 @@ describe("<Footer />", () => {
         expect(screen.getByText(/all rights reserved/i)).toBeInTheDocument()
     })
 
-    it("should render Footer links with correct attributes", () => {
+    it("should render Footer links with the correct attributes", () => {
         render(<Footer />)
 
         const linkedinLink = screen.getByRole("link", { name: /linkedin/i })
@@ -25,7 +25,8 @@ describe("<Footer />", () => {
         )
         expect(linkedinLink).toHaveAttribute("target", "_blank")
         expect(linkedinLink).toHaveAttribute("rel", "noreferrer")
-        expect(linkedinLink).toHaveAttribute("aria-label", "LinkedIn")
+        expect(linkedinLink).toHaveAccessibleName()
+        expect(linkedinLink).toHaveAccessibleDescription()
 
         expect(githubLink).toBeInTheDocument()
         expect(githubLink).toHaveAttribute(
@@ -34,6 +35,7 @@ describe("<Footer />", () => {
         )
         expect(githubLink).toHaveAttribute("target", "_blank")
         expect(githubLink).toHaveAttribute("rel", "noreferrer")
-        expect(githubLink).toHaveAttribute("aria-label", "GitHub")
+        expect(githubLink).toHaveAccessibleName()
+        expect(githubLink).toHaveAccessibleDescription()
     })
 })

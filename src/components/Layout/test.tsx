@@ -2,17 +2,6 @@ import { render, screen } from "@testing-library/react"
 
 import Layout from "."
 
-jest.mock("next/router", () => ({
-    useRouter() {
-        return {
-            route: "/",
-            pathname: "",
-            query: "",
-            asPath: ""
-        }
-    }
-}))
-
 describe("<Layout />", () => {
     it("should render the layout with the passed children", () => {
         render(
