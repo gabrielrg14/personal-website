@@ -1,15 +1,11 @@
 import {
     ReactLogo,
-    Tailwindcss,
     Docker,
-    Kubernetes
+    Kubernetes,
+    Amazonaws
 } from "@styled-icons/simple-icons/"
 
 const potentialTechs = [
-    {
-        icon: <Tailwindcss />,
-        label: "Tailwind"
-    },
     {
         icon: <ReactLogo />,
         label: "React Native"
@@ -21,6 +17,10 @@ const potentialTechs = [
     {
         icon: <Kubernetes />,
         label: "Kubernetes"
+    },
+    {
+        icon: <Amazonaws />,
+        label: "AWS"
     }
 ]
 

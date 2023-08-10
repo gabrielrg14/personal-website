@@ -1,9 +1,8 @@
 import {
     Nextdotjs,
-    Vercel,
     Typescript,
     Styledcomponents,
-    Graphql,
+    Tailwindcss,
     Jest,
     Testinglibrary
 } from "@styled-icons/simple-icons/"
@@ -14,10 +13,6 @@ const studyingTechs = [
         label: "Next.js"
     },
     {
-        icon: <Vercel />,
-        label: "Vercel"
-    },
-    {
         icon: <Typescript />,
         label: "TypeScript"
     },
@@ -26,8 +21,8 @@ const studyingTechs = [
         label: "Styled Components"
     },
     {
-        icon: <Graphql />,
-        label: "GraphQL"
+        icon: <Tailwindcss />,
+        label: "Tailwind"
     },
     {
         icon: <Jest />,

@@ -1,9 +1,10 @@
 import {
     Vuedotjs,
     Redux,
+    Graphql,
     Nodedotjs,
     Express,
-    Wordpress
+    Vercel
 } from "@styled-icons/simple-icons/"
 
 const knowledgeTechs = [
@@ -16,6 +17,10 @@ const knowledgeTechs = [
         label: "Redux"
     },
     {
+        icon: <Graphql />,
+        label: "GraphQL"
+    },
+    {
         icon: <Nodedotjs />,
         label: "Node.js"
     },
@@ -24,8 +29,8 @@ const knowledgeTechs = [
         label: "Express.js"
     },
     {
-        icon: <Wordpress />,
-        label: "Wordpress"
+        icon: <Vercel />,
+        label: "Vercel"
     }
 ]
 
