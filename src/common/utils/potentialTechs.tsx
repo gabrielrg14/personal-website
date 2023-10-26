@@ -1,5 +1,5 @@
 import {
-    ReactLogo,
+    Nestjs,
     Docker,
     Kubernetes,
     Amazonaws
@@ -7,8 +7,8 @@ import {
 
 const potentialTechs = [
     {
-        icon: <ReactLogo />,
-        label: "React Native"
+        icon: <Nestjs />,
+        label: "Nest.js"
     },
     {
         icon: <Docker />,

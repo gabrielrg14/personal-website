@@ -3,6 +3,8 @@ import {
     Css3,
     Javascript,
     ReactLogo,
+    Nextdotjs,
+    Styledcomponents,
     Bootstrap,
     Git,
     Github
@@ -24,6 +26,14 @@ const knownTechs = [
     {
         icon: <ReactLogo />,
         label: "React.js"
+    },
+    {
+        icon: <Nextdotjs />,
+        label: "Next.js"
+    },
+    {
+        icon: <Styledcomponents />,
+        label: "Styled Components"
     },
     {
         icon: <Bootstrap />,

@@ -1,28 +1,18 @@
 import {
-    Nextdotjs,
+    ReactLogo,
     Typescript,
-    Styledcomponents,
-    Tailwindcss,
     Jest,
     Testinglibrary
 } from "@styled-icons/simple-icons/"
 
 const studyingTechs = [
     {
-        icon: <Nextdotjs />,
-        label: "Next.js"
+        icon: <ReactLogo />,
+        label: "React Native"
     },
     {
         icon: <Typescript />,
         label: "TypeScript"
-    },
-    {
-        icon: <Styledcomponents />,
-        label: "Styled Components"
-    },
-    {
-        icon: <Tailwindcss />,
-        label: "Tailwind"
     },
     {
         icon: <Jest />,

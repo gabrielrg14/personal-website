@@ -4,6 +4,7 @@ import {
     Graphql,
     Nodedotjs,
     Express,
+    Tailwindcss,
     Vercel
 } from "@styled-icons/simple-icons/"
 
@@ -27,6 +28,10 @@ const knowledgeTechs = [
     {
         icon: <Express />,
         label: "Express.js"
+    },
+    {
+        icon: <Tailwindcss />,
+        label: "Tailwind"
     },
     {
         icon: <Vercel />,
