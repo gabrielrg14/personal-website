@@ -7,6 +7,7 @@ import {
     Redux,
     Vuedotjs,
     Nextdotjs,
+    Expo,
     Wordpress,
     Bootstrap,
     Styledcomponents,
@@ -51,6 +52,11 @@ const techProjects = [
         identifier: "react"
     },
     {
+        icon: <ReactLogo />,
+        label: "React Native",
+        identifier: "react-native"
+    },
+    {
         icon: <Redux />,
         label: "Redux",
         identifier: "redux"
@@ -64,6 +70,11 @@ const techProjects = [
         icon: <Nextdotjs />,
         label: "Next.js",
         identifier: "nextjs"
+    },
+    {
+        icon: <Expo />,
+        label: "Expo",
+        identifier: "expo"
     },
     {
         icon: <Wordpress />,
