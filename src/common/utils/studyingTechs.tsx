@@ -1,5 +1,6 @@
 import {
     ReactLogo,
+    Expo,
     Typescript,
     Jest,
     Testinglibrary
@@ -9,6 +10,11 @@ const studyingTechs = [
     {
         icon: <ReactLogo />,
         label: "React Native"
+    },
+    {
+        icon: <Expo />,
+        label: "Expo",
+        identifier: "expo"
     },
     {
         icon: <Typescript />,
