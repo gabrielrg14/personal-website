@@ -8,6 +8,7 @@ import SEO from "../../next-seo.config"
 import * as gtag from "common/lib/gtag"
 import GoogleAnalytics from "components/Analytics"
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import GlobalStyle from "styles/global"
 import Layout from "components/Layout"
@@ -33,6 +34,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             <DefaultSeo {...SEO} />
             <GoogleAnalytics />
             <VercelAnalytics />
+            <SpeedInsights />
             <GlobalStyle />
             <Layout>
                 <NextNProgress
