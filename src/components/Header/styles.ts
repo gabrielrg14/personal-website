@@ -20,7 +20,7 @@ export const NavList = styled.ul`
     align-items: center;
 `
 
-export const NavItem = styled.li`
+export const NavItem = styled("li")`
     list-style: none;
 `
 

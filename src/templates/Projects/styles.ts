@@ -31,7 +31,7 @@ export const ProjectsList = styled.ul`
     `}
 `
 
-export const Project = styled.li`
+export const Project = styled("li")`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
