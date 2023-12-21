@@ -1,10 +1,9 @@
-import { useContext } from "react"
-import { UserContext } from "common/contexts/user"
+import { useStore } from "store"
 
 import AboutTemplate from "templates/About"
 
 const About = () => {
-    const user = useContext(UserContext)
+    const { user } = useStore()
     return <AboutTemplate user={user} />
 }
 

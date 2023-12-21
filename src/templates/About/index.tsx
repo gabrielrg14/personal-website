@@ -9,10 +9,10 @@ import knowledge from "common/utils/knowledgeTechs"
 import studying from "common/utils/studyingTechs"
 import potential from "common/utils/potentialTechs"
 
-import { UserContextData } from "common/contexts/user"
+import IUser from "interfaces/IUser"
 
 type AboutTemplateProps = {
-    user: UserContextData
+    user: IUser
 }
 
 const AboutTemplate = ({ user }: AboutTemplateProps) => {

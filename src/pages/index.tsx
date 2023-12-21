@@ -1,10 +1,9 @@
-import { useContext } from "react"
-import { UserContext } from "common/contexts/user"
+import { useStore } from "store"
 
 import HomeTemplate from "templates/Home"
 
 const Home = () => {
-    const user = useContext(UserContext)
+    const { user } = useStore()
     return <HomeTemplate user={user} />
 }
 

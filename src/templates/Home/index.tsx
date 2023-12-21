@@ -2,10 +2,10 @@ import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
 
-import { UserContextData } from "common/contexts/user"
+import IUser from "interfaces/IUser"
 
 type HomeTemplateProps = {
-    user: UserContextData
+    user: IUser
 }
 
 const HomeTemplate = ({ user }: HomeTemplateProps) => {
