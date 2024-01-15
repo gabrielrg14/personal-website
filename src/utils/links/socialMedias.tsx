@@ -1,6 +1,6 @@
 import { Linkedin, Github } from "@styled-icons/simple-icons/"
 
-const socialMedias = [
+export const socialMedias = [
     {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/gabrielrapuccigonzalez/",
@@ -12,5 +12,3 @@ const socialMedias = [
         icon: <Github />
     }
 ]
-
-export default socialMedias

@@ -1,22 +1,23 @@
 import { GetStaticProps } from "next"
 
-import ProjectsTemplate, { ProjectsTemplateProps } from "templates/Projects"
+import { IRepository } from "interfaces"
+import { UserService } from "services"
+import { ProjectsTemplate } from "templates"
 
 export const getStaticProps: GetStaticProps = async () => {
-    const respApi = await fetch(
-        "https://api.github.com/users/gabrielrg14/starred"
-    )
-    const repositories = await respApi.json()
+    const repositories = await UserService.getUserStarredRepos("gabrielrg14")
 
     return {
         revalidate: 60,
-        props: {
-            repositories
-        }
+        props: { repositories }
     }
 }
 
-const Projects = ({ repositories }: ProjectsTemplateProps) => {
+type ProjectsProps = {
+    repositories: IRepository[]
+}
+
+const Projects = ({ repositories }: ProjectsProps) => {
     return <ProjectsTemplate repositories={repositories} />
 }
 

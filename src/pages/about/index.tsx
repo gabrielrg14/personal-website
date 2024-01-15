@@ -1,9 +1,9 @@
-import { useStore } from "store"
-
-import AboutTemplate from "templates/About"
+import { useUser } from "hooks"
+import { AboutTemplate } from "templates"
 
 const About = () => {
-    const { user } = useStore()
+    const { user } = useUser()
+
     return <AboutTemplate user={user} />
 }
 

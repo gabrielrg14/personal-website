@@ -2,11 +2,10 @@ import { useRouter } from "next/router"
 
 import * as S from "./styles"
 import Image from "next/image"
-
 import Logo from "/public/images/logo/logo-32.png"
-import links from "common/utils/headerLinks"
+import { headerLinks as links } from "utils"
 
-const Header = () => {
+export const Header = () => {
     const router = useRouter()
 
     return (
@@ -46,5 +45,3 @@ const Header = () => {
         </header>
     )
 }
-
-export default Header

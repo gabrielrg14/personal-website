@@ -5,7 +5,7 @@ import {
     Amazonaws
 } from "@styled-icons/simple-icons/"
 
-const potentialTechs = [
+export const potentialTechs = [
     {
         icon: <Nestjs />,
         label: "Nest.js"
@@ -23,5 +23,3 @@ const potentialTechs = [
         label: "AWS"
     }
 ]
-
-export default potentialTechs

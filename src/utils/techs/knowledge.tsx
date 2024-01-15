@@ -8,7 +8,7 @@ import {
     Vercel
 } from "@styled-icons/simple-icons/"
 
-const knowledgeTechs = [
+export const knowledgeTechs = [
     {
         icon: <Vuedotjs />,
         label: "Vue.js"
@@ -38,5 +38,3 @@ const knowledgeTechs = [
         label: "Vercel"
     }
 ]
-
-export default knowledgeTechs

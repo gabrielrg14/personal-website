@@ -1,4 +1,4 @@
-const headerLinks = [
+export const headerLinks = [
     {
         href: "/about",
         label: "About me"
@@ -8,5 +8,3 @@ const headerLinks = [
         label: "Projects"
     }
 ]
-
-export default headerLinks

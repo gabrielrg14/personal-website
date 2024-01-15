@@ -1,7 +1,7 @@
 import Script from "next/script"
-import { GA_TRACKING_ID } from "common/lib/gtag"
+import { GA_TRACKING_ID } from "common/gtag"
 
-const Analytics = () => (
+export const Analytics = () => (
     <>
         <Script
             data-testid="gtag-script"
@@ -25,5 +25,3 @@ const Analytics = () => (
         />
     </>
 )
-
-export default Analytics

@@ -6,7 +6,7 @@ import {
     Testinglibrary
 } from "@styled-icons/simple-icons/"
 
-const studyingTechs = [
+export const studyingTechs = [
     {
         icon: <ReactLogo />,
         label: "React Native"
@@ -29,5 +29,3 @@ const studyingTechs = [
         label: "Testing Library"
     }
 ]
-
-export default studyingTechs

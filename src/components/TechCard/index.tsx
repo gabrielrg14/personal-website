@@ -5,7 +5,7 @@ type TechCardProps = {
     label: string
 }
 
-const TechCard = ({ icon, label }: TechCardProps) => {
+export const TechCard = ({ icon, label }: TechCardProps) => {
     return (
         <S.Wrapper>
             <S.Icon>{icon}</S.Icon>
@@ -13,5 +13,3 @@ const TechCard = ({ icon, label }: TechCardProps) => {
         </S.Wrapper>
     )
 }
-
-export default TechCard

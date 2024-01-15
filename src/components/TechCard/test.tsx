@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react"
-
-import TechCard from "."
 import { Testinglibrary } from "@styled-icons/simple-icons/"
+
+import { TechCard } from "."
 
 describe("<TechCard />", () => {
     it("should render label and svg icon", () => {

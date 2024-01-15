@@ -1,9 +1,9 @@
-import { useStore } from "store"
-
-import HomeTemplate from "templates/Home"
+import { useUser } from "hooks"
+import { HomeTemplate } from "templates"
 
 const Home = () => {
-    const { user } = useStore()
+    const { user } = useUser()
+
     return <HomeTemplate user={user} />
 }
 

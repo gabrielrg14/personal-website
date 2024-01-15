@@ -25,7 +25,7 @@ import {
     Vercel
 } from "@styled-icons/simple-icons/"
 
-const techProjects = [
+export const techProjects = [
     {
         icon: <Html5 />,
         label: "HTML",
@@ -152,5 +152,3 @@ const techProjects = [
         identifier: "vercel"
     }
 ]
-
-export default techProjects

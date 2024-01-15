@@ -1,14 +1,13 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-
-import IUser from "interfaces/IUser"
+import { IUser } from "interfaces"
 
 type HomeTemplateProps = {
     user: IUser
 }
 
-const HomeTemplate = ({ user }: HomeTemplateProps) => {
+export const HomeTemplate = ({ user }: HomeTemplateProps) => {
     return (
         <>
             <NextSeo
@@ -49,5 +48,3 @@ const HomeTemplate = ({ user }: HomeTemplateProps) => {
         </>
     )
 }
-
-export default HomeTemplate

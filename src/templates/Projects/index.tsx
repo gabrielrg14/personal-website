@@ -1,30 +1,17 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-import TechList from "components/TechList"
-import TechCard from "components/TechCard"
 import Link from "next/link"
+import { IRepository } from "interfaces"
+import { TechList, TechCard } from "components"
+import { techProjects as techs } from "utils"
 import { ExternalLink } from "@styled-icons/remix-line/ExternalLink"
 
-import techs from "common/utils/techProjects"
-
-type Repository = {
-    id: number
-    name: string
-    description: string
-    language: string
-    homepage: string
-    topics: string[]
-    owner: object
-    html_url: string
-    created_at: Date
+type ProjectsTemplateProps = {
+    repositories: IRepository[]
 }
 
-export interface ProjectsTemplateProps {
-    repositories: Repository[]
-}
-
-const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
+export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
     return (
         <>
             <NextSeo
@@ -101,5 +88,3 @@ const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
         </>
     )
 }
-
-export default ProjectsTemplate

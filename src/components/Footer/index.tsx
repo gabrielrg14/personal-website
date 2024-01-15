@@ -1,9 +1,8 @@
 import * as S from "./styles"
 import Link from "next/link"
+import { socialMedias } from "utils"
 
-import socialMedias from "common/utils/socialMedias"
-
-const Footer = () => {
+export const Footer = () => {
     return (
         <S.FooterTag>
             <S.SpanText>Made with ❤️ by Gabriel Rapucci Gonzalez</S.SpanText>
@@ -27,5 +26,3 @@ const Footer = () => {
         </S.FooterTag>
     )
 }
-
-export default Footer

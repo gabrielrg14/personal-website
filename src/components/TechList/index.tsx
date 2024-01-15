@@ -4,8 +4,6 @@ type TechListProps = {
     children: React.ReactNode
 }
 
-const TechList = ({ children }: TechListProps) => {
+export const TechList = ({ children }: TechListProps) => {
     return <S.Wrapper>{children}</S.Wrapper>
 }
-
-export default TechList

@@ -5,13 +5,11 @@ import { useRouter } from "next/router"
 import { DefaultSeo } from "next-seo"
 import SEO from "../../next-seo.config"
 
-import * as gtag from "common/lib/gtag"
-import GoogleAnalytics from "components/Analytics"
+import * as gtag from "common/gtag"
+import { GlobalStyle } from "styles"
+import { Analytics as GoogleAnalytics, Layout } from "components"
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
-import GlobalStyle from "styles/global"
-import Layout from "components/Layout"
 import NextNProgress from "nextjs-progressbar"
 
 const App = ({ Component, pageProps }: AppProps) => {

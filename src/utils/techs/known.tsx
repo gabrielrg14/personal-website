@@ -10,7 +10,7 @@ import {
     Github
 } from "@styled-icons/simple-icons/"
 
-const knownTechs = [
+export const knownTechs = [
     {
         icon: <Html5 />,
         label: "HTML"
@@ -48,5 +48,3 @@ const knownTechs = [
         label: "GitHub"
     }
 ]
-
-export default knownTechs

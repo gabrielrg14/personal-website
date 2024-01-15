@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react"
 
-import TechList from "."
+import { TechList } from "."
 
 describe("<TechList />", () => {
     it("should render the wrapper", () => {

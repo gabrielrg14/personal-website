@@ -1,26 +1,19 @@
-import { useCallback, useEffect } from "react"
-import { useStore } from "store"
+import { useEffect } from "react"
 
 import * as S from "./styles"
-import Header from "components/Header"
-import Footer from "components/Footer"
+import { useUser } from "hooks"
+import { Header, Footer } from "components"
 
 type LayoutProps = {
     children: React.ReactNode
 }
 
-const Layout = ({ children }: LayoutProps) => {
-    const { setUser } = useStore()
-
-    const getUserData = useCallback(async () => {
-        const respApi = await fetch("https://api.github.com/users/gabrielrg14")
-        const userData = await respApi.json()
-        setUser(userData)
-    }, [setUser])
+export const Layout = ({ children }: LayoutProps) => {
+    const { setUserStore } = useUser()
 
     useEffect(() => {
-        getUserData()
-    }, [getUserData])
+        setUserStore("gabrielrg14")
+    }, [setUserStore])
 
     return (
         <S.LayoutWrapper>
@@ -30,5 +23,3 @@ const Layout = ({ children }: LayoutProps) => {
         </S.LayoutWrapper>
     )
 }
-
-export default Layout

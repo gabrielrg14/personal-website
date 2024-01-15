@@ -1,21 +1,20 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-import TechList from "components/TechList"
-import TechCard from "components/TechCard"
-
-import known from "common/utils/knownTechs"
-import knowledge from "common/utils/knowledgeTechs"
-import studying from "common/utils/studyingTechs"
-import potential from "common/utils/potentialTechs"
-
-import IUser from "interfaces/IUser"
+import { IUser } from "interfaces"
+import { TechList, TechCard } from "components"
+import {
+    knownTechs as known,
+    knowledgeTechs as knowledge,
+    studyingTechs as studying,
+    potentialTechs as potential
+} from "utils"
 
 type AboutTemplateProps = {
     user: IUser
 }
 
-const AboutTemplate = ({ user }: AboutTemplateProps) => {
+export const AboutTemplate = ({ user }: AboutTemplateProps) => {
     return (
         <>
             <NextSeo
@@ -71,5 +70,3 @@ const AboutTemplate = ({ user }: AboutTemplateProps) => {
         </>
     )
 }
-
-export default AboutTemplate

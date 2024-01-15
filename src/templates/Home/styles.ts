@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import media from "common/utils/mediaQueries"
+import { mediaQueries as media } from "utils"
 
 import Image from "next/image"
 
