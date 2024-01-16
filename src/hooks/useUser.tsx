@@ -9,9 +9,7 @@ export const useUser = () => {
     const setUserStore = useCallback(
         async (username: string) => {
             const { status, data } = await UserService.getUser(username)
-
             if (status !== 200) throw new Error()
-
             setUser(data)
         },
         [setUser]

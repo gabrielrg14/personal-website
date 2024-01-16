@@ -1,3 +1,3 @@
 export * from "./links"
-export * from "./mediaQueries"
+export * from "./mediaQuery"
 export * from "./techs"

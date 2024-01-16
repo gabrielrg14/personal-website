@@ -3,20 +3,19 @@ import { render, screen } from "@testing-library/react"
 import { Footer } from "."
 
 describe("<Footer />", () => {
-    it("should render Footer with the important information", () => {
+    it("should render with the informative texts", () => {
         render(<Footer />)
 
         expect(
-            screen.getByText(/gabriel rapucci gonzalez/i)
+            screen.getByText(/by gabriel rapucci gonzalez/i)
         ).toBeInTheDocument()
         expect(screen.getByText(/all rights reserved/i)).toBeInTheDocument()
     })
 
-    it("should render Footer links with the correct attributes", () => {
+    it("should render the link to linkedin with the correct attributes, accessible name and description", () => {
         render(<Footer />)
 
         const linkedinLink = screen.getByRole("link", { name: /linkedin/i })
-        const githubLink = screen.getByRole("link", { name: /github/i })
 
         expect(linkedinLink).toBeInTheDocument()
         expect(linkedinLink).toHaveAttribute(
@@ -25,8 +24,14 @@ describe("<Footer />", () => {
         )
         expect(linkedinLink).toHaveAttribute("target", "_blank")
         expect(linkedinLink).toHaveAttribute("rel", "noreferrer")
-        expect(linkedinLink).toHaveAccessibleName()
-        expect(linkedinLink).toHaveAccessibleDescription()
+        expect(linkedinLink).toHaveAccessibleName(/linkedin/i)
+        expect(linkedinLink).toHaveAccessibleDescription(/linkedin/i)
+    })
+
+    it("should render the link to github with the correct attributes, accessible name and description", () => {
+        render(<Footer />)
+
+        const githubLink = screen.getByRole("link", { name: /github/i })
 
         expect(githubLink).toBeInTheDocument()
         expect(githubLink).toHaveAttribute(
@@ -35,7 +40,7 @@ describe("<Footer />", () => {
         )
         expect(githubLink).toHaveAttribute("target", "_blank")
         expect(githubLink).toHaveAttribute("rel", "noreferrer")
-        expect(githubLink).toHaveAccessibleName()
-        expect(githubLink).toHaveAccessibleDescription()
+        expect(githubLink).toHaveAccessibleName(/github/i)
+        expect(githubLink).toHaveAccessibleDescription(/github/i)
     })
 })
