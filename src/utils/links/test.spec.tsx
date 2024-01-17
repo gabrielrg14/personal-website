@@ -1,4 +1,5 @@
-import { Linkedin, Github } from "@styled-icons/simple-icons/"
+import { USERNAME } from "common"
+import { Linkedin, Github } from "@styled-icons/simple-icons"
 
 import { headerLinks, socialMedias } from "."
 
@@ -25,7 +26,7 @@ describe("links", () => {
             })
             expect(socialMedias).toContainEqual({
                 name: "GitHub",
-                link: "https://github.com/gabrielrg14",
+                link: `https://github.com/${USERNAME}`,
                 icon: <Github />
             })
         })

@@ -6,7 +6,7 @@ import {
     Express,
     Tailwindcss,
     Vercel
-} from "@styled-icons/simple-icons/"
+} from "@styled-icons/simple-icons"
 
 export const knowledgeTechs = [
     {

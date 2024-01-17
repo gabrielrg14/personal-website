@@ -3,7 +3,7 @@ import { Api } from "providers"
 
 const getUser = (username: string) => Api.get<IUser>(`/${username}`)
 
-const getUserStarredRepos = async (username: string) => {
+const getStarredUserRepositories = async (username: string) => {
     const { status, data } = await Api.get<IRepository[]>(
         `/${username}/starred`
     )
@@ -15,5 +15,5 @@ const getUserStarredRepos = async (username: string) => {
 
 export const UserService = {
     getUser,
-    getUserStarredRepos
+    getStarredUserRepositories
 }

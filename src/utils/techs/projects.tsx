@@ -23,7 +23,7 @@ import {
     Git,
     Github,
     Vercel
-} from "@styled-icons/simple-icons/"
+} from "@styled-icons/simple-icons"
 
 export const techProjects = [
     {

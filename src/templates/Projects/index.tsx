@@ -5,7 +5,7 @@ import Link from "next/link"
 import { IRepository } from "interfaces"
 import { TechList, TechCard } from "components"
 import { techProjects as techs } from "utils"
-import { ExternalLink } from "@styled-icons/remix-line/ExternalLink"
+import { ExternalLink } from "@styled-icons/remix-line"
 
 type ProjectsTemplateProps = {
     repositories: IRepository[]

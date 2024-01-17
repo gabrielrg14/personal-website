@@ -8,7 +8,7 @@ import {
     Bootstrap,
     Git,
     Github
-} from "@styled-icons/simple-icons/"
+} from "@styled-icons/simple-icons"
 
 export const knownTechs = [
     {

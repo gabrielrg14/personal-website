@@ -4,7 +4,7 @@ import {
     Typescript,
     Jest,
     Testinglibrary
-} from "@styled-icons/simple-icons/"
+} from "@styled-icons/simple-icons"
 
 export const studyingTechs = [
     {

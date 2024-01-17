@@ -2,10 +2,11 @@ import { GetStaticProps } from "next"
 
 import { IRepository } from "interfaces"
 import { UserService } from "services"
+import { USERNAME } from "common"
 import { ProjectsTemplate } from "templates"
 
 export const getStaticProps: GetStaticProps = async () => {
-    const repositories = await UserService.getUserStarredRepos("gabrielrg14")
+    const repositories = await UserService.getStarredUserRepositories(USERNAME)
 
     return {
         revalidate: 60,

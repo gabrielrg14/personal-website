@@ -3,7 +3,7 @@ import {
     Docker,
     Kubernetes,
     Amazonaws
-} from "@styled-icons/simple-icons/"
+} from "@styled-icons/simple-icons"
 
 export const potentialTechs = [
     {

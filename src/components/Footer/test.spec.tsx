@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react"
+import { USERNAME } from "common"
 
 import { Footer } from "."
 
@@ -36,7 +37,7 @@ describe("<Footer />", () => {
         expect(githubLink).toBeInTheDocument()
         expect(githubLink).toHaveAttribute(
             "href",
-            "https://github.com/gabrielrg14"
+            `https://github.com/${USERNAME}`
         )
         expect(githubLink).toHaveAttribute("target", "_blank")
         expect(githubLink).toHaveAttribute("rel", "noreferrer")

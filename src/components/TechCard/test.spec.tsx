@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { Jest, Testinglibrary } from "@styled-icons/simple-icons/"
+import { Jest, Testinglibrary } from "@styled-icons/simple-icons"
 
 import { TechCard } from "."
 

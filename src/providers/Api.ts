@@ -1,8 +1,7 @@
 import axios from "axios"
-
-const baseURL = "https://api.github.com/users"
+import { API_URL } from "common"
 
 export const Api = axios.create({
-    baseURL,
+    baseURL: API_URL,
     headers: { Authorization: `Bearer ${process.env.NEXT_PUBLIC_GH_TOKEN}` }
 })
