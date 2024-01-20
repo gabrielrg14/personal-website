@@ -20,15 +20,15 @@ export const AvatarImage = styled(Image)`
     height: 100%;
     width: 100%;
     border-radius: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     animation: appear-on-screen 1s;
 `
 
 export const PillText = styled.div`
     background-color: #f7fcfe;
     color: #161817;
-    border-radius: 50px;
-    padding: 10px;
+    border-radius: 3rem;
+    padding: 0.75rem;
     width: 50%;
     animation: appear-on-screen 1.5s;
 
@@ -46,7 +46,17 @@ export const BlackPillText = styled(PillText)`
     color: #f7fcfe;
 `
 
-export const Info = styled.h2`
-    font-size: 1.2rem;
-    line-height: 1.2;
+export const InfoRow = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 0.5rem;
+`
+
+export const Info = styled.h3`
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    overflow: hidden;
 `

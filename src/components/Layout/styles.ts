@@ -10,5 +10,5 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     min-height: 80vh;
-    padding: 20px;
+    padding: 1.25rem;
 `

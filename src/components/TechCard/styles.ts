@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    width: 100px;
+    width: 6.25rem;
 `
 
 export const Icon = styled.div`
     ${StyledIconBase} {
         color: #18a330;
-        width: 40px;
+        width: 2.5rem;
     }
 `

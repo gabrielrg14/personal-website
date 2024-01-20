@@ -5,10 +5,10 @@ import { headerLinks, socialMedias } from "."
 
 describe("links", () => {
     describe("headerLinks", () => {
-        it("should contain about me and projects links", () => {
+        it("should contain skills and projects links", () => {
             expect(headerLinks).toContainEqual({
-                href: "/about",
-                label: "About me"
+                href: "/skills",
+                label: "Skills"
             })
             expect(headerLinks).toContainEqual({
                 href: "/projects",

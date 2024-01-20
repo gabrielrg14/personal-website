@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mediaQueries as media } from "utils"
 
 import Link from "next/link"
 
@@ -7,9 +8,13 @@ export const Navbar = styled.nav`
     gap: 1rem;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 1rem;
+    font-size: 1.2rem;
     background-color: #161817;
+
+    ${media.lessThan("mobile")`
+        flex-direction: column;
+    `}
 `
 
 export const NavList = styled.ul`

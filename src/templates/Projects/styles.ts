@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { mediaQueries as media } from "utils"
 
+import Link from "next/link"
 import { StyledIconBase } from "@styled-icons/styled-icon"
 
 export const Wrapper = styled.div`
@@ -12,16 +13,7 @@ export const Wrapper = styled.div`
     `}
 `
 
-export const SupportText = styled.p`
-    background-color: #161817;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    padding: 0.5em;
-`
-
-export const ProjectsList = styled.ul`
+export const Projects = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -39,35 +31,35 @@ export const Project = styled("li")`
     text-align: center;
     gap: 1rem;
     background-color: #161817;
-    border-radius: 15px;
+    border-radius: 1rem;
     border: 1px solid #18a330;
-    padding: 1em;
+    padding: 1rem;
 `
 
-export const ProjectTitle = styled.h2`
+export const Title = styled.h2`
     font-size: 1.5rem;
 `
 
-export const ProjectWebsite = styled.h3`
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 1em;
-
-    a:hover {
-        transition: 0.5s ease-out;
-        color: #18a330;
-        text-decoration: none;
-    }
+export const Links = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
 `
 
-export const Icon = styled.span`
+export const IconLink = styled(Link)`
     ${StyledIconBase} {
-        width: 20px;
-        margin-bottom: 5px;
+        color: #f7fcfe;
+        width: 1.75rem;
+
+        :hover {
+            transition: 0.5s ease-out;
+            color: #18a330;
+        }
     }
 `
 
-export const ProjectDescription = styled.span`
+export const Description = styled.span`
     font-size: 1.1rem;
     line-height: 1.2;
 `

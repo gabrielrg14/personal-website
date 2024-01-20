@@ -2,10 +2,13 @@ import {
     Html5,
     Css3,
     Javascript,
+    Typescript,
     ReactLogo,
     Nextdotjs,
     Styledcomponents,
     Bootstrap,
+    Jest,
+    Testinglibrary,
     Git,
     Github
 } from "@styled-icons/simple-icons"
@@ -24,6 +27,10 @@ export const knownTechs = [
         label: "JavaScript"
     },
     {
+        icon: <Typescript />,
+        label: "TypeScript"
+    },
+    {
         icon: <ReactLogo />,
         label: "React.js"
     },
@@ -38,6 +45,14 @@ export const knownTechs = [
     {
         icon: <Bootstrap />,
         label: "Bootstrap"
+    },
+    {
+        icon: <Jest />,
+        label: "Jest"
+    },
+    {
+        icon: <Testinglibrary />,
+        label: "Testing Library"
     },
     {
         icon: <Git />,

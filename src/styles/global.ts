@@ -7,6 +7,14 @@ export const GlobalStyle = createGlobalStyle`
         border: 0;
     }
 
+    html {
+        cursor: url("/images/cursor/pointer.cur"), pointer;
+    }
+
+    body {
+        cursor: url("/images/cursor/default.cur"), default;
+    }
+
     body {
         height: 100%;
         background-color: #161817;
@@ -18,22 +26,42 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "League Spartan", "Montserrat", sans-serif;
     }
 
-    body::-webkit-scrollbar {
-        width: 15px;
+    ::-webkit-scrollbar {
+        width: 0.5rem;
     }
 
-    body::-webkit-scrollbar-track {
-        background-color: #f7fcfe;
-    }
-
-    body::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-track-piece {
         background-color: #161817;
-        border-radius: 15px;
-        border: 2px solid #f7fcfe;
+        border-radius: 0%;
+    }
+
+    ::-webkit-scrollbar-track-piece:hover {
+        box-shadow: inset 0 1px 1px #f7fcfe;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 100%;
+        background-color: #161817;
+        background-image: -webkit-linear-gradient(90deg, transparent, #18a330 45%, #18a330 45%, transparent);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        border-radius: 0%;
     }
 
     ::selection {
         color: #18a330;
+    }
+
+    h1, h2, h3, h4, h5, h6, span, p, blockquote,
+    pre, cite, code, small, strong, sub, sup,
+    b, u, i, dl, dt, dd, fieldset, label, legend,
+    caption, th, td, article {
+        cursor: url("/images/cursor/text.cur"), text;
+    }
+
+    a, button {
+        cursor: url("/images/cursor/pointer.cur"), pointer;
     }
 
     ol, ul, li {
@@ -47,12 +75,11 @@ export const GlobalStyle = createGlobalStyle`
 
     a:hover {
         transition: 0.5s ease-out;
-        text-decoration: 3px underline #18a330;
     }
 
     .btn-default {
-        border-radius: 30px;
-        padding: 10px 30px;
+        border-radius: 2rem;
+        padding: 0.75rem 1.75rem;
         display: inline-block;
         background-color: #f7fcfe;
         color: #161817;

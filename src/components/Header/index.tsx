@@ -18,9 +18,9 @@ export const Header = () => {
                         color: router.pathname === "/" ? "#18a330" : undefined
                     }}
                 >
-                    <span>{"<"}</span>
+                    {"<"}
                     <Image src={Logo} priority alt="Logo image" />
-                    <span>{"/>"}</span>
+                    {"/>"}
                 </S.NavLink>
 
                 <S.NavList>
@@ -30,9 +30,9 @@ export const Header = () => {
                                 href={href}
                                 aria-label={`Go to ${label} page`}
                                 style={{
-                                    textDecoration:
+                                    borderBottom:
                                         router.pathname === href
-                                            ? "2px underline #18a330"
+                                            ? "2px solid #18a330"
                                             : undefined
                                 }}
                             >

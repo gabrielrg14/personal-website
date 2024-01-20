@@ -1,14 +1,22 @@
 import {
+    ReactLogo,
+    Expo,
     Vuedotjs,
     Redux,
     Graphql,
     Nodedotjs,
-    Express,
-    Tailwindcss,
-    Vercel
+    Tailwindcss
 } from "@styled-icons/simple-icons"
 
 export const knowledgeTechs = [
+    {
+        icon: <ReactLogo />,
+        label: "React Native"
+    },
+    {
+        icon: <Expo />,
+        label: "Expo"
+    },
     {
         icon: <Vuedotjs />,
         label: "Vue.js"
@@ -26,15 +34,7 @@ export const knowledgeTechs = [
         label: "Node.js"
     },
     {
-        icon: <Express />,
-        label: "Express.js"
-    },
-    {
         icon: <Tailwindcss />,
         label: "Tailwind"
-    },
-    {
-        icon: <Vercel />,
-        label: "Vercel"
     }
 ]

@@ -1,25 +1,25 @@
 import {
+    Cypress,
     Nestjs,
-    Docker,
-    Kubernetes,
-    Amazonaws
+    Amazonaws,
+    Azuredevops
 } from "@styled-icons/simple-icons"
 
 export const potentialTechs = [
+    {
+        icon: <Cypress />,
+        label: "Cypress"
+    },
     {
         icon: <Nestjs />,
         label: "Nest.js"
     },
     {
-        icon: <Docker />,
-        label: "Docker"
-    },
-    {
-        icon: <Kubernetes />,
-        label: "Kubernetes"
-    },
-    {
         icon: <Amazonaws />,
         label: "AWS"
+    },
+    {
+        icon: <Azuredevops />,
+        label: "Azure"
     }
 ]

@@ -1,31 +1,12 @@
-import {
-    ReactLogo,
-    Expo,
-    Typescript,
-    Jest,
-    Testinglibrary
-} from "@styled-icons/simple-icons"
+import { Docker, Kubernetes } from "@styled-icons/simple-icons"
 
 export const studyingTechs = [
     {
-        icon: <ReactLogo />,
-        label: "React Native"
+        icon: <Docker />,
+        label: "Docker"
     },
     {
-        icon: <Expo />,
-        label: "Expo",
-        identifier: "expo"
-    },
-    {
-        icon: <Typescript />,
-        label: "TypeScript"
-    },
-    {
-        icon: <Jest />,
-        label: "Jest"
-    },
-    {
-        icon: <Testinglibrary />,
-        label: "Testing Library"
+        icon: <Kubernetes />,
+        label: "Kubernetes"
     }
 ]

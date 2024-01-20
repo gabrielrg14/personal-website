@@ -28,7 +28,7 @@ export const DivIcons = styled.div`
 export const Icon = styled.div`
     ${StyledIconBase} {
         color: #f7fcfe;
-        width: 20px;
+        width: 1.25rem;
 
         :hover {
             transition: 0.5s ease-out;
@@ -39,4 +39,8 @@ export const Icon = styled.div`
 
 export const SpanText = styled.span`
     text-align: center;
+`
+
+export const Copyright = styled.span`
+    color: #18a330;
 `

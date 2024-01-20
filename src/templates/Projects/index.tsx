@@ -1,11 +1,11 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-import Link from "next/link"
 import { IRepository } from "interfaces"
 import { TechList, TechCard } from "components"
-import { techProjects as techs } from "utils"
-import { ExternalLink } from "@styled-icons/remix-line"
+import { formatRepositoryName, techProjects as techs } from "utils"
+import { Github } from "@styled-icons/simple-icons"
+import { Globe } from "@styled-icons/bootstrap/Globe"
 
 type ProjectsTemplateProps = {
     repositories: IRepository[]
@@ -28,24 +28,34 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
             />
 
             <S.Wrapper>
-                <S.SupportText>
-                    Click on the project title to be redirected to the
-                    repository on Github
-                </S.SupportText>
-
-                <S.ProjectsList>
+                <S.Projects>
                     {repositories?.map((repository) => (
                         <S.Project key={repository.id}>
-                            <S.ProjectTitle>
-                                <Link
+                            <S.Title>
+                                {formatRepositoryName(repository.name)}
+                            </S.Title>
+
+                            <S.Links>
+                                <S.IconLink
                                     href={repository.html_url}
                                     aria-label={repository.name}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    {repository.name}
-                                </Link>
-                            </S.ProjectTitle>
+                                    <Github />
+                                </S.IconLink>
+
+                                {repository.homepage && (
+                                    <S.IconLink
+                                        href={repository.homepage}
+                                        aria-label="Go to website"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <Globe />
+                                    </S.IconLink>
+                                )}
+                            </S.Links>
 
                             <TechList>
                                 {techs.map(
@@ -62,28 +72,12 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                 )}
                             </TechList>
 
-                            {repository.homepage && (
-                                <S.ProjectWebsite>
-                                    <Link
-                                        href={repository.homepage}
-                                        aria-label="Go to website"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Go to website{" "}
-                                        <S.Icon>
-                                            <ExternalLink />
-                                        </S.Icon>
-                                    </Link>
-                                </S.ProjectWebsite>
-                            )}
-
-                            <S.ProjectDescription>
+                            <S.Description>
                                 {repository.description}
-                            </S.ProjectDescription>
+                            </S.Description>
                         </S.Project>
                     ))}
-                </S.ProjectsList>
+                </S.Projects>
             </S.Wrapper>
         </>
     )

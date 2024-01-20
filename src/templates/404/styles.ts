@@ -22,5 +22,5 @@ export const Info = styled.h2`
 
 export const NoContent = styled.h3`
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 `
