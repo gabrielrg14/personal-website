@@ -13,7 +13,11 @@ describe("<TechCard />", () => {
 
     it("should render the testing library label and svg icon", () => {
         const { container } = render(
-            <TechCard label="Testing Library" icon={<Testinglibrary />} />
+            <TechCard
+                label="Testing Library"
+                icon={<Testinglibrary />}
+                iconSize={24}
+            />
         )
 
         expect(screen.getByText(/testing library/i)).toBeInTheDocument()

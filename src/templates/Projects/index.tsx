@@ -2,10 +2,9 @@ import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
 import { IRepository } from "interfaces"
-import { TechList, TechCard } from "components"
-import { formatRepositoryName, techProjects as techs } from "utils"
-import { Github } from "@styled-icons/simple-icons"
-import { Globe } from "@styled-icons/bootstrap/Globe"
+import { Container, TechList, TechCard } from "components"
+import { formatRepositoryName, techListing as techs } from "utils"
+import { MarkGithub, Globe } from "@styled-icons/octicons"
 
 type ProjectsTemplateProps = {
     repositories: IRepository[]
@@ -27,7 +26,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/projects`}
             />
 
-            <S.Wrapper>
+            <Container>
                 <S.Projects>
                     {repositories?.map((repository) => (
                         <S.Project key={repository.id}>
@@ -42,7 +41,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <Github />
+                                    <MarkGithub />
                                 </S.IconLink>
 
                                 {repository.homepage && (
@@ -64,7 +63,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                             identifier
                                         ) && (
                                             <TechCard
-                                                key={label}
+                                                key={identifier}
                                                 label={label}
                                                 icon={icon}
                                             />
@@ -78,7 +77,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                         </S.Project>
                     ))}
                 </S.Projects>
-            </S.Wrapper>
+            </Container>
         </>
     )
 }

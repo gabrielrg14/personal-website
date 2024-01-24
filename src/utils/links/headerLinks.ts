@@ -4,6 +4,10 @@ export const headerLinks = [
         label: "Skills"
     },
     {
+        href: "/experiences",
+        label: "Experiences"
+    },
+    {
         href: "/projects",
         label: "Projects"
     }

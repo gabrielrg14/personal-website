@@ -1,5 +1,6 @@
 import { USERNAME } from "common"
-import { Linkedin, Github } from "@styled-icons/simple-icons"
+import { Linkedin } from "@styled-icons/simple-icons/Linkedin"
+import { MarkGithub } from "@styled-icons/octicons/MarkGithub"
 
 export const socialMedias = [
     {
@@ -10,6 +11,6 @@ export const socialMedias = [
     {
         name: "GitHub",
         link: `https://github.com/${USERNAME}`,
-        icon: <Github />
+        icon: <MarkGithub />
     }
 ]

@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin: auto 1rem;
+    margin: auto 0;
 `
 
 export const Avatar = styled.div`
@@ -29,8 +29,12 @@ export const PillText = styled.div`
     color: #161817;
     border-radius: 3rem;
     padding: 0.75rem;
-    width: 50%;
+    width: 40%;
     animation: appear-on-screen 1.5s;
+
+    ${media.lessThan("desktop")`
+        width: 60%;
+    `}
 
     ${media.lessThan("tablet")`
         width: 80%;
@@ -56,7 +60,7 @@ export const InfoRow = styled.div`
 
 export const Info = styled.h3`
     font-size: 1.1rem;
-    line-height: 1.4;
+    line-height: 1.5rem;
     text-overflow: ellipsis;
     overflow: hidden;
 `

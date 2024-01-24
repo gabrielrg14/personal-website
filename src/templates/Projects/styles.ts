@@ -4,21 +4,12 @@ import { mediaQueries as media } from "utils"
 import Link from "next/link"
 import { StyledIconBase } from "@styled-icons/styled-icon"
 
-export const Wrapper = styled.div`
-    max-width: 60vw;
-    margin: auto;
-
-    ${media.lessThan("mobile")`
-        max-width: 80vw;
-    `}
-`
-
 export const Projects = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 
-    ${media.lessThan("desktop")`
+    ${media.lessThan("tablet")`
         grid-template-columns: 1fr;
     `}
 `
@@ -61,5 +52,5 @@ export const IconLink = styled(Link)`
 
 export const Description = styled.span`
     font-size: 1.1rem;
-    line-height: 1.2;
+    line-height: 1.25rem;
 `

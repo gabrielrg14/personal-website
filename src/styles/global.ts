@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html {
+        line-height: 1;
         cursor: url("/images/cursor/pointer.cur"), pointer;
     }
 
@@ -19,8 +20,6 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         background-color: #161817;
         color: #f7fcfe;
-        line-height: 1;
-        font-size: 100%;
         font: inherit;
         vertical-align: baseline;
         font-family: "League Spartan", "Montserrat", sans-serif;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`links headerLinks should match snapshot 1`] = `
+[
+  {
+    "href": "/skills",
+    "label": "Skills",
+  },
+  {
+    "href": "/experiences",
+    "label": "Experiences",
+  },
+  {
+    "href": "/projects",
+    "label": "Projects",
+  },
+]
+`;
+
+exports[`links socialMedias should match snapshot 1`] = `
+[
+  {
+    "icon": <Linkedin />,
+    "link": "https://www.linkedin.com/in/gabrielrapuccigonzalez/",
+    "name": "LinkedIn",
+  },
+  {
+    "icon": <MarkGithub />,
+    "link": "https://github.com/gabrielrg14",
+    "name": "GitHub",
+  },
+]
+`;

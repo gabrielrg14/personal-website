@@ -1,14 +1,15 @@
 import * as S from "./styles"
 
 type TechCardProps = {
-    icon: React.ReactNode
     label: string
+    icon: React.ReactNode
+    iconSize?: number
 }
 
-export const TechCard = ({ icon, label }: TechCardProps) => {
+export const TechCard = ({ label, icon, iconSize }: TechCardProps) => {
     return (
         <S.Wrapper>
-            <S.Icon>{icon}</S.Icon>
+            <S.Icon size={iconSize}>{icon}</S.Icon>
             <p>{label}</p>
         </S.Wrapper>
     )

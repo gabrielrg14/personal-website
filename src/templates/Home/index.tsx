@@ -13,12 +13,12 @@ export const HomeTemplate = ({ user }: HomeTemplateProps) => {
         <>
             <NextSeo
                 title="Gabriel - Frontend React Developer"
-                description="Welcome to my personal website. Here you will learn a little more about me, my skills, the technologies I have knowledge of, the ones I use and know well, the ones I'm currently studying and also the projects I've developed."
+                description="My personal website, here you will learn a little more about me, my technology skills, my work experiences and also the projects I've developed."
                 additionalMetaTags={[
                     {
                         name: "keywords",
                         content:
-                            "Gabriel Rapucci Gonzalez, Campinas, Brazil, Dev, Web Dev, Frontend, Dev Frontend, Developer, Frontend Developer, React Developer, Frontend React Developer, Portfolio, Resume, Personal Project, Personal Website"
+                            "Gabriel Rapucci Gonzalez, Campinas, SP, Brasil, Brazil, Dev, Web, Web Developer, Frontend, Dev Frontend, Developer, Frontend Developer, React Developer, Frontend React Developer, Portfolio, Resume, Project, Personal Portfolio, Personal Resume, Personal Project, Personal Website"
                     }
                 ]}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/`}

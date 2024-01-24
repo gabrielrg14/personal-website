@@ -1,8 +1,9 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-import { TechList, TechCard } from "components"
+import { Container, TechList, TechCard } from "components"
 import {
+    techListing as techs,
     knownTechs as known,
     knowledgeTechs as knowledge,
     studyingTechs as studying,
@@ -19,49 +20,83 @@ export const SkillsTemplate = () => {
                     {
                         name: "keywords",
                         content:
-                            "Skill, Skills, Gabriel's skills, Technologies, Used Technologies, Technologies with Knowledge, Technologies Studied"
+                            "Skill, Skills, Gabriel's skills, Technology, Technology Skills, Technologies, Used Technologies, Technologies with Knowledge, Technologies Studied, Technologies to be Studied"
                     }
                 ]}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/skills`}
             />
 
-            <S.Wrapper>
-                <S.ListBox>
-                    <S.TitleList>Techs and tools I usually use</S.TitleList>
-                    <TechList>
-                        {known.map(({ icon, label }) => (
-                            <TechCard key={label} label={label} icon={icon} />
-                        ))}
-                    </TechList>
-                </S.ListBox>
+            <Container>
+                <S.Wrapper>
+                    <S.ListBox>
+                        <S.TitleList>Techs and tools I usually use</S.TitleList>
+                        <TechList>
+                            {techs.map(
+                                ({ icon, label, identifier }) =>
+                                    known.includes(identifier) && (
+                                        <TechCard
+                                            key={identifier}
+                                            label={label}
+                                            icon={icon}
+                                        />
+                                    )
+                            )}
+                        </TechList>
+                    </S.ListBox>
 
-                <S.ListBox>
-                    <S.TitleList>Techs and tools I have used</S.TitleList>
-                    <TechList>
-                        {knowledge.map(({ icon, label }) => (
-                            <TechCard key={label} label={label} icon={icon} />
-                        ))}
-                    </TechList>
-                </S.ListBox>
+                    <S.ListBox>
+                        <S.TitleList>Techs and tools I have used</S.TitleList>
+                        <TechList>
+                            {techs.map(
+                                ({ icon, label, identifier }) =>
+                                    knowledge.includes(identifier) && (
+                                        <TechCard
+                                            key={identifier}
+                                            label={label}
+                                            icon={icon}
+                                        />
+                                    )
+                            )}
+                        </TechList>
+                    </S.ListBox>
 
-                <S.ListBox>
-                    <S.TitleList>I&#39;m studying at the moment</S.TitleList>
-                    <TechList>
-                        {studying.map(({ icon, label }) => (
-                            <TechCard key={label} label={label} icon={icon} />
-                        ))}
-                    </TechList>
-                </S.ListBox>
+                    <S.ListBox>
+                        <S.TitleList>
+                            I&#39;m studying at the moment
+                        </S.TitleList>
+                        <TechList>
+                            {techs.map(
+                                ({ icon, label, identifier }) =>
+                                    studying.includes(identifier) && (
+                                        <TechCard
+                                            key={identifier}
+                                            label={label}
+                                            icon={icon}
+                                        />
+                                    )
+                            )}
+                        </TechList>
+                    </S.ListBox>
 
-                <S.ListBox>
-                    <S.TitleList>I intend to study in the future</S.TitleList>
-                    <TechList>
-                        {potential.map(({ icon, label }) => (
-                            <TechCard key={label} label={label} icon={icon} />
-                        ))}
-                    </TechList>
-                </S.ListBox>
-            </S.Wrapper>
+                    <S.ListBox>
+                        <S.TitleList>
+                            I intend to study in the future
+                        </S.TitleList>
+                        <TechList>
+                            {techs.map(
+                                ({ icon, label, identifier }) =>
+                                    potential.includes(identifier) && (
+                                        <TechCard
+                                            key={identifier}
+                                            label={label}
+                                            icon={icon}
+                                        />
+                                    )
+                            )}
+                        </TechList>
+                    </S.ListBox>
+                </S.Wrapper>
+            </Container>
         </>
     )
 }

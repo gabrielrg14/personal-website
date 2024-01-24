@@ -23,6 +23,7 @@ describe("<Header />", () => {
         expect(homeLink).toHaveAttribute("href", "/")
         expect(homeLink).toHaveAccessibleName(/go to home/i)
     })
+
     it("should render the skills link with href and accessible name", () => {
         render(<Header />)
 
@@ -32,6 +33,19 @@ describe("<Header />", () => {
         expect(skillsLink).toHaveAttribute("href", "/skills")
         expect(skillsLink).toHaveAccessibleName(/skills/i)
     })
+
+    it("should render the experiences link with href and accessible name", () => {
+        render(<Header />)
+
+        const experiencesLink = screen.getByRole("link", {
+            name: /experiences/i
+        })
+
+        expect(experiencesLink).toBeInTheDocument()
+        expect(experiencesLink).toHaveAttribute("href", "/experiences")
+        expect(experiencesLink).toHaveAccessibleName(/experiences/i)
+    })
+
     it("should render the projects link with href and accessible name", () => {
         render(<Header />)
 

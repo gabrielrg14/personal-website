@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`timelines experiences should match snapshot 1`] = `
+[
+  {
+    "company": "Allergisa, a business of ALS",
+    "description": "Responsible for maintaining, carrying out updates/corrections and creating new features for the company's internal system, through the SCRUM work methodology.",
+    "period": "May 2021 - Present",
+    "skills": [
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "bootstrap",
+      "git",
+    ],
+    "title": "Front-end Developer",
+  },
+  {
+    "company": "Lenscope",
+    "description": "Responsible for developing new landing pages for lens e-commerce, maintaining and updating pages and products created and also monitoring hosting directly on the provider's service, implementing security and performance improvements for the website.",
+    "period": "Oct 2019 - Oct 2020",
+    "skills": [
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "php",
+      "bootstrap",
+      "wordpress",
+      "prestashop",
+      "git",
+      "mysql",
+    ],
+    "title": "Web Development Intern",
+  },
+]
+`;

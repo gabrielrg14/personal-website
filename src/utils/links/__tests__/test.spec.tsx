@@ -1,14 +1,23 @@
 import { USERNAME } from "common"
-import { Linkedin, Github } from "@styled-icons/simple-icons"
+import { Linkedin } from "@styled-icons/simple-icons/Linkedin"
+import { MarkGithub } from "@styled-icons/octicons/MarkGithub"
 
-import { headerLinks, socialMedias } from "."
+import { headerLinks, socialMedias } from "utils"
 
 describe("links", () => {
     describe("headerLinks", () => {
-        it("should contain skills and projects links", () => {
+        it("should match snapshot", () => {
+            expect(headerLinks).toMatchSnapshot()
+        })
+
+        it("should contain skills, experiences and projects links", () => {
             expect(headerLinks).toContainEqual({
                 href: "/skills",
                 label: "Skills"
+            })
+            expect(headerLinks).toContainEqual({
+                href: "/experiences",
+                label: "Experiences"
             })
             expect(headerLinks).toContainEqual({
                 href: "/projects",
@@ -18,6 +27,10 @@ describe("links", () => {
     })
 
     describe("socialMedias", () => {
+        it("should match snapshot", () => {
+            expect(socialMedias).toMatchSnapshot()
+        })
+
         it("should contain LinkedIn and GitHub links", () => {
             expect(socialMedias).toContainEqual({
                 name: "LinkedIn",
@@ -27,7 +40,7 @@ describe("links", () => {
             expect(socialMedias).toContainEqual({
                 name: "GitHub",
                 link: `https://github.com/${USERNAME}`,
-                icon: <Github />
+                icon: <MarkGithub />
             })
         })
     })

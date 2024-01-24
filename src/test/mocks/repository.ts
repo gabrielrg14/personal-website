@@ -17,7 +17,7 @@ const repository1 = {
     },
     html_url: "https://github.com/gabrielrg14/personal-website",
     description:
-        "My personal website, here you will learn a little more about me, the technologies I have knowledge of, the ones I use and know well, the ones I'm currently studying and also the projects I've developed.",
+        "My personal website, here you will learn a little more about me, my technology skills, my work experiences and also the projects I've developed.",
     fork: false,
     url: "https://api.github.com/repos/gabrielrg14/personal-website",
     created_at: "2022-12-22T20:09:16Z",

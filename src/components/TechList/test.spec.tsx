@@ -6,11 +6,15 @@ describe("<TechList />", () => {
     it("should render the passed children", () => {
         render(
             <TechList>
-                <div data-testid="list">Test</div>
+                <ul data-testid="list">
+                    <li>Test</li>
+                </ul>
             </TechList>
         )
 
-        expect(screen.getByTestId("list")).toBeInTheDocument()
+        expect(screen.getByRole("list")).toBeInTheDocument()
+        expect(screen.getByRole("listitem")).toBeInTheDocument()
+        expect(screen.getByTestId(/list/i)).toBeInTheDocument()
         expect(screen.getByText(/test/i)).toBeInTheDocument()
     })
 })

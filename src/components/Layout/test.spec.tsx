@@ -11,7 +11,7 @@ describe("<Layout />", () => {
         )
 
         expect(screen.getByRole("main")).toBeInTheDocument()
-        expect(screen.getByTestId("layout")).toBeInTheDocument()
+        expect(screen.getByTestId(/layout/i)).toBeInTheDocument()
         expect(screen.getByText(/test/i)).toBeInTheDocument()
     })
 })
