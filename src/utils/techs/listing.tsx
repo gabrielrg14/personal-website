@@ -3,27 +3,27 @@ import { Css3 } from "@styled-icons/simple-icons/Css3"
 import { Javascript } from "@styled-icons/simple-icons/Javascript"
 import { Typescript } from "@styled-icons/simple-icons/Typescript"
 import { ReactLogo } from "@styled-icons/simple-icons/ReactLogo"
-import { Redux } from "@styled-icons/simple-icons/Redux"
-import { Vuedotjs } from "@styled-icons/simple-icons/Vuedotjs"
-import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs"
 import { Expo } from "@styled-icons/simple-icons/Expo"
-import { Php } from "@styled-icons/simple-icons/Php"
+import { Redux } from "@styled-icons/simple-icons/Redux"
+import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs"
+import { Vuedotjs } from "@styled-icons/simple-icons/Vuedotjs"
 import { Jquery } from "@styled-icons/simple-icons/Jquery"
-import { Wordpress } from "@styled-icons/simple-icons/Wordpress"
-import { Prestashop } from "@styled-icons/simple-icons/Prestashop"
 import { Bootstrap } from "@styled-icons/simple-icons/Bootstrap"
 import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents"
 import { Tailwindcss } from "@styled-icons/simple-icons/Tailwindcss"
+import { Php } from "@styled-icons/simple-icons/Php"
+import { Prestashop } from "@styled-icons/simple-icons/Prestashop"
+import { Wordpress } from "@styled-icons/simple-icons/Wordpress"
 import { Nodedotjs } from "@styled-icons/simple-icons/Nodedotjs"
 import { Express } from "@styled-icons/simple-icons/Express"
 import { Nestjs } from "@styled-icons/simple-icons/Nestjs"
+import { Graphql } from "@styled-icons/simple-icons/Graphql"
 import { Jest } from "@styled-icons/simple-icons/Jest"
 import { Testinglibrary } from "@styled-icons/simple-icons/Testinglibrary"
 import { Cypress } from "@styled-icons/simple-icons/Cypress"
 import { Mongodb } from "@styled-icons/simple-icons/Mongodb"
 import { Postgresql } from "@styled-icons/simple-icons/Postgresql"
 import { Mysql } from "@styled-icons/simple-icons/Mysql"
-import { Graphql } from "@styled-icons/simple-icons/Graphql"
 import { Git } from "@styled-icons/simple-icons/Git"
 import { Github } from "@styled-icons/simple-icons/Github"
 import { Docker } from "@styled-icons/simple-icons/Docker"
@@ -64,14 +64,14 @@ export const techListing = [
         identifier: "react-native"
     },
     {
+        icon: <Expo />,
+        label: "Expo",
+        identifier: "expo"
+    },
+    {
         icon: <Redux />,
         label: "Redux",
         identifier: "redux"
-    },
-    {
-        icon: <Vuedotjs />,
-        label: "Vue.js",
-        identifier: "vuejs"
     },
     {
         icon: <Nextdotjs />,
@@ -79,29 +79,14 @@ export const techListing = [
         identifier: "nextjs"
     },
     {
-        icon: <Expo />,
-        label: "Expo",
-        identifier: "expo"
-    },
-    {
-        icon: <Php />,
-        label: "PHP",
-        identifier: "php"
+        icon: <Vuedotjs />,
+        label: "Vue.js",
+        identifier: "vuejs"
     },
     {
         icon: <Jquery />,
         label: "jQuery",
         identifier: "jquery"
-    },
-    {
-        icon: <Wordpress />,
-        label: "WordPress",
-        identifier: "wordpress"
-    },
-    {
-        icon: <Prestashop />,
-        label: "PrestaShop",
-        identifier: "prestashop"
     },
     {
         icon: <Bootstrap />,
@@ -119,6 +104,21 @@ export const techListing = [
         identifier: "tailwindcss"
     },
     {
+        icon: <Php />,
+        label: "PHP",
+        identifier: "php"
+    },
+    {
+        icon: <Prestashop />,
+        label: "PrestaShop",
+        identifier: "prestashop"
+    },
+    {
+        icon: <Wordpress />,
+        label: "WordPress",
+        identifier: "wordpress"
+    },
+    {
         icon: <Nodedotjs />,
         label: "Node.js",
         identifier: "nodejs"
@@ -132,6 +132,11 @@ export const techListing = [
         icon: <Nestjs />,
         label: "Nest.js",
         identifier: "nestjs"
+    },
+    {
+        icon: <Graphql />,
+        label: "GraphQL",
+        identifier: "graphql"
     },
     {
         icon: <Jest />,
@@ -162,11 +167,6 @@ export const techListing = [
         icon: <Mysql />,
         label: "MySQL",
         identifier: "mysql"
-    },
-    {
-        icon: <Graphql />,
-        label: "GraphQL",
-        identifier: "graphql"
     },
     {
         icon: <Git />,

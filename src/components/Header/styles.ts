@@ -4,13 +4,27 @@ import { mediaQueries as media } from "utils"
 import Link from "next/link"
 
 export const Navbar = styled.nav`
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1.2rem;
     background-color: #161817;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 20%;
+    margin: auto;
+    font-size: 1.2rem;
+
+    ${media.lessThan("largeDesktop")`
+        padding: 1rem 15%;
+    `}
+
+    ${media.lessThan("desktop")`
+        padding: 1rem 10%;
+    `}
+
+    ${media.lessThan("tablet")`
+        padding: 1rem 5%;
+    `}
 
     ${media.lessThan("mobile")`
         flex-direction: column;

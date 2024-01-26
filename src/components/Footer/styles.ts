@@ -3,25 +3,37 @@ import { mediaQueries as media } from "utils"
 
 import { StyledIconBase } from "@styled-icons/styled-icon"
 
-export const FooterTag = styled.footer`
+export const Footer = styled.footer`
+    background-color: #161817;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 10%;
+    gap: 1rem;
+    padding: 2rem 20%;
+    margin: auto;
     font-size: 1rem;
-    background-color: #161817;
+
+    ${media.lessThan("largeDesktop")`
+        padding: 2rem 15%;
+    `}
+
+    ${media.lessThan("desktop")`
+        padding: 2rem 10%;
+    `}
 
     ${media.lessThan("tablet")`
         flex-direction: column;
         justify-content: center;
+        padding: 2rem 5%;
     `}
 `
 
-export const DivIcons = styled.div`
+export const SocialMedias = styled.div`
+    flex: 1;
     display: flex;
+    justify-content: center;
     gap: 1rem;
 `
 
@@ -37,8 +49,12 @@ export const Icon = styled.div`
     }
 `
 
-export const SpanText = styled.span`
-    text-align: center;
+export const Text = styled.span`
+    flex: 1;
+
+    :last-child {
+        text-align: right;
+    }
 `
 
 export const Copyright = styled.span`

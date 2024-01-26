@@ -4,9 +4,9 @@ import { socialMedias } from "utils"
 
 export const Footer = () => {
     return (
-        <S.FooterTag>
-            <S.SpanText>Made with 💚 by Gabriel Rapucci Gonzalez</S.SpanText>
-            <S.DivIcons>
+        <S.Footer>
+            <S.Text>Made with 💚 by Gabriel Rapucci</S.Text>
+            <S.SocialMedias>
                 {socialMedias.map(({ name, icon, link }) => (
                     <Link
                         key={link}
@@ -19,11 +19,11 @@ export const Footer = () => {
                         <S.Icon>{icon}</S.Icon>
                     </Link>
                 ))}
-            </S.DivIcons>
-            <S.SpanText>
+            </S.SocialMedias>
+            <S.Text>
                 {new Date().getFullYear()} <S.Copyright>©️</S.Copyright> All
                 rights reserved
-            </S.SpanText>
-        </S.FooterTag>
+            </S.Text>
+        </S.Footer>
     )
 }

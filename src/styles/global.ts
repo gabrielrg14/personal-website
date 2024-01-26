@@ -72,28 +72,6 @@ export const GlobalStyle = createGlobalStyle`
         color: #f7fcfe;
     }
 
-    a:hover {
-        transition: 0.5s ease-out;
-    }
-
-    .btn-default {
-        border-radius: 2rem;
-        padding: 0.75rem 1.75rem;
-        display: inline-block;
-        background-color: #f7fcfe;
-        color: #161817;
-        font-size: 1.2rem;
-        text-decoration: none;
-        vertical-align: middle;
-        text-align: center;
-        transition: all .3s ease;
-    }
-
-    .btn-default:hover {
-        background-color: #18a330;
-        color: #f7fcfe;
-    }
-
     @keyframes appear-on-screen {
         from {
             transform: scale(0);

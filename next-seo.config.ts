@@ -2,7 +2,7 @@ import { DefaultSeoProps } from "next-seo"
 
 const config: DefaultSeoProps = {
     titleTemplate: "<%s />",
-    defaultTitle: "Gabriel - Frontend Developer",
+    defaultTitle: "Gabriel - Front-end Developer",
     themeColor: "#18a330",
     additionalLinkTags: [
         {
@@ -38,7 +38,7 @@ const config: DefaultSeoProps = {
         type: "website",
         locale: "en",
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
-        siteName: "Gabriel Rapucci Gonzalez - Personal Website"
+        siteName: "Gabriel - Front-end Developer"
     }
 }
 

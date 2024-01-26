@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
 import Link from "next/link"
-import { Container } from "components"
+import { Container, Button } from "components"
 
 export const PageNotFoundTemplate = () => {
     return (
@@ -17,7 +17,7 @@ export const PageNotFoundTemplate = () => {
                         But the content for that page was not found! 🤔
                     </S.NoContent>
                     <Link href="/" aria-label="Go to Home">
-                        <div className="btn-default">Go to Home</div>
+                        <Button variant="secondary">Go to Home</Button>
                     </Link>
                 </S.Wrapper>
             </Container>

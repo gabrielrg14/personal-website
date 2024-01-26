@@ -29,15 +29,11 @@ export const PillText = styled.div`
     color: #161817;
     border-radius: 3rem;
     padding: 0.75rem;
-    width: 40%;
+    width: 50%;
     animation: appear-on-screen 1.5s;
 
     ${media.lessThan("desktop")`
-        width: 60%;
-    `}
-
-    ${media.lessThan("tablet")`
-        width: 80%;
+        width: 70%;
     `}
 
     ${media.lessThan("mobile")`

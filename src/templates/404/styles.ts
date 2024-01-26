@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
     border: 1px solid #18a330;
     padding: 1.25rem;
     text-align: center;
+    width: fit-content;
+    margin: auto;
 `
 
 export const Error = styled.h1`

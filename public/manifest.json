@@ -1,6 +1,6 @@
 {
     "name": "Gabriel Rapucci Gonzalez - Personal Website",
-    "short_name": "Personal Website",
+    "short_name": "Gabriel Rapucci",
     "icons": [
         {
             "src": "/images/logo/logo-32.png",
@@ -22,8 +22,8 @@
         }
     ],
     "background_color": "#161817",
+    "theme_color": "#18a330",
     "description": "My personal website, here you will learn a little more about me, my technology skills, my work experiences and also the projects I've developed.",
     "display": "fullscreen",
-    "start_url": "/",
-    "theme_color": "#18a330"
+    "start_url": "/"
 }

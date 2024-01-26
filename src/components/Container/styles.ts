@@ -2,14 +2,18 @@ import styled from "styled-components"
 import { mediaQueries as media } from "utils"
 
 export const Container = styled.div`
-    max-width: 60vw;
+    width: 60%;
     margin: auto;
 
-    ${media.lessThan("desktop")`
-        max-width: 80vw;
+    ${media.lessThan("largeDesktop")`
+        width: 70%;
     `}
 
-    ${media.lessThan("mobile")`
-        max-width: 100vw;
+    ${media.lessThan("desktop")`
+        width: 80%;
+    `}
+
+    ${media.lessThan("tablet")`
+        width: 90%;
     `}
 `

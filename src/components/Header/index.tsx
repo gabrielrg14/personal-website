@@ -2,7 +2,9 @@ import { useRouter } from "next/router"
 
 import * as S from "./styles"
 import Image from "next/image"
+import Link from "next/link"
 import Logo from "/public/images/logo/logo-32.png"
+import { Button } from "components"
 import { headerLinks as links } from "utils"
 
 export const Header = () => {
@@ -24,6 +26,18 @@ export const Header = () => {
                 </S.NavLink>
 
                 <S.NavList>
+                    <Link
+                        href={"/files/gabriel-rapucci-gonzalez.pdf"}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Download CV"
+                        download
+                    >
+                        <Button size="small" rounded>
+                            Download CV
+                        </Button>
+                    </Link>
+
                     {links.map(({ href, label }) => (
                         <S.NavItem key={label}>
                             <S.NavLink

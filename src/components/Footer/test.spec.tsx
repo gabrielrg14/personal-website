@@ -7,9 +7,7 @@ describe("<Footer />", () => {
     it("should render with the informative texts", () => {
         render(<Footer />)
 
-        expect(
-            screen.getByText(/by gabriel rapucci gonzalez/i)
-        ).toBeInTheDocument()
+        expect(screen.getByText(/by gabriel rapucci/i)).toBeInTheDocument()
         expect(screen.getByText(/all rights reserved/i)).toBeInTheDocument()
     })
 
