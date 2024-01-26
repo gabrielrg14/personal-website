@@ -5,28 +5,19 @@ import { StyledIconBase } from "@styled-icons/styled-icon"
 
 export const Footer = styled.footer`
     background-color: #161817;
+`
+
+export const Wrapper = styled.div`
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 20%;
-    margin: auto;
+    padding: 2rem 0;
     font-size: 1rem;
-
-    ${media.lessThan("largeDesktop")`
-        padding: 2rem 15%;
-    `}
-
-    ${media.lessThan("desktop")`
-        padding: 2rem 10%;
-    `}
 
     ${media.lessThan("tablet")`
         flex-direction: column;
-        justify-content: center;
-        padding: 2rem 5%;
     `}
 `
 
@@ -34,6 +25,7 @@ export const SocialMedias = styled.div`
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 `
 
@@ -41,9 +33,9 @@ export const Icon = styled.div`
     ${StyledIconBase} {
         color: #f7fcfe;
         width: 1.25rem;
+        transition: color 0.5s ease-out;
 
         :hover {
-            transition: 0.5s ease-out;
             color: #18a330;
         }
     }

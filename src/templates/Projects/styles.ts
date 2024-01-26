@@ -42,9 +42,9 @@ export const IconLink = styled(Link)`
     ${StyledIconBase} {
         color: #f7fcfe;
         width: 1.75rem;
+        transition: color 0.5s ease-out;
 
         :hover {
-            transition: 0.5s ease-out;
             color: #18a330;
         }
     }

@@ -24,6 +24,21 @@ describe("<Header />", () => {
         expect(homeLink).toHaveAccessibleName(/go to home/i)
     })
 
+    it("should render the download link with href and accessible name", () => {
+        render(<Header />)
+
+        const downloadLink = screen.getByRole("link", {
+            name: /download cv/i
+        })
+
+        expect(downloadLink).toBeInTheDocument()
+        expect(downloadLink).toHaveAttribute(
+            "href",
+            "/files/gabriel-rapucci-gonzalez.pdf"
+        )
+        expect(downloadLink).toHaveAccessibleName(/download cv/i)
+    })
+
     it("should render the skills link with href and accessible name", () => {
         render(<Header />)
 

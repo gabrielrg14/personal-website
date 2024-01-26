@@ -14,7 +14,7 @@ const user = {
     location: "Campinas, Brazil",
     email: null,
     hireable: null,
-    bio: "I work as Front-end Developer (React.js). I graduated in Systems Analysis and Development from Fatec Campinas. \r\nI'm a student in my free time 🤓",
+    bio: "👨‍💻 Front-end React Developer ⚛️",
     twitter_username: null,
     public_repos: 23,
     public_gists: 0,

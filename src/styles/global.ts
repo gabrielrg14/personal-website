@@ -60,16 +60,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a, button {
+        color: #f7fcfe;
+        text-decoration: none;
+        font-family: inherit;
         cursor: url("/images/cursor/pointer.cur"), pointer;
     }
 
     ol, ul, li {
         list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: #f7fcfe;
     }
 
     @keyframes appear-on-screen {

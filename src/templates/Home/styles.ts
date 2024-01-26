@@ -6,7 +6,6 @@ import Image from "next/image"
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     text-align: center;
     margin: auto 0;
@@ -19,8 +18,12 @@ export const Avatar = styled.div`
 export const AvatarImage = styled(Image)`
     height: 100%;
     width: 100%;
+    background-color: #161817;
+    border-top: 0.25rem outset #f7fcfe;
+    border-left: 0.25rem outset #f7fcfe;
     border-radius: 100%;
-    margin-bottom: 1.25rem;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
     animation: appear-on-screen 1s;
 `
 
@@ -44,6 +47,12 @@ export const PillText = styled.div`
 export const BlackPillText = styled(PillText)`
     background-color: #161817;
     color: #f7fcfe;
+    border-top: 0.25rem outset #f7fcfe;
+
+    :last-child {
+        border-top: none;
+        border-bottom: 0.25rem inset #f7fcfe;
+    }
 `
 
 export const InfoRow = styled.div`

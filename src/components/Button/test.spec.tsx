@@ -24,8 +24,6 @@ describe("<Button />", () => {
                 Test
             </Button>
         )
-        screen.debug()
-        screen.logTestingPlaygroundURL()
 
         fireEvent.click(screen.getByRole("button", { name: /test/i }))
 

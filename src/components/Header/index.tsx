@@ -2,60 +2,64 @@ import { useRouter } from "next/router"
 
 import * as S from "./styles"
 import Image from "next/image"
-import Link from "next/link"
 import Logo from "/public/images/logo/logo-32.png"
-import { Button } from "components"
+import { Container, Button } from "components"
 import { headerLinks as links } from "utils"
 
 export const Header = () => {
     const router = useRouter()
 
     return (
-        <header>
-            <S.Navbar>
-                <S.NavLink
-                    href="/"
-                    aria-label="Go to Home"
-                    style={{
-                        color: router.pathname === "/" ? "#18a330" : undefined
-                    }}
-                >
-                    {"<"}
-                    <Image src={Logo} priority alt="Logo image" />
-                    {"/>"}
-                </S.NavLink>
-
-                <S.NavList>
-                    <Link
-                        href={"/files/gabriel-rapucci-gonzalez.pdf"}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Download CV"
-                        download
+        <S.Header>
+            <Container>
+                <S.Navbar>
+                    <S.NavLink
+                        href="/"
+                        aria-label="Go to Home"
+                        style={{
+                            color:
+                                router.pathname === "/" ? "#18a330" : undefined
+                        }}
                     >
-                        <Button size="small" rounded>
-                            Download CV
-                        </Button>
-                    </Link>
+                        {"<"}
+                        <Image src={Logo} priority alt="Logo image" />
+                        {"/>"}
+                    </S.NavLink>
 
-                    {links.map(({ href, label }) => (
-                        <S.NavItem key={label}>
+                    <S.NavList>
+                        <S.NavItem>
                             <S.NavLink
-                                href={href}
-                                aria-label={`Go to ${label} page`}
-                                style={{
-                                    borderBottom:
-                                        router.pathname === href
-                                            ? "2px solid #18a330"
-                                            : undefined
-                                }}
+                                href={"/files/gabriel-rapucci-gonzalez.pdf"}
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="Download CV"
+                                download
                             >
-                                {label}
+                                <Button size="small" rounded>
+                                    Download CV
+                                </Button>
                             </S.NavLink>
                         </S.NavItem>
-                    ))}
-                </S.NavList>
-            </S.Navbar>
-        </header>
+
+                        {links.map(({ href, label }) => (
+                            <S.NavItem key={label}>
+                                <S.NavLink
+                                    href={href}
+                                    aria-label={`Go to ${label} page`}
+                                    style={{
+                                        borderBottom:
+                                            router.pathname === href
+                                                ? "2px solid #18a330"
+                                                : undefined
+                                    }}
+                                >
+                                    {label}
+                                </S.NavLink>
+                            </S.NavItem>
+                        ))}
+                    </S.NavList>
+                </S.Navbar>
+            </Container>
+        </S.Header>
     )
 }
