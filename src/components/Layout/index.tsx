@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import * as S from "./styles"
 import { useUser } from "hooks"
 import { USERNAME } from "common"
-import { Header, Footer } from "components"
+import { Header, Main, Footer } from "components"
 
 type LayoutProps = {
     children: React.ReactNode
@@ -17,10 +17,10 @@ export const Layout = ({ children }: LayoutProps) => {
     }, [setUserStore])
 
     return (
-        <S.LayoutWrapper>
+        <S.Wrapper>
             <Header />
-            <S.Main>{children}</S.Main>
+            <Main>{children}</Main>
             <Footer />
-        </S.LayoutWrapper>
+        </S.Wrapper>
     )
 }

@@ -3,18 +3,16 @@ import { render, screen } from "@testing-library/react"
 import { TechList } from "."
 
 describe("<TechList />", () => {
-    it("should render the passed children", () => {
+    it("should render a list, list item and the passed children", () => {
         render(
             <TechList>
-                <ul data-testid="list">
-                    <li>Test</li>
-                </ul>
+                <li data-testid="item">Test</li>
             </TechList>
         )
 
         expect(screen.getByRole("list")).toBeInTheDocument()
         expect(screen.getByRole("listitem")).toBeInTheDocument()
-        expect(screen.getByTestId(/list/i)).toBeInTheDocument()
+        expect(screen.getByTestId(/item/i)).toBeInTheDocument()
         expect(screen.getByText(/test/i)).toBeInTheDocument()
     })
 })

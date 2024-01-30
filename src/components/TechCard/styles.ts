@@ -6,18 +6,19 @@ type IconProps = StyledIconProps & {
     size?: number
 }
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    width: 6.25rem;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    width: 10rem;
+    font-size: 1.9rem;
 `
 
 export const Icon = styled.div<IconProps>`
     ${StyledIconBase} {
         color: #18a330;
-        width: ${(props) => (props.size ? `${props.size}px` : "2.5rem")};
+        width: ${(props) => (props.size ? `${props.size / 10}rem` : "4rem")};
     }
 `

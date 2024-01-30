@@ -3,36 +3,35 @@ import { mediaQueries as media } from "utils"
 
 import { StyledIconBase } from "@styled-icons/styled-icon"
 
-export const Footer = styled.footer`
-    background-color: #161817;
-`
+export const Footer = styled.footer``
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    padding: 2rem 0;
-    font-size: 1rem;
+    gap: 1.6rem;
+    padding: 2.4rem 0;
+    font-size: 1.6rem;
 
     ${media.lessThan("tablet")`
         flex-direction: column;
     `}
 `
 
-export const SocialMedias = styled.div`
+export const SocialMedias = styled.ul`
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
 `
+
+export const SocialMedia = styled("li")``
 
 export const Icon = styled.div`
     ${StyledIconBase} {
-        color: #f7fcfe;
-        width: 1.25rem;
+        width: 2rem;
         transition: color 0.5s ease-out;
 
         :hover {

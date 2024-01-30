@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.2rem;
 `

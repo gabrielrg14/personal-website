@@ -1,26 +1,25 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
-    background-color: #161817;
-    border-radius: 1rem;
-    border: 1px solid #18a330;
-    padding: 1.25rem;
+import { Blackboard } from "components"
+
+export const Wrapper = styled(Blackboard)`
+    padding: 2.4rem;
     text-align: center;
     width: fit-content;
     margin: auto;
 `
 
 export const Error = styled.h1`
-    font-size: 3rem;
+    font-size: 4.8rem;
     color: #18a330;
 `
 
 export const Info = styled.h2`
-    font-size: 2rem;
-    margin: 0.5rem 0;
+    font-size: 3.2rem;
+    margin: 0.8rem 0;
 `
 
 export const NoContent = styled.h3`
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
 `

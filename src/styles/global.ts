@@ -7,26 +7,26 @@ export const GlobalStyle = createGlobalStyle`
         border: 0;
     }
 
+    html, body, #__next {
+        height: 100%;
+    }
+
     html {
+        font-size: 62.5%;
         line-height: 1;
         cursor: url("/images/cursor/pointer.cur"), pointer;
     }
 
     body {
+        font-size: 1.6rem;
+        color: #f7fcfe;
+        background-color: #161817;
+        font-family: "League Spartan", "Montserrat", sans-serif;
         cursor: url("/images/cursor/default.cur"), default;
     }
 
-    body {
-        height: 100%;
-        background-color: #161817;
-        color: #f7fcfe;
-        font: inherit;
-        vertical-align: baseline;
-        font-family: "League Spartan", "Montserrat", sans-serif;
-    }
-
     ::-webkit-scrollbar {
-        width: 0.5rem;
+        width: 8px;
     }
 
     ::-webkit-scrollbar-track-piece {

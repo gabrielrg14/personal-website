@@ -4,6 +4,12 @@ import { Jest, Testinglibrary } from "@styled-icons/simple-icons"
 import { TechCard } from "."
 
 describe("<TechCard />", () => {
+    it("should render a list item", () => {
+        render(<TechCard label="Jest" icon={<Jest />} />)
+
+        expect(screen.getByRole("listitem")).toBeInTheDocument()
+    })
+
     it("should render the jest label and svg icon", () => {
         const { container } = render(<TechCard label="Jest" icon={<Jest />} />)
 

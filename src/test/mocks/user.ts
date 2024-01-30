@@ -14,7 +14,7 @@ const user = {
     location: "Campinas, Brazil",
     email: null,
     hireable: null,
-    bio: "👨‍💻 Front-end React Developer ⚛️",
+    bio: "👨‍💻 Front-end Developer 🌐",
     twitter_username: null,
     public_repos: 23,
     public_gists: 0,

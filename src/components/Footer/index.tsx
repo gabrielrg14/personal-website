@@ -11,16 +11,17 @@ export const Footer = () => {
                     <S.Text>Made with 💚 by Gabriel Rapucci</S.Text>
                     <S.SocialMedias>
                         {socialMedias.map(({ name, icon, link }) => (
-                            <Link
-                                key={link}
-                                title={name}
-                                href={link}
-                                aria-label={name}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <S.Icon>{icon}</S.Icon>
-                            </Link>
+                            <S.SocialMedia key={link}>
+                                <Link
+                                    title={name}
+                                    href={link}
+                                    aria-label={name}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <S.Icon>{icon}</S.Icon>
+                                </Link>
+                            </S.SocialMedia>
                         ))}
                     </S.SocialMedias>
                     <S.Text>

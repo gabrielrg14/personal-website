@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: auto 0;
 `
 
 export const Avatar = styled.div`
@@ -19,19 +18,19 @@ export const AvatarImage = styled(Image)`
     height: 100%;
     width: 100%;
     background-color: #161817;
-    border-top: 0.25rem outset #f7fcfe;
-    border-left: 0.25rem outset #f7fcfe;
+    border-top: 4px outset #f7fcfe;
+    border-left: 4px outset #f7fcfe;
     border-radius: 100%;
-    padding: 0.25rem;
-    margin-bottom: 1rem;
+    padding: 0.4rem;
+    margin-bottom: 1.6rem;
     animation: appear-on-screen 1s;
 `
 
 export const PillText = styled.div`
     background-color: #f7fcfe;
     color: #161817;
-    border-radius: 3rem;
-    padding: 0.75rem;
+    border-radius: 48px;
+    padding: 1.2rem;
     width: 50%;
     animation: appear-on-screen 1.5s;
 
@@ -47,11 +46,11 @@ export const PillText = styled.div`
 export const BlackPillText = styled(PillText)`
     background-color: #161817;
     color: #f7fcfe;
-    border-top: 0.25rem outset #f7fcfe;
+    border-top: 4px outset #f7fcfe;
 
     :last-child {
         border-top: none;
-        border-bottom: 0.25rem inset #f7fcfe;
+        border-bottom: 4px inset #f7fcfe;
     }
 `
 
@@ -59,13 +58,13 @@ export const InfoRow = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.5rem;
-    margin: 0.5rem;
+    gap: 0.8rem;
+    margin: 0.8rem;
 `
 
 export const Info = styled.h3`
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
     text-overflow: ellipsis;
     overflow: hidden;
 `

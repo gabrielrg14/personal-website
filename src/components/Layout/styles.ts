@@ -1,14 +1,7 @@
 import styled from "styled-components"
 
-export const LayoutWrapper = styled.div`
-    background-image: url("/images/background/content.jpg");
-    background-size: cover;
-    background-position: center;
-`
-
-export const Main = styled.main`
+export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
-    padding: 1.25rem 0;
+    height: 100%;
 `

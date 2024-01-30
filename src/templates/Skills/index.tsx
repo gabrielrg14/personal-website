@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
-import { Container, TechList, TechCard } from "components"
+import { Blackboard, TechList, TechCard } from "components"
 import {
     techListing as techs,
     knownTechs as known,
@@ -26,7 +26,7 @@ export const SkillsTemplate = () => {
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/skills`}
             />
 
-            <Container>
+            <Blackboard>
                 <S.Wrapper>
                     <S.ListBox>
                         <S.TitleList>Techs and tools I usually use</S.TitleList>
@@ -96,7 +96,7 @@ export const SkillsTemplate = () => {
                         </TechList>
                     </S.ListBox>
                 </S.Wrapper>
-            </Container>
+            </Blackboard>
         </>
     )
 }

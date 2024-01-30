@@ -28,16 +28,16 @@ const variants = {
 
 const sizes = {
     small: {
-        fontSize: "1.1rem",
-        padding: "0.5rem 1rem"
+        fontSize: "1.8rem",
+        padding: "0.8rem 1.6rem"
     },
     medium: {
-        fontSize: "1.2rem",
-        padding: "0.75rem 1.5rem"
+        fontSize: "1.9rem",
+        padding: "1.2rem 2.4rem"
     },
     large: {
-        fontSize: "1.3rem",
-        padding: "1rem 2rem"
+        fontSize: "2rem",
+        padding: "1.6rem 3.2rem"
     }
 }
 
@@ -45,7 +45,7 @@ export const Button = styled.button<ButtonProps>`
     line-height: normal;
     text-align: center;
     transition: all 0.5s ease;
-    border-radius: ${({ rounded }) => (rounded ? "1.5rem" : "0.5rem")};
+    border-radius: ${({ rounded }) => (rounded ? "24px" : "8px")};
     background-color: ${({ variant }) => variants[variant].backgroundColor};
     color: ${({ variant }) => variants[variant].color};
     font-size: ${({ size }) => sizes[size].fontSize};

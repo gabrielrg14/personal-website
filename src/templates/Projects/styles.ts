@@ -1,13 +1,13 @@
 import styled from "styled-components"
 import { mediaQueries as media } from "utils"
 
-import Link from "next/link"
+import { Blackboard } from "components"
 import { StyledIconBase } from "@styled-icons/styled-icon"
 
 export const Projects = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.6rem;
 
     ${media.lessThan("tablet")`
         grid-template-columns: 1fr;
@@ -17,31 +17,33 @@ export const Projects = styled.ul`
 export const Project = styled("li")`
     display: flex;
     flex-direction: column;
+`
+
+export const StyledBlackboard = styled(Blackboard)`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1.6rem;
+    padding: 1.6rem;
     text-align: center;
-    gap: 1rem;
-    background-color: #161817;
-    border-radius: 1rem;
-    border: 1px solid #18a330;
-    padding: 1rem;
 `
 
 export const Title = styled.h2`
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 `
 
-export const Links = styled.div`
+export const Links = styled.ul`
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.6rem;
 `
 
-export const IconLink = styled(Link)`
+export const IconLink = styled("li")`
     ${StyledIconBase} {
-        color: #f7fcfe;
-        width: 1.75rem;
+        width: 2.8rem;
         transition: color 0.5s ease-out;
 
         :hover {
@@ -51,6 +53,6 @@ export const IconLink = styled(Link)`
 `
 
 export const Description = styled.span`
-    font-size: 1.1rem;
-    line-height: 1.25rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
 `

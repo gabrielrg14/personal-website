@@ -3,18 +3,16 @@ import { mediaQueries as media } from "utils"
 
 import Link from "next/link"
 
-export const Header = styled.header`
-    background-color: #161817;
-`
+export const Header = styled.header``
 
 export const Navbar = styled.nav`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    font-size: 1.2rem;
+    gap: 1.6rem;
+    padding: 2.4rem 0;
+    font-size: 1.9rem;
 
     ${media.lessThan("mobile")`
         flex-direction: column;
@@ -25,8 +23,7 @@ export const NavLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: #f7fcfe;
-    line-height: 1.5rem;
+    line-height: 2.4rem;
     transition: color 0.5s ease;
 
     :hover {
@@ -39,7 +36,7 @@ export const NavList = styled.ul`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
 `
 
 export const NavItem = styled("li")`
