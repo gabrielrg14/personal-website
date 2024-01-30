@@ -19,6 +19,6 @@ export const Wrapper = styled.li`
 export const Icon = styled.div<IconProps>`
     ${StyledIconBase} {
         color: #18a330;
-        width: ${(props) => (props.size ? `${props.size / 10}rem` : "4rem")};
+        width: ${({ size }) => (size ? `${size / 10}rem` : "4rem")};
     }
 `

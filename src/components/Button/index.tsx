@@ -1,8 +1,6 @@
-import { ButtonHTMLAttributes } from "react"
-
 import * as S from "./styles"
 
-type ButtonProps = {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     variant?: "primary" | "secondary"
     size?: "small" | "medium" | "large"
     rounded?: boolean
@@ -15,7 +13,7 @@ export const Button = ({
     rounded = false,
     children,
     ...rest
-}: ButtonHTMLAttributes<ButtonProps> & ButtonProps) => {
+}: ButtonProps) => {
     return (
         <S.Button variant={variant} size={size} rounded={rounded} {...rest}>
             {children}
