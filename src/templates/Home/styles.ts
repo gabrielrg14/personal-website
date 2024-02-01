@@ -17,20 +17,20 @@ export const Avatar = styled.div`
 export const AvatarImage = styled(Image)`
     height: 100%;
     width: 100%;
-    background-color: #161817;
-    border-top: 4px outset #f7fcfe;
-    border-left: 4px outset #f7fcfe;
+    background-color: var(--dark-color);
+    border-top: 4px outset var(--light-color);
+    border-left: 4px outset var(--light-color);
     border-radius: 100%;
     padding: 0.4rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: var(--default-size);
     animation: appear-on-screen 1s;
 `
 
 export const PillText = styled.div`
-    background-color: #f7fcfe;
-    color: #161817;
+    background-color: var(--light-color);
+    color: var(--dark-color);
     border-radius: 48px;
-    padding: 1.2rem;
+    padding: var(--sm-size);
     width: 50%;
     animation: appear-on-screen 1.5s;
 
@@ -44,27 +44,35 @@ export const PillText = styled.div`
 `
 
 export const BlackPillText = styled(PillText)`
-    background-color: #161817;
-    color: #f7fcfe;
-    border-top: 4px outset #f7fcfe;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-top: 4px outset var(--light-color);
 
     :last-child {
         border-top: none;
-        border-bottom: 4px inset #f7fcfe;
+        border-bottom: 4px inset var(--light-color);
     }
+`
+
+export const Name = styled.h1`
+    font-size: var(--xl-size);
+`
+
+export const Bio = styled.h2`
+    font-size: var(--lg-size);
 `
 
 export const InfoRow = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.8rem;
-    margin: 0.8rem;
+    gap: var(--xs-size);
+    margin: var(--xs-size);
 `
 
 export const Info = styled.h3`
-    font-size: 1.7rem;
-    line-height: 2.4rem;
+    font-size: var(--md-size);
+    line-height: var(--lg-size);
     text-overflow: ellipsis;
     overflow: hidden;
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-    padding: 1.6rem;
+    padding: var(--default-size);
 `
 
 export const ListBox = styled.div`
@@ -10,8 +10,8 @@ export const ListBox = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.6rem;
-    margin-bottom: 0.8rem;
+    padding: var(--default-size);
+    margin-bottom: var(--xs-size);
 
     :last-child {
         margin-bottom: 0;
@@ -19,7 +19,7 @@ export const ListBox = styled.div`
 `
 
 export const TitleList = styled.h1`
-    font-size: 2.4rem;
-    border-bottom: 2px solid #18a330;
+    font-size: var(--lg-size);
+    border-bottom: 2px solid var(--highlight-color);
     padding-bottom: 0.4rem;
 `

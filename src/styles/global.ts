@@ -1,6 +1,19 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+    :root {
+        --highlight-color: #18a330;
+        --dark-color: #161817;
+        --light-color: #f7fcfe;
+
+        --xs-size: 0.8rem;
+        --sm-size: 1.2rem;
+        --default-size: 1.6rem;
+        --md-size: 1.8rem;
+        --lg-size: 2.4rem;
+        --xl-size: 3.2rem;
+    }
+
     * {
         padding: 0;
         margin: 0;
@@ -18,9 +31,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-size: 1.6rem;
-        color: #f7fcfe;
-        background-color: #161817;
+        font-size: var(--default-size);
+        color: var(--light-color);
+        background-color: var(--dark-color);
         font-family: "League Spartan", "Montserrat", sans-serif;
         cursor: url("/images/cursor/default.cur"), default;
     }
@@ -30,18 +43,18 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-track-piece {
-        background-color: #161817;
+        background-color: var(--dark-color);
         border-radius: 0%;
     }
 
     ::-webkit-scrollbar-track-piece:hover {
-        box-shadow: inset 0 1px 1px #f7fcfe;
+        box-shadow: inset 0 1px 1px var(--light-color);
     }
 
     ::-webkit-scrollbar-thumb {
         border-radius: 100%;
-        background-color: #161817;
-        background-image: -webkit-linear-gradient(90deg, transparent, #18a330 45%, #18a330 45%, transparent);
+        background-color: var(--dark-color);
+        background-image: -webkit-linear-gradient(90deg, transparent, var(--highlight-color) 45%, var(--highlight-color) 45%, transparent);
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -49,7 +62,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::selection {
-        color: #18a330;
+        color: var(--highlight-color);
     }
 
     h1, h2, h3, h4, h5, h6, span, p, blockquote,
@@ -60,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a, button {
-        color: #f7fcfe;
+        color: var(--light-color);
         text-decoration: none;
         font-family: inherit;
         cursor: url("/images/cursor/pointer.cur"), pointer;

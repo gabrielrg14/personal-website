@@ -10,15 +10,15 @@ export const Wrapper = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.6rem;
-    padding: 1.6rem;
+    gap: var(--default-size);
+    padding: var(--default-size);
     width: 10rem;
-    font-size: 1.9rem;
+    font-size: var(--md-size);
 `
 
 export const Icon = styled.div<IconProps>`
     ${StyledIconBase} {
-        color: #18a330;
+        color: var(--highlight-color);
         width: ${({ size }) => (size ? `${size / 10}rem` : "4rem")};
     }
 `

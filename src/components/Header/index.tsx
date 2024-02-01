@@ -18,7 +18,9 @@ export const Header = () => {
                         aria-label="Go to Home"
                         style={{
                             color:
-                                router.pathname === "/" ? "#18a330" : undefined
+                                router.pathname === "/"
+                                    ? "var(--highlight-color)"
+                                    : undefined
                         }}
                     >
                         {"<"}
@@ -49,7 +51,7 @@ export const Header = () => {
                                     style={{
                                         borderBottom:
                                             router.pathname === href
-                                                ? "2px solid #18a330"
+                                                ? "2px solid var(--highlight-color)"
                                                 : undefined
                                     }}
                                 >

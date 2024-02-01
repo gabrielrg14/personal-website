@@ -17,10 +17,10 @@ export const Layout = ({ children }: LayoutProps) => {
     }, [setUserStore])
 
     return (
-        <S.Wrapper>
+        <S.Layout>
             <Header />
             <Main>{children}</Main>
             <Footer />
-        </S.Wrapper>
+        </S.Layout>
     )
 }

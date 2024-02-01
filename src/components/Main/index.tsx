@@ -8,7 +8,9 @@ type MainProps = {
 export const Main = ({ children }: MainProps) => {
     return (
         <S.Main>
-            <Container>{children}</Container>
+            <Container>
+                <S.Section>{children}</S.Section>
+            </Container>
         </S.Main>
     )
 }

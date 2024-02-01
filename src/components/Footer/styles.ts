@@ -10,9 +10,9 @@ export const Wrapper = styled.footer`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1.6rem;
-    padding: 2.4rem 0;
-    font-size: 1.6rem;
+    gap: var(--default-size);
+    padding: var(--lg-size) 0;
+    font-size: var(--default-size);
 
     ${media.lessThan("tablet")`
         flex-direction: column;
@@ -24,7 +24,7 @@ export const SocialMedias = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.6rem;
+    gap: var(--default-size);
 `
 
 export const SocialMedia = styled("li")``
@@ -35,7 +35,7 @@ export const Icon = styled.div`
         transition: color 0.5s ease-out;
 
         :hover {
-            color: #18a330;
+            color: var(--highlight-color);
         }
     }
 `
@@ -49,5 +49,5 @@ export const Text = styled.span`
 `
 
 export const Copyright = styled.span`
-    color: #18a330;
+    color: var(--highlight-color);
 `

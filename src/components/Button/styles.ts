@@ -9,35 +9,35 @@ type ButtonProps = {
 
 const variants = {
     primary: {
-        backgroundColor: "#18a330",
-        color: "#f7fcfe",
+        backgroundColor: "var(--highlight-color)",
+        color: "var(--light-color)",
         hover: {
-            backgroundColor: "#f7fcfe",
-            color: "#18a330"
+            backgroundColor: "var(--light-color)",
+            color: "var(--highlight-color)"
         }
     },
     secondary: {
-        backgroundColor: "#f7fcfe",
-        color: "#161817",
+        backgroundColor: "var(--light-color)",
+        color: "var(--dark-color)",
         hover: {
-            backgroundColor: "#18a330",
-            color: "#f7fcfe"
+            backgroundColor: "var(--highlight-color)",
+            color: "var(--light-color)"
         }
     }
 }
 
 const sizes = {
     small: {
-        fontSize: "1.8rem",
-        padding: "0.8rem 1.6rem"
+        fontSize: "var(--md-size)",
+        padding: "var(--xs-size) var(--default-size)"
     },
     medium: {
-        fontSize: "1.9rem",
-        padding: "1.2rem 2.4rem"
+        fontSize: "2rem",
+        padding: "var(--sm-size) var(--lg-size)"
     },
     large: {
-        fontSize: "2rem",
-        padding: "1.6rem 3.2rem"
+        fontSize: "var(--lg-size)",
+        padding: "var(--default-size) var(--xl-size)"
     }
 }
 

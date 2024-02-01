@@ -38,11 +38,11 @@ export const HomeTemplate = ({ user }: HomeTemplateProps) => {
                 </S.Avatar>
 
                 <S.BlackPillText>
-                    <h1>{user.name}</h1>
+                    <S.Name>{user.name}</S.Name>
                 </S.BlackPillText>
 
                 <S.PillText>
-                    <h2>{user.bio}</h2>
+                    <S.Bio>{user.bio}</S.Bio>
                 </S.PillText>
 
                 <S.BlackPillText>

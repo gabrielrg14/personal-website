@@ -23,14 +23,14 @@ export const ExperiencesTemplate = () => {
             />
 
             <Blackboard>
-                <VerticalTimeline lineColor="#f7fcfe">
+                <VerticalTimeline lineColor="var(--light-color)">
                     {experiences.map((experience, index) => (
                         <S.TimelineElement
                             key={index}
                             contentStyle={{
-                                background: "#161817",
-                                color: "#f7fcfe",
-                                border: "2px solid #f7fcfe",
+                                background: "var(--dark-color)",
+                                color: "var(--light-color)",
+                                border: "2px solid var(--light-color)",
                                 borderRadius: "16px"
                             }}
                             contentArrowStyle={{
@@ -39,8 +39,8 @@ export const ExperiencesTemplate = () => {
                             date={experience.period}
                             icon={<Work />}
                             iconStyle={{
-                                background: "#161817",
-                                color: "#18a330"
+                                background: "var(--dark-color)",
+                                color: "var(--highlight-color)"
                             }}
                         >
                             <S.Title>{experience.title}</S.Title>

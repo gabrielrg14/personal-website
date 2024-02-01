@@ -10,9 +10,9 @@ export const Navbar = styled.nav`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1.6rem;
-    padding: 2.4rem 0;
-    font-size: 1.9rem;
+    gap: var(--default-size);
+    padding: var(--lg-size) 0;
+    font-size: 2rem;
 
     ${media.lessThan("mobile")`
         flex-direction: column;
@@ -23,11 +23,11 @@ export const NavLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    line-height: 2.4rem;
+    line-height: var(--lg-size);
     transition: color 0.5s ease;
 
     :hover {
-        color: #18a330;
+        color: var(--highlight-color);
     }
 `
 
@@ -36,7 +36,7 @@ export const NavList = styled.ul`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.6rem;
+    gap: var(--default-size);
 `
 
 export const NavItem = styled("li")`
