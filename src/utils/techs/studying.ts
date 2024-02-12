@@ -1,1 +1,1 @@
-export const studyingTechs = ["docker", "kubernetes"]
+export const studyingTechs = ["docker", "kubernetes", "githubactions"]

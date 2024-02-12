@@ -28,6 +28,7 @@ import { Git } from "@styled-icons/simple-icons/Git"
 import { Github } from "@styled-icons/simple-icons/Github"
 import { Docker } from "@styled-icons/simple-icons/Docker"
 import { Kubernetes } from "@styled-icons/simple-icons/Kubernetes"
+import { Githubactions } from "@styled-icons/simple-icons/Githubactions"
 import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws"
 import { Azuredevops } from "@styled-icons/simple-icons/Azuredevops"
 import { Vercel } from "@styled-icons/simple-icons/Vercel"
@@ -187,6 +188,11 @@ export const techListing = [
         icon: <Kubernetes />,
         label: "Kubernetes",
         identifier: "kubernetes"
+    },
+    {
+        icon: <Githubactions />,
+        label: "GitHub Actions",
+        identifier: "githubactions"
     },
     {
         icon: <Amazonaws />,
