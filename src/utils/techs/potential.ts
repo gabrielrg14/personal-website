@@ -1,1 +1,1 @@
-export const potentialTechs = ["cypress", "nestjs", "aws", "azure"]
+export const potentialTechs = ["cypress", "nestjs", "github-actions"]

@@ -33,8 +33,7 @@ exports[`techs potentialTechs should match snapshot 1`] = `
 [
   "cypress",
   "nestjs",
-  "aws",
-  "azure",
+  "github-actions",
 ]
 `;
 
@@ -42,6 +41,8 @@ exports[`techs studyingTechs should match snapshot 1`] = `
 [
   "docker",
   "kubernetes",
-  "githubactions",
+  "aws",
+  "azure",
+  "google-cloud",
 ]
 `;

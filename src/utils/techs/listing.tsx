@@ -31,6 +31,7 @@ import { Kubernetes } from "@styled-icons/simple-icons/Kubernetes"
 import { Githubactions } from "@styled-icons/simple-icons/Githubactions"
 import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws"
 import { Azuredevops } from "@styled-icons/simple-icons/Azuredevops"
+import { Googlecloud } from "@styled-icons/simple-icons/Googlecloud"
 import { Vercel } from "@styled-icons/simple-icons/Vercel"
 
 export const techListing = [
@@ -192,7 +193,7 @@ export const techListing = [
     {
         icon: <Githubactions />,
         label: "GitHub Actions",
-        identifier: "githubactions"
+        identifier: "github-actions"
     },
     {
         icon: <Amazonaws />,
@@ -201,8 +202,13 @@ export const techListing = [
     },
     {
         icon: <Azuredevops />,
-        label: "Azure",
+        label: "Microsoft Azure",
         identifier: "azure"
+    },
+    {
+        icon: <Googlecloud />,
+        label: "Google Cloud",
+        identifier: "google-cloud"
     },
     {
         icon: <Vercel />,
