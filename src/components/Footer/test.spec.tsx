@@ -11,6 +11,22 @@ describe("<Footer />", () => {
         expect(screen.getByText(/all rights reserved/i)).toBeInTheDocument()
     })
 
+    it("should render the link to github with the correct attributes, accessible name and description", () => {
+        render(<Footer />)
+
+        const githubLink = screen.getByRole("link", { name: /github/i })
+
+        expect(githubLink).toBeInTheDocument()
+        expect(githubLink).toHaveAttribute(
+            "href",
+            `https://github.com/${USERNAME}/`
+        )
+        expect(githubLink).toHaveAttribute("target", "_blank")
+        expect(githubLink).toHaveAttribute("rel", "noreferrer")
+        expect(githubLink).toHaveAccessibleName(/github/i)
+        expect(githubLink).toHaveAccessibleDescription(/github/i)
+    })
+
     it("should render the link to linkedin with the correct attributes, accessible name and description", () => {
         render(<Footer />)
 
@@ -27,19 +43,19 @@ describe("<Footer />", () => {
         expect(linkedinLink).toHaveAccessibleDescription(/linkedin/i)
     })
 
-    it("should render the link to github with the correct attributes, accessible name and description", () => {
+    it("should render the link to instagram with the correct attributes, accessible name and description", () => {
         render(<Footer />)
 
-        const githubLink = screen.getByRole("link", { name: /github/i })
+        const instagramLink = screen.getByRole("link", { name: /instagram/i })
 
-        expect(githubLink).toBeInTheDocument()
-        expect(githubLink).toHaveAttribute(
+        expect(instagramLink).toBeInTheDocument()
+        expect(instagramLink).toHaveAttribute(
             "href",
-            `https://github.com/${USERNAME}`
+            "https://www.instagram.com/gabriel_rapucci/"
         )
-        expect(githubLink).toHaveAttribute("target", "_blank")
-        expect(githubLink).toHaveAttribute("rel", "noreferrer")
-        expect(githubLink).toHaveAccessibleName(/github/i)
-        expect(githubLink).toHaveAccessibleDescription(/github/i)
+        expect(instagramLink).toHaveAttribute("target", "_blank")
+        expect(instagramLink).toHaveAttribute("rel", "noreferrer")
+        expect(instagramLink).toHaveAccessibleName(/instagram/i)
+        expect(instagramLink).toHaveAccessibleDescription(/instagram/i)
     })
 })

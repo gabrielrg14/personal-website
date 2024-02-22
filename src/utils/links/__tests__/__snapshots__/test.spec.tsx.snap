@@ -20,14 +20,19 @@ exports[`links headerLinks should match snapshot 1`] = `
 exports[`links socialMedias should match snapshot 1`] = `
 [
   {
+    "icon": <MarkGithub />,
+    "link": "https://github.com/gabrielrg14/",
+    "name": "GitHub",
+  },
+  {
     "icon": <Linkedin />,
     "link": "https://www.linkedin.com/in/gabrielrapuccigonzalez/",
     "name": "LinkedIn",
   },
   {
-    "icon": <MarkGithub />,
-    "link": "https://github.com/gabrielrg14",
-    "name": "GitHub",
+    "icon": <Instagram />,
+    "link": "https://www.instagram.com/gabriel_rapucci/",
+    "name": "Instagram",
   },
 ]
 `;

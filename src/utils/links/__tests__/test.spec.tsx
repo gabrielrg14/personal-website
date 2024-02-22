@@ -1,6 +1,7 @@
 import { USERNAME } from "common"
-import { Linkedin } from "@styled-icons/simple-icons/Linkedin"
 import { MarkGithub } from "@styled-icons/octicons/MarkGithub"
+import { Linkedin } from "@styled-icons/simple-icons/Linkedin"
+import { Instagram } from "@styled-icons/simple-icons/Instagram"
 
 import { headerLinks, socialMedias } from "utils"
 
@@ -31,16 +32,21 @@ describe("links", () => {
             expect(socialMedias).toMatchSnapshot()
         })
 
-        it("should contain LinkedIn and GitHub links", () => {
+        it("should contain GitHub, LinkedIn and Instagram links", () => {
+            expect(socialMedias).toContainEqual({
+                name: "GitHub",
+                link: `https://github.com/${USERNAME}/`,
+                icon: <MarkGithub />
+            })
             expect(socialMedias).toContainEqual({
                 name: "LinkedIn",
                 link: "https://www.linkedin.com/in/gabrielrapuccigonzalez/",
                 icon: <Linkedin />
             })
             expect(socialMedias).toContainEqual({
-                name: "GitHub",
-                link: `https://github.com/${USERNAME}`,
-                icon: <MarkGithub />
+                name: "Instagram",
+                link: "https://www.instagram.com/gabriel_rapucci/",
+                icon: <Instagram />
             })
         })
     })
