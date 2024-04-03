@@ -1,9 +1,9 @@
 export const knowledgeTechs = [
     "react-native",
     "expo",
-    "vuejs",
     "redux",
-    "graphql",
+    "vuejs",
+    "tailwindcss",
     "nodejs",
-    "tailwindcss"
+    "docker"
 ]

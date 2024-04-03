@@ -11,6 +11,7 @@ import { Jquery } from "@styled-icons/simple-icons/Jquery"
 import { Bootstrap } from "@styled-icons/simple-icons/Bootstrap"
 import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents"
 import { Tailwindcss } from "@styled-icons/simple-icons/Tailwindcss"
+import { Angularjs } from "@styled-icons/simple-icons/Angularjs"
 import { Php } from "@styled-icons/simple-icons/Php"
 import { Prestashop } from "@styled-icons/simple-icons/Prestashop"
 import { Wordpress } from "@styled-icons/simple-icons/Wordpress"
@@ -104,6 +105,11 @@ export const techListing = [
         icon: <Tailwindcss />,
         label: "Tailwind",
         identifier: "tailwindcss"
+    },
+    {
+        icon: <Angularjs />,
+        label: "AngularJS",
+        identifier: "angularjs"
     },
     {
         icon: <Php />,

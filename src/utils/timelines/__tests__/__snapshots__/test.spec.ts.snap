@@ -10,6 +10,7 @@ exports[`timelines experiences should match snapshot 1`] = `
       "react",
       "javascript",
       "bootstrap",
+      "angularjs",
       "git",
     ],
     "title": "Front-end Developer",

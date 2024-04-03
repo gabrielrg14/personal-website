@@ -5,7 +5,7 @@ export const experiences = [
         period: "May 2021 - Present",
         description:
             "Responsible for maintaining, carrying out updates/corrections and creating new features for the company's internal system, through the SCRUM work methodology.",
-        skills: ["react", "javascript", "bootstrap", "git"]
+        skills: ["react", "javascript", "bootstrap", "angularjs", "git"]
     },
     {
         title: "Web Development Intern",

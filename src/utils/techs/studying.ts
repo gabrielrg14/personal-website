@@ -1,7 +1,1 @@
-export const studyingTechs = [
-    "docker",
-    "kubernetes",
-    "aws",
-    "azure",
-    "google-cloud"
-]
+export const studyingTechs = ["cypress", "github-actions"]

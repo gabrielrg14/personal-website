@@ -4,11 +4,11 @@ exports[`techs knowledgeTechs should match snapshot 1`] = `
 [
   "react-native",
   "expo",
-  "vuejs",
   "redux",
-  "graphql",
-  "nodejs",
+  "vuejs",
   "tailwindcss",
+  "nodejs",
+  "docker",
 ]
 `;
 
@@ -31,18 +31,14 @@ exports[`techs knownTechs should match snapshot 1`] = `
 
 exports[`techs potentialTechs should match snapshot 1`] = `
 [
-  "cypress",
   "nestjs",
-  "github-actions",
+  "aws",
 ]
 `;
 
 exports[`techs studyingTechs should match snapshot 1`] = `
 [
-  "docker",
-  "kubernetes",
-  "aws",
-  "azure",
-  "google-cloud",
+  "cypress",
+  "github-actions",
 ]
 `;
