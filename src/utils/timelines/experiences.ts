@@ -1,7 +1,7 @@
 export const experiences = [
     {
         title: "Front-end Developer",
-        company: "Allergisa, a business of ALS",
+        company: "ALS Life Sciences",
         period: "May 2021 - Present",
         description:
             "Responsible for maintaining, carrying out updates/corrections and creating new features for the company's internal system, through the SCRUM work methodology.",
