@@ -5,7 +5,7 @@ import { StyledIconBase } from "@styled-icons/styled-icon"
 
 export const Footer = styled.footer``
 
-export const Wrapper = styled.footer`
+export const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

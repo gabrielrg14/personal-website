@@ -3,12 +3,21 @@
   "version": "1.1.5",
   "private": true,
   "description": "My personal website, here you will learn a little more about me, my technology skills, my work experiences and also the projects I've developed.",
+  "author": "Gabriel Rapucci Gonzalez <gabrielrapuccigonzalez14@hotmail.com> (https://gabrielrapucci.com.br)",
+  "homepage": "https://gabrielrapucci.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielrg14/personal-website"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielrg14/personal-website/issues"
+  },
   "keywords": [
     "nextjs",
+    "personal-website",
     "front-end",
-    "personal-website"
+    "portfolio"
   ],
-  "author": "Gabriel Rapucci Gonzalez <gabrielrapuccigonzalez14@hotmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +27,9 @@
     "test": "jest",
     "test:verbose": "jest --verbose",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
@@ -49,10 +60,14 @@
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "cypress": "^13.8.1",
     "eslint": "^8.45.0",
     "eslint-config-next": "^13.4.12",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^3.2.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "jest-styled-components": "^7.1.1",
@@ -61,12 +76,5 @@
     "prettier": "^3.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^4.8.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gabrielrg14/personal-website"
-  },
-  "bugs": {
-    "url": "https://github.com/gabrielrg14/personal-website/issues"
   }
 }
