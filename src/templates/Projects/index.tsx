@@ -31,37 +31,39 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                 {repositories?.map((repository) => (
                     <S.Project key={repository.id}>
                         <S.StyledBlackboard>
-                            <S.Title>
-                                {formatRepositoryName(repository.name)}
-                            </S.Title>
+                            <S.Repository>
+                                <S.Title>
+                                    {formatRepositoryName(repository.name)}
+                                </S.Title>
 
-                            <S.Links>
-                                <S.IconLink>
-                                    <Link
-                                        title="GitHub"
-                                        href={repository.html_url}
-                                        aria-label="Go to the project repository on GitHub"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <MarkGithub />
-                                    </Link>
-                                </S.IconLink>
-
-                                {repository.homepage && (
+                                <S.Links>
                                     <S.IconLink>
                                         <Link
-                                            title="Website"
-                                            href={repository.homepage}
-                                            aria-label="Go to the repository Website"
+                                            title="GitHub"
+                                            href={repository.html_url}
+                                            aria-label="Go to the project repository on GitHub"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <Globe />
+                                            <MarkGithub />
                                         </Link>
                                     </S.IconLink>
-                                )}
-                            </S.Links>
+
+                                    {repository.homepage && (
+                                        <S.IconLink>
+                                            <Link
+                                                title="Website"
+                                                href={repository.homepage}
+                                                aria-label="Go to the repository Website"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <Globe />
+                                            </Link>
+                                        </S.IconLink>
+                                    )}
+                                </S.Links>
+                            </S.Repository>
 
                             <TechList>
                                 {techs.map(

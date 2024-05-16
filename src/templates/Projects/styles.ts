@@ -30,6 +30,14 @@ export const StyledBlackboard = styled(Blackboard)`
     text-align: center;
 `
 
+export const Repository = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--default-size);
+`
+
 export const Title = styled.h2`
     font-size: var(--lg-size);
 `
