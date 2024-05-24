@@ -52,11 +52,9 @@ describe("Navigation", () => {
         cy.navigateToProjectLink("Pokedex", "Website")
 
         cy.origin("https://pokedex.gabrielrapucci.com.br/", () => {
-            cy.get("main section a[aria-label='bulbasaur']").should(
+            cy.contains("main section ul li a h2", "Bulbasaur").should(
                 "be.visible"
             )
-            cy.get("main section a img[alt='bulbasaur']").should("be.visible")
-            cy.contains("main section a h2", "Bulbasaur").should("be.visible")
         })
     })
 
