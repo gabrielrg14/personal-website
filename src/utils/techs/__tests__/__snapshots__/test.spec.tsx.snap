@@ -24,21 +24,22 @@ exports[`techs knownTechs should match snapshot 1`] = `
   "bootstrap",
   "jest",
   "testing-library",
+  "cypress",
   "git",
   "github",
+  "github-actions",
 ]
 `;
 
 exports[`techs potentialTechs should match snapshot 1`] = `
 [
-  "nestjs",
+  "storybook",
   "aws",
 ]
 `;
 
 exports[`techs studyingTechs should match snapshot 1`] = `
 [
-  "cypress",
-  "github-actions",
+  "nestjs",
 ]
 `;
