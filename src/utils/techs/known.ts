@@ -9,6 +9,8 @@ export const knownTechs = [
     "bootstrap",
     "jest",
     "testing-library",
+    "cypress",
     "git",
-    "github"
+    "github",
+    "github-actions"
 ]

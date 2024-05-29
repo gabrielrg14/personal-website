@@ -22,6 +22,7 @@ import { Graphql } from "@styled-icons/simple-icons/Graphql"
 import { Jest } from "@styled-icons/simple-icons/Jest"
 import { Testinglibrary } from "@styled-icons/simple-icons/Testinglibrary"
 import { Cypress } from "@styled-icons/simple-icons/Cypress"
+import { Storybook } from "@styled-icons/simple-icons/Storybook"
 import { Mongodb } from "@styled-icons/simple-icons/Mongodb"
 import { Postgresql } from "@styled-icons/simple-icons/Postgresql"
 import { Mysql } from "@styled-icons/simple-icons/Mysql"
@@ -160,6 +161,11 @@ export const techListing = [
         icon: <Cypress />,
         label: "Cypress",
         identifier: "cypress"
+    },
+    {
+        icon: <Storybook />,
+        label: "Storybook",
+        identifier: "storybook"
     },
     {
         icon: <Mongodb />,
