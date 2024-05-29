@@ -27,6 +27,7 @@ export const ExperiencesTemplate = () => {
                     {experiences.map((experience, index) => (
                         <S.TimelineElement
                             key={index}
+                            visible={true}
                             contentStyle={{
                                 background: "var(--dark-color)",
                                 color: "var(--light-color)",
