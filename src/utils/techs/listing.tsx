@@ -18,6 +18,7 @@ import { Wordpress } from "@styled-icons/simple-icons/Wordpress"
 import { Nodedotjs } from "@styled-icons/simple-icons/Nodedotjs"
 import { Express } from "@styled-icons/simple-icons/Express"
 import { Nestjs } from "@styled-icons/simple-icons/Nestjs"
+import { Prisma } from "@styled-icons/simple-icons/Prisma"
 import { Graphql } from "@styled-icons/simple-icons/Graphql"
 import { Jest } from "@styled-icons/simple-icons/Jest"
 import { Testinglibrary } from "@styled-icons/simple-icons/Testinglibrary"
@@ -141,6 +142,11 @@ export const techListing = [
         icon: <Nestjs />,
         label: "Nest.js",
         identifier: "nestjs"
+    },
+    {
+        icon: <Prisma />,
+        label: "Prisma",
+        identifier: "prisma"
     },
     {
         icon: <Graphql />,

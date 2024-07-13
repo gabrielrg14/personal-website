@@ -41,5 +41,6 @@ exports[`techs potentialTechs should match snapshot 1`] = `
 exports[`techs studyingTechs should match snapshot 1`] = `
 [
   "nestjs",
+  "prisma",
 ]
 `;

@@ -26,6 +26,10 @@ const config: DefaultSeoProps = {
     ],
     additionalMetaTags: [
         {
+            name: "author",
+            content: "Gabriel Rapucci Gonzalez"
+        },
+        {
             name: "google-site-verification",
             content: "11r8K6MLmUAgq8eTWLXk49GhEiZuybZx1h8kIyO6PX8"
         },
