@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        title: "Front-end Developer",
+        title: "Front-end Software Developer",
         company: "ALS Life Sciences",
         period: "May 2021 - Present",
         description:

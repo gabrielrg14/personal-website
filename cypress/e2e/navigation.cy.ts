@@ -24,7 +24,7 @@ describe("Navigation", () => {
 
     it("navigate to Experiences page by header", () => {
         cy.navigateToHeaderPage("Experiences")
-        cy.contains("main section h1", "Front-end Developer").should(
+        cy.contains("main section h1", "Front-end Software Developer").should(
             "be.visible"
         )
     })

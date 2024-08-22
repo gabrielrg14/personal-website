@@ -16,12 +16,12 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
         <>
             <NextSeo
                 title="Projects"
-                description="Main projects developed and published by me on GitHub throughout my career as a Front-end Developer."
+                description="Main projects developed and published by me on GitHub throughout my career as a Front-end Software Developer."
                 additionalMetaTags={[
                     {
                         name: "keywords",
                         content:
-                            "GitHub, Projects, Dev Projects, Web Projects, Front-end Projects, React Projects, React.js Projects, Next.js Projects, Front-end Developer, Front-end React Developer"
+                            "GitHub, Projects, Dev Projects, Web Projects, Front-end Projects, React Projects, React.js Projects, Next.js Projects, Front-end Developer, Front-end Software Developer, React Developer, Front-end React Developer"
                     }
                 ]}
                 canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/projects`}
