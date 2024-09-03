@@ -34,5 +34,10 @@ exports[`links socialMedias should match snapshot 1`] = `
     "link": "https://www.instagram.com/gabriel_rapucci/",
     "name": "Instagram",
   },
+  {
+    "icon": <Whatsapp />,
+    "link": "https://api.whatsapp.com/send/?phone=5519981392516&text&type=phone_number&app_absent=0/",
+    "name": "WhatsApp",
+  },
 ]
 `;
