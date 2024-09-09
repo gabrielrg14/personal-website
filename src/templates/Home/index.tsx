@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo"
 
 import * as S from "./styles"
 import { IUser } from "interfaces"
-import { Mail, Organization, Location } from "@styled-icons/octicons"
+import { Organization, Location } from "@styled-icons/octicons"
 
 type HomeTemplateProps = {
     user: IUser
@@ -46,11 +46,6 @@ export const HomeTemplate = ({ user }: HomeTemplateProps) => {
                 </S.PillText>
 
                 <S.BlackPillText>
-                    <S.InfoRow>
-                        <Mail size={20} />
-                        <S.Info>{user.email}</S.Info>
-                    </S.InfoRow>
-
                     <S.InfoRow>
                         <Organization size={20} />
                         <S.Info>{user.company}</S.Info>

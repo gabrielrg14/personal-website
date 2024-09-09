@@ -30,6 +30,11 @@ exports[`links socialMedias should match snapshot 1`] = `
     "name": "LinkedIn",
   },
   {
+    "icon": <Mail />,
+    "link": "mailto:gabrielrapuccigonzalez14@hotmail.com",
+    "name": "E-mail",
+  },
+  {
     "icon": <Instagram />,
     "link": "https://www.instagram.com/gabriel_rapucci/",
     "name": "Instagram",
