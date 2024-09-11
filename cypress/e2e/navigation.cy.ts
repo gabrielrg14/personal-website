@@ -17,7 +17,7 @@ describe("Navigation", () => {
 
     it("navigate to Skills page by header", () => {
         cy.navigateToHeaderPage("Skills")
-        cy.contains("main section h1", "Techs and tools I usually use").should(
+        cy.contains("main section h1", "Main technologies I master").should(
             "be.visible"
         )
     })
