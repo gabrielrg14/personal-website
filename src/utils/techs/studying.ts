@@ -1,1 +1,1 @@
-export const studyingTechs = ["nestjs", "prisma"]
+export const studyingTechs = ["aws"]

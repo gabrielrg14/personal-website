@@ -1,9 +1,10 @@
 export const knowledgeTechs = [
     "react-native",
-    "expo",
     "redux",
     "vuejs",
     "tailwindcss",
     "nodejs",
+    "nestjs",
+    "prisma",
     "docker"
 ]

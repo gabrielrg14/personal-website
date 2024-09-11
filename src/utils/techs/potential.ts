@@ -1,1 +1,1 @@
-export const potentialTechs = ["storybook", "aws"]
+export const potentialTechs = ["storybook"]

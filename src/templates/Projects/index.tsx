@@ -75,6 +75,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                                 key={identifier}
                                                 label={label}
                                                 icon={icon}
+                                                iconSize={36}
                                             />
                                         )
                                 )}

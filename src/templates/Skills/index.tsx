@@ -29,7 +29,7 @@ export const SkillsTemplate = () => {
             <Blackboard>
                 <S.Wrapper>
                     <S.ListBox>
-                        <S.TitleList>Techs and tools I usually use</S.TitleList>
+                        <S.TitleList>Main technologies I master</S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>
@@ -45,7 +45,9 @@ export const SkillsTemplate = () => {
                     </S.ListBox>
 
                     <S.ListBox>
-                        <S.TitleList>Techs and tools I have used</S.TitleList>
+                        <S.TitleList>
+                            Technologies I know, but have not yet mastered
+                        </S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>
@@ -61,9 +63,7 @@ export const SkillsTemplate = () => {
                     </S.ListBox>
 
                     <S.ListBox>
-                        <S.TitleList>
-                            I&#39;m studying at the moment
-                        </S.TitleList>
+                        <S.TitleList>I&#39;m studying right now</S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>
@@ -79,9 +79,7 @@ export const SkillsTemplate = () => {
                     </S.ListBox>
 
                     <S.ListBox>
-                        <S.TitleList>
-                            I intend to study in the future
-                        </S.TitleList>
+                        <S.TitleList>I plan to study next</S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>
