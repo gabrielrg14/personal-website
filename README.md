@@ -4,7 +4,7 @@ My personal website, here you will learn a little more about me, my technology s
 
 ## ⚙️ Technologies
 
-Technologies used and studied to carry out this project:
+Technologies studied and used to carry out this project:
 
 - [`Next.js`](https://nextjs.org/)
 - [`TypeScript`](https://www.typescriptlang.org/)
@@ -23,8 +23,8 @@ Technologies used and studied to carry out this project:
 
 To clone and run this project, you will need:
 
-- [`Git`](https://git-scm.com/downloads)
-- [`Node.js`](https://nodejs.org/en/)
+- [`Git`](https://git-scm.com/)
+- [`Node.js`](https://nodejs.org/)
 - [`npm`](https://www.npmjs.com/)
 
 **Note:** When installing Node.js, npm is automatically installed. 🎉
