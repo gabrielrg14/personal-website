@@ -3,9 +3,22 @@
 exports[`timelines experiences should match snapshot 1`] = `
 [
   {
+    "company": "AB InBev",
+    "description": "",
+    "period": "Nov 2024 - Present",
+    "skills": [
+      "react",
+      "nextjs",
+      "typescript",
+      "styled-components",
+      "git",
+    ],
+    "title": "Front-end Software Engineer",
+  },
+  {
     "company": "ALS Life Sciences",
     "description": "Responsible for maintaining, carrying out updates/corrections and creating new features for the company's internal system, through the SCRUM work methodology.",
-    "period": "May 2021 - Present",
+    "period": "May 2021 - Nov 2024",
     "skills": [
       "react",
       "javascript",

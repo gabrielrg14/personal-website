@@ -1,8 +1,15 @@
 export const experiences = [
     {
+        title: "Front-end Software Engineer",
+        company: "AB InBev",
+        period: "Nov 2024 - Present",
+        description: "",
+        skills: ["react", "nextjs", "typescript", "styled-components", "git"]
+    },
+    {
         title: "Front-end Software Developer",
         company: "ALS Life Sciences",
-        period: "May 2021 - Present",
+        period: "May 2021 - Nov 2024",
         description:
             "Responsible for maintaining, carrying out updates/corrections and creating new features for the company's internal system, through the SCRUM work methodology.",
         skills: ["react", "javascript", "bootstrap", "angularjs", "git"]
