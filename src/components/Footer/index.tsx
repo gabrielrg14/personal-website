@@ -25,7 +25,7 @@ export const Footer = () => {
                         ))}
                     </S.SocialMedias>
                     <S.Text>
-                        {new Date().getFullYear()} <S.Copyright>©️</S.Copyright>{" "}
+                        {new Date().getFullYear()} <S.Copyright>©</S.Copyright>{" "}
                         All rights reserved
                     </S.Text>
                 </S.Wrapper>
