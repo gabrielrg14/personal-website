@@ -4,7 +4,16 @@ export const experiences = [
         company: "AB InBev",
         period: "Nov 2024 - Present",
         description: "",
-        skills: ["react", "nextjs", "typescript", "styled-components", "git"]
+        skills: [
+            "react",
+            "nextjs",
+            "typescript",
+            "styled-components",
+            "jest",
+            "testing-library",
+            "git",
+            "azure-devops"
+        ]
     },
     {
         title: "Front-end Software Developer",

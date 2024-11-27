@@ -214,6 +214,11 @@ export const techListing = [
         identifier: "github-actions"
     },
     {
+        icon: <Azuredevops />,
+        label: "Azure DevOps",
+        identifier: "azure-devops"
+    },
+    {
         icon: <Amazonaws />,
         label: "AWS",
         identifier: "aws"
@@ -221,7 +226,7 @@ export const techListing = [
     {
         icon: <Azuredevops />,
         label: "Microsoft Azure",
-        identifier: "azure"
+        identifier: "microsoft-azure"
     },
     {
         icon: <Googlecloud />,
