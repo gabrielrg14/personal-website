@@ -4,7 +4,7 @@ exports[`timelines experiences should match snapshot 1`] = `
 [
   {
     "company": "AB InBev",
-    "description": "",
+    "description": "Responsible for developing responsive and accessible interfaces and creating reusable and testable components, focusing on optimizing performance and automated test coverage, ensuring quality, minimizing failures and providing great user experience and usability.",
     "period": "Nov 2024 - Present",
     "skills": [
       "react",

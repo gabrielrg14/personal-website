@@ -3,7 +3,8 @@ export const experiences = [
         title: "Front-end Software Engineer",
         company: "AB InBev",
         period: "Nov 2024 - Present",
-        description: "",
+        description:
+            "Responsible for developing responsive and accessible interfaces and creating reusable and testable components, focusing on optimizing performance and automated test coverage, ensuring quality, minimizing failures and providing great user experience and usability.",
         skills: [
             "react",
             "nextjs",
