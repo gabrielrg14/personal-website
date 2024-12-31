@@ -6,5 +6,6 @@ export const knowledgeTechs = [
     "nodejs",
     "nestjs",
     "prisma",
-    "docker"
+    "docker",
+    "aws"
 ]

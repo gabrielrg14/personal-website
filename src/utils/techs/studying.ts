@@ -1,1 +1,1 @@
-export const studyingTechs = ["aws"]
+export const studyingTechs = ["clean-code"]
