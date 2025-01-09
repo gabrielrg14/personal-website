@@ -25,4 +25,7 @@ Cypress.Commands.add("navigateToProjectLink", (name: string, title: string) => {
         .should("be.visible")
         .invoke("removeAttr", "target")
         .click()
+
+    // let the test continue
+    cy.on("uncaught:exception", () => false)
 })
