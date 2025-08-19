@@ -4,13 +4,14 @@ export const knownTechs = [
     "javascript",
     "typescript",
     "react",
+    "redux",
     "nextjs",
     "styled-components",
-    "bootstrap",
     "jest",
     "testing-library",
     "cypress",
     "git",
     "github",
+    "azure-devops",
     "github-actions"
 ]

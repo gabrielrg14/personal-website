@@ -8,6 +8,7 @@ exports[`timelines experiences should match snapshot 1`] = `
     "period": "Nov 2024 - Present",
     "skills": [
       "react",
+      "redux",
       "nextjs",
       "typescript",
       "styled-components",

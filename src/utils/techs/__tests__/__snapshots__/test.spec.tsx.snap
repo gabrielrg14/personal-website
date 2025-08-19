@@ -3,7 +3,6 @@
 exports[`techs knowledgeTechs should match snapshot 1`] = `
 [
   "react-native",
-  "redux",
   "vuejs",
   "tailwindcss",
   "nodejs",
@@ -21,14 +20,15 @@ exports[`techs knownTechs should match snapshot 1`] = `
   "javascript",
   "typescript",
   "react",
+  "redux",
   "nextjs",
   "styled-components",
-  "bootstrap",
   "jest",
   "testing-library",
   "cypress",
   "git",
   "github",
+  "azure-devops",
   "github-actions",
 ]
 `;

@@ -7,6 +7,7 @@ export const experiences = [
             "Responsible for developing responsive and accessible interfaces and creating reusable and testable components, focusing on optimizing performance and automated test coverage, ensuring quality, minimizing failures and providing great user experience and usability.",
         skills: [
             "react",
+            "redux",
             "nextjs",
             "typescript",
             "styled-components",

@@ -45,9 +45,7 @@ export const SkillsTemplate = () => {
                     </S.ListBox>
 
                     <S.ListBox>
-                        <S.TitleList>
-                            Technologies I know, but have not yet mastered
-                        </S.TitleList>
+                        <S.TitleList>Other technologies I've tried</S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>
@@ -63,7 +61,7 @@ export const SkillsTemplate = () => {
                     </S.ListBox>
 
                     <S.ListBox>
-                        <S.TitleList>I&#39;m studying right now</S.TitleList>
+                        <S.TitleList>I'm studying right now</S.TitleList>
                         <TechList>
                             {techs.map(
                                 ({ icon, label, identifier }) =>

@@ -1,6 +1,5 @@
 export const knowledgeTechs = [
     "react-native",
-    "redux",
     "vuejs",
     "tailwindcss",
     "nodejs",
