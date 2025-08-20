@@ -11,7 +11,7 @@ exports[`timelines experiences should match snapshot 1`] = `
       "redux",
       "nextjs",
       "typescript",
-      "styled-components",
+      "css-in-js",
       "jest",
       "testing-library",
       "git",

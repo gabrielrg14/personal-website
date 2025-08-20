@@ -10,7 +10,7 @@ export const experiences = [
             "redux",
             "nextjs",
             "typescript",
-            "styled-components",
+            "css-in-js",
             "jest",
             "testing-library",
             "git",

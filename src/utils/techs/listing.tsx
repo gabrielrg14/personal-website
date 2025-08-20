@@ -101,6 +101,11 @@ export const techListing = [
     },
     {
         icon: <Styledcomponents />,
+        label: "CSS-in-JS",
+        identifier: "css-in-js"
+    },
+    {
+        icon: <Styledcomponents />,
         label: "Styled Components",
         identifier: "styled-components"
     },
