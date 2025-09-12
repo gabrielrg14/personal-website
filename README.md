@@ -10,7 +10,6 @@ Technologies studied and used to carry out this project:
 - [`TypeScript`](https://www.typescriptlang.org/)
 - [`Styled Components`](https://styled-components.com/)
 - [`Styled Icons`](https://styled-icons.dev/)
-- [`Zustand`](https://zustand-demo.pmnd.rs/)
 - [`Jest`](https://jestjs.io/)
 - [`React Testing Library`](https://testing-library.com/docs/react-testing-library/intro/)
 - [`Mock Service Worker`](https://mswjs.io/)

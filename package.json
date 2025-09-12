@@ -52,8 +52,7 @@
     "sharp": "^0.32.6",
     "styled-components": "^5.3.1",
     "styled-icons": "^10.47.0",
-    "styled-media-query": "^2.1.2",
-    "zustand": "^4.4.7"
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.22.5",
