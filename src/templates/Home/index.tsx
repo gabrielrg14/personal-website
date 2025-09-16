@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo"
+import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import { IUser } from "interfaces"
@@ -11,18 +12,7 @@ type HomeTemplateProps = {
 export const HomeTemplate = ({ user }: HomeTemplateProps) => {
     return (
         <>
-            <NextSeo
-                title="Gabriel - Front-end Software Developer"
-                description="My personal website, here you will learn a little more about me, my technology skills, my work experiences and also the projects I've developed."
-                additionalMetaTags={[
-                    {
-                        name: "keywords",
-                        content:
-                            "Gabriel Rapucci Gonzalez, Campinas, SP, Brasil, Brazil, Dev, Web, Web Developer, Frontend, Front-end, Dev Front-end, Developer, Front-end Developer, Front-end Software Developer, React Developer, Front-end React Developer, Portfolio, Resume, Project, Personal Portfolio, Personal Resume, Personal Project, Personal Website"
-                    }
-                ]}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/`}
-            />
+            <NextSeo {...pageSeo} />
 
             <S.Wrapper>
                 <S.Avatar>

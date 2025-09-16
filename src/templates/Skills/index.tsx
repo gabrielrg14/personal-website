@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo"
+import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import { Blackboard, TechList, TechCard } from "components"
@@ -13,18 +14,7 @@ import {
 export const SkillsTemplate = () => {
     return (
         <>
-            <NextSeo
-                title="Skills"
-                description="The skills that Gabriel has, the technologies he uses daily, which he has knowledge, which he is currently studying and which he intends to study in the future."
-                additionalMetaTags={[
-                    {
-                        name: "keywords",
-                        content:
-                            "Skill, Skills, Gabriel's skills, Technology, Technology Skills, Technologies, Used Technologies, Technologies with Knowledge, Technologies Studied, Technologies to be Studied"
-                    }
-                ]}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/skills`}
-            />
+            <NextSeo {...pageSeo} />
 
             <Blackboard>
                 <S.Wrapper>

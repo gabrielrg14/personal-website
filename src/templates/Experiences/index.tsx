@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo"
+import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import { VerticalTimeline } from "react-vertical-timeline-component"
@@ -9,18 +10,7 @@ import { Work } from "@styled-icons/material/Work"
 export const ExperiencesTemplate = () => {
     return (
         <>
-            <NextSeo
-                title="Experiences"
-                description="The work experiences Gabriel had during his career as a developer."
-                additionalMetaTags={[
-                    {
-                        name: "keywords",
-                        content:
-                            "Experience, Experiences, Gabriel's experiences, Work, Work Experiences, Job, Jobs, Technology Jobs"
-                    }
-                ]}
-                canonical={`${process.env.NEXT_PUBLIC_SITE_URL}/experiences`}
-            />
+            <NextSeo {...pageSeo} />
 
             <Blackboard>
                 <VerticalTimeline lineColor="var(--light-color)">

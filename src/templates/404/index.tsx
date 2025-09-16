@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo"
+import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import Link from "next/link"
@@ -7,7 +8,7 @@ import { Button } from "components"
 export const PageNotFoundTemplate = () => {
     return (
         <>
-            <NextSeo title="404 Error" />
+            <NextSeo {...pageSeo} />
 
             <S.Wrapper>
                 <S.Error>404 Error</S.Error>
