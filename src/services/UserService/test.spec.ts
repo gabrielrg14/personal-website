@@ -5,7 +5,7 @@ import { UserService } from "."
 
 describe("UserService", () => {
     describe("getUser", () => {
-        it("should return user main properties", async () => {
+        it("should return the user's main properties", async () => {
             const user = await UserService.getUser(USERNAME)
 
             expect(user).toHaveProperty("avatar_url")
@@ -23,7 +23,7 @@ describe("UserService", () => {
     })
 
     describe("getStarredUserRepositories", () => {
-        it("should return repository main properties", async () => {
+        it("should return the main properties of the repositories", async () => {
             const repositories =
                 await UserService.getStarredUserRepositories(USERNAME)
 
@@ -35,19 +35,29 @@ describe("UserService", () => {
             expect(repositories[0]).toHaveProperty("owner")
         })
 
-        it("should return repository data", async () => {
+        it.each(repositoryMocks.arrayList)(
+            "should return data from the %s repository",
+            async (name, repository) => {
+                const repositories =
+                    await UserService.getStarredUserRepositories(USERNAME)
+
+                const repositoryFoundByName = repositories.find(
+                    (repository) => repository.name === name
+                )
+
+                expect(repositoryFoundByName).toStrictEqual(repository)
+            }
+        )
+
+        it("should return a list of repositories including pokedex, travelTheWorld and tailwindInterfaces", async () => {
             const repositories =
                 await UserService.getStarredUserRepositories(USERNAME)
 
-            expect(repositories[0]).toStrictEqual(repositoryMocks.repository1)
-        })
-
-        it("should return a list of repositories with repository1 and repository2", async () => {
-            const repositories =
-                await UserService.getStarredUserRepositories(USERNAME)
-
-            expect(repositories).toContainEqual(repositoryMocks.repository1)
-            expect(repositories).toContainEqual(repositoryMocks.repository2)
+            expect(repositories).toContainEqual(repositoryMocks.pokedex)
+            expect(repositories).toContainEqual(repositoryMocks.travelTheWorld)
+            expect(repositories).toContainEqual(
+                repositoryMocks.tailwindInterfaces
+            )
             expect(repositories).toStrictEqual(repositoryMocks.list)
         })
     })
