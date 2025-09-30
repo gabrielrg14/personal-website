@@ -2,20 +2,12 @@ import { IUser, IRepository } from "interfaces"
 import { Api } from "providers"
 
 const getUser = async (username: string) => {
-    const { status, data } = await Api.get<IUser>(`/${username}`)
-
-    if (status !== 200) throw new Error()
-
+    const { data } = await Api.get<IUser>(`/${username}`)
     return data
 }
 
 const getStarredUserRepositories = async (username: string) => {
-    const { status, data } = await Api.get<IRepository[]>(
-        `/${username}/starred`
-    )
-
-    if (status !== 200) throw new Error()
-
+    const { data } = await Api.get<IRepository[]>(`/${username}/starred`)
     return data.filter((repo) => repo.owner.login === username)
 }
 

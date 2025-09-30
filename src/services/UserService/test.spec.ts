@@ -5,6 +5,10 @@ import { UserService } from "."
 
 describe("UserService", () => {
     describe("getUser", () => {
+        it("should throw an error when the searched user does not exist", async () => {
+            await expect(UserService.getUser("not-a-user")).rejects.toThrow()
+        })
+
         it("should return the user's main properties", async () => {
             const user = await UserService.getUser(USERNAME)
 
@@ -23,6 +27,12 @@ describe("UserService", () => {
     })
 
     describe("getStarredUserRepositories", () => {
+        it("should throw an error when the searched user does not exist", async () => {
+            await expect(
+                UserService.getStarredUserRepositories("not-a-user")
+            ).rejects.toThrow()
+        })
+
         it("should return the main properties of the repositories", async () => {
             const repositories =
                 await UserService.getStarredUserRepositories(USERNAME)
