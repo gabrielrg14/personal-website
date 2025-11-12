@@ -37,6 +37,7 @@ import { Azuredevops } from "@styled-icons/simple-icons/Azuredevops"
 import { Googlecloud } from "@styled-icons/simple-icons/Googlecloud"
 import { Vercel } from "@styled-icons/simple-icons/Vercel"
 import { Saturn } from "@styled-icons/simple-icons/Saturn"
+import { BrainCircuit } from "@styled-icons/fluentui-system-filled/BrainCircuit"
 
 export const techListing = [
     {
@@ -248,5 +249,10 @@ export const techListing = [
         icon: <Saturn />,
         label: "Clean Code",
         identifier: "clean-code"
+    },
+    {
+        icon: <BrainCircuit />,
+        label: "Cursor AI",
+        identifier: "cursor-ai"
     }
 ]
