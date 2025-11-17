@@ -5,7 +5,7 @@ import * as S from "./styles"
 import { VerticalTimeline } from "react-vertical-timeline-component"
 import { Blackboard, TechList, TechCard } from "components"
 import { experiences, techListing as techs } from "utils"
-import { Work } from "@styled-icons/material/Work"
+import { Briefcase } from "@styled-icons/octicons/Briefcase"
 
 export const ExperiencesTemplate = () => {
     return (
@@ -28,7 +28,7 @@ export const ExperiencesTemplate = () => {
                                 borderRight: "none"
                             }}
                             date={experience.period}
-                            icon={<Work />}
+                            icon={<Briefcase />}
                             iconStyle={{
                                 background: "var(--dark-color)",
                                 color: "var(--highlight-color)"

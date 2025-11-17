@@ -1,1 +1,1 @@
-export const studyingTechs = ["cursor-ai"]
+export const studyingTechs = ["cursor"]

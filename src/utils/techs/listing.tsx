@@ -1,43 +1,45 @@
-import { Html5 } from "@styled-icons/simple-icons/Html5"
-import { Css3 } from "@styled-icons/simple-icons/Css3"
-import { Javascript } from "@styled-icons/simple-icons/Javascript"
-import { Typescript } from "@styled-icons/simple-icons/Typescript"
-import { ReactLogo } from "@styled-icons/simple-icons/ReactLogo"
-import { Expo } from "@styled-icons/simple-icons/Expo"
-import { Redux } from "@styled-icons/simple-icons/Redux"
-import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs"
-import { Vuedotjs } from "@styled-icons/simple-icons/Vuedotjs"
-import { Jquery } from "@styled-icons/simple-icons/Jquery"
-import { Bootstrap } from "@styled-icons/simple-icons/Bootstrap"
-import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents"
-import { Tailwindcss } from "@styled-icons/simple-icons/Tailwindcss"
-import { Angularjs } from "@styled-icons/simple-icons/Angularjs"
-import { Php } from "@styled-icons/simple-icons/Php"
-import { Prestashop } from "@styled-icons/simple-icons/Prestashop"
-import { Wordpress } from "@styled-icons/simple-icons/Wordpress"
-import { Nodedotjs } from "@styled-icons/simple-icons/Nodedotjs"
-import { Express } from "@styled-icons/simple-icons/Express"
-import { Nestjs } from "@styled-icons/simple-icons/Nestjs"
-import { Prisma } from "@styled-icons/simple-icons/Prisma"
-import { Graphql } from "@styled-icons/simple-icons/Graphql"
-import { Jest } from "@styled-icons/simple-icons/Jest"
-import { Testinglibrary } from "@styled-icons/simple-icons/Testinglibrary"
-import { Cypress } from "@styled-icons/simple-icons/Cypress"
-import { Storybook } from "@styled-icons/simple-icons/Storybook"
-import { Mongodb } from "@styled-icons/simple-icons/Mongodb"
-import { Postgresql } from "@styled-icons/simple-icons/Postgresql"
-import { Mysql } from "@styled-icons/simple-icons/Mysql"
-import { Git } from "@styled-icons/simple-icons/Git"
-import { Github } from "@styled-icons/simple-icons/Github"
-import { Docker } from "@styled-icons/simple-icons/Docker"
-import { Kubernetes } from "@styled-icons/simple-icons/Kubernetes"
-import { Githubactions } from "@styled-icons/simple-icons/Githubactions"
-import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws"
-import { Azuredevops } from "@styled-icons/simple-icons/Azuredevops"
-import { Googlecloud } from "@styled-icons/simple-icons/Googlecloud"
-import { Vercel } from "@styled-icons/simple-icons/Vercel"
-import { Saturn } from "@styled-icons/simple-icons/Saturn"
-import { BrainCircuit } from "@styled-icons/fluentui-system-filled/BrainCircuit"
+import {
+    Amazonaws,
+    Angularjs,
+    Azuredevops,
+    Bootstrap,
+    Css3,
+    Cypress,
+    Docker,
+    Expo,
+    Express,
+    Git,
+    Github,
+    Githubactions,
+    Googlecloud,
+    Graphql,
+    Html5,
+    Javascript,
+    Jest,
+    Jquery,
+    Kubernetes,
+    Mongodb,
+    Mysql,
+    Nestjs,
+    Nextdotjs,
+    Nodedotjs,
+    Php,
+    Postgresql,
+    Prestashop,
+    Prisma,
+    ReactLogo,
+    Redux,
+    Saturn,
+    Storybook,
+    Styledcomponents,
+    Tailwindcss,
+    Testinglibrary,
+    Typescript,
+    Vercel,
+    Vuedotjs,
+    Wordpress
+} from "@styled-icons/simple-icons"
+import { Code } from "@styled-icons/octicons/Code"
 
 export const techListing = [
     {
@@ -251,8 +253,8 @@ export const techListing = [
         identifier: "clean-code"
     },
     {
-        icon: <BrainCircuit />,
-        label: "Cursor AI",
-        identifier: "cursor-ai"
+        icon: <Code />,
+        label: "Cursor",
+        identifier: "cursor"
     }
 ]
