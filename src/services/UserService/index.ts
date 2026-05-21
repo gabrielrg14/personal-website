@@ -1,13 +1,15 @@
 import { IUser, IRepository } from "interfaces"
-import { Api } from "providers"
+import { api } from "providers"
 
-const getUser = async (username: string) => {
-    const { data } = await Api.get<IUser>(`/${username}`)
+const getUser = async (username: string): Promise<IUser> => {
+    const { data } = await api.get<IUser>(`/${username}`)
     return data
 }
 
-const getStarredUserRepositories = async (username: string) => {
-    const { data } = await Api.get<IRepository[]>(`/${username}/starred`)
+const getStarredUserRepositories = async (
+    username: string
+): Promise<IRepository[]> => {
+    const { data } = await api.get<IRepository[]>(`/${username}/starred`)
     return data.filter((repo) => repo.owner.login === username)
 }
 
