@@ -4,7 +4,7 @@ import * as S from "./styles"
 import Image from "next/image"
 import Logo from "/public/images/logo/logo-32.png"
 import { Container, Button } from "components"
-import { headerLinks as links } from "utils"
+import { headerLinks } from "utils"
 
 export const Header = () => {
     const router = useRouter()
@@ -43,7 +43,7 @@ export const Header = () => {
                             </S.NavLink>
                         </S.NavItem>
 
-                        {links.map(({ href, label }) => (
+                        {headerLinks.map(({ href, label }) => (
                             <S.NavItem key={label}>
                                 <S.NavLink
                                     href={href}

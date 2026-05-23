@@ -3,8 +3,8 @@ import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import { VerticalTimeline } from "react-vertical-timeline-component"
-import { Blackboard, TechList, TechCard } from "components"
-import { experiences, techListing as techs } from "utils"
+import { Blackboard, TechList } from "components"
+import { experiences } from "utils"
 import { Briefcase } from "@styled-icons/octicons/Briefcase"
 
 export const ExperiencesTemplate = () => {
@@ -39,21 +39,7 @@ export const ExperiencesTemplate = () => {
                             <S.Description>
                                 {experience.description}
                             </S.Description>
-                            <TechList>
-                                {techs.map(
-                                    ({ icon, label, identifier }) =>
-                                        experience.skills.includes(
-                                            identifier
-                                        ) && (
-                                            <TechCard
-                                                key={identifier}
-                                                label={label}
-                                                icon={icon}
-                                                iconSize={32}
-                                            />
-                                        )
-                                )}
-                            </TechList>
+                            <TechList list={experience.skills} iconSize={32} />
                         </S.TimelineElement>
                     ))}
                 </VerticalTimeline>

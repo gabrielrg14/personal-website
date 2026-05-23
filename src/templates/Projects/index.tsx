@@ -4,8 +4,8 @@ import { pageSeo } from "./seo"
 import * as S from "./styles"
 import Link from "next/link"
 import { IRepository } from "interfaces"
-import { TechList, TechCard } from "components"
-import { formatRepositoryName, techListing as techs } from "utils"
+import { TechList } from "components"
+import { formatRepositoryName } from "utils"
 import { MarkGithub, Globe } from "@styled-icons/octicons"
 
 type ProjectsTemplateProps = {
@@ -55,21 +55,7 @@ export const ProjectsTemplate = ({ repositories }: ProjectsTemplateProps) => {
                                 </S.Links>
                             </S.Repository>
 
-                            <TechList>
-                                {techs.map(
-                                    ({ icon, label, identifier }) =>
-                                        repository.topics.includes(
-                                            identifier
-                                        ) && (
-                                            <TechCard
-                                                key={identifier}
-                                                label={label}
-                                                icon={icon}
-                                                iconSize={36}
-                                            />
-                                        )
-                                )}
-                            </TechList>
+                            <TechList list={repository.topics} iconSize={36} />
 
                             <S.Description>
                                 {repository.description}
