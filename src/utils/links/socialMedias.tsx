@@ -1,8 +1,9 @@
+import { ISocialMedia } from "interfaces"
 import { USERNAME } from "common"
 import { Mail, MarkGithub } from "@styled-icons/octicons"
 import { Instagram, Linkedin, Whatsapp } from "@styled-icons/simple-icons"
 
-export const socialMedias = [
+export const socialMedias: ISocialMedia[] = [
     {
         name: "GitHub",
         link: `https://github.com/${USERNAME}/`,

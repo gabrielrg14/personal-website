@@ -1,4 +1,6 @@
-export const knownTechs = [
+import { TTechList } from "interfaces"
+
+export const knownTechs: TTechList = [
     "html",
     "css",
     "javascript",

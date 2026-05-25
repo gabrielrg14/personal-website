@@ -1,4 +1,6 @@
-export const headerLinks = [
+import { IHeaderLink } from "interfaces"
+
+export const headerLinks: IHeaderLink[] = [
     {
         href: "/skills",
         label: "Skills"

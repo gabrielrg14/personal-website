@@ -1,4 +1,6 @@
-export const experiences = [
+import { ITimeline } from "interfaces"
+
+export const experiences: ITimeline[] = [
     {
         title: "Front-end Software Engineer",
         company: "AB InBev",

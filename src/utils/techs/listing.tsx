@@ -1,3 +1,4 @@
+import { ITech } from "interfaces"
 import {
     Amazonaws,
     Angularjs,
@@ -41,7 +42,7 @@ import {
 } from "@styled-icons/simple-icons"
 import { Code } from "@styled-icons/octicons/Code"
 
-export const techListing = [
+export const techListing: ITech[] = [
     {
         icon: <Html5 />,
         label: "HTML",

@@ -1,4 +1,6 @@
-export const knowledgeTechs = [
+import { TTechList } from "interfaces"
+
+export const knowledgeTechs: TTechList = [
     "react-native",
     "vuejs",
     "tailwindcss",
