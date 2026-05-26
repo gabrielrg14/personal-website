@@ -1,7 +1,11 @@
 import { render, screen } from "@testing-library/react"
-import { techListing } from "utils"
+import { techMocks } from "test/mocks"
 
 import { TechList } from "."
+
+jest.mock("utils/techs/listing", () => ({
+    techListing: techMocks.techListing
+}))
 
 describe("<TechList />", () => {
     it("should not render list items when list is empty", () => {
@@ -11,32 +15,32 @@ describe("<TechList />", () => {
         expect(techCards).toHaveLength(0)
     })
 
-    it("should render list items only for identifiers present in the list", () => {
-        const techsToShow = ["html", "css", "javascript"]
+    it("should render list items with correct label", () => {
+        const techList = techMocks.known
 
-        const { container } = render(<TechList list={techsToShow} />)
+        render(<TechList list={techList} />)
 
-        const techCards = container.querySelectorAll("li")
-        expect(techCards).toHaveLength(techsToShow.length)
-    })
-
-    it("should render list items with correct labels", () => {
-        const techsToShow = ["html", "react", "typescript"]
-
-        render(<TechList list={techsToShow} />)
-
-        techsToShow.forEach((identifier) => {
-            const tech = techListing.find((t) => t.identifier === identifier)
+        techList.forEach((identifier) => {
+            const tech = techMocks.techListing.find(
+                (t) => t.identifier === identifier
+            )
             expect(screen.getByText(tech!.label)).toBeInTheDocument()
         })
     })
 
-    it("should not render list items for identifiers not in the list", () => {
+    it("should render list items only for identifiers in the list", () => {
         const { container } = render(
-            <TechList list={["html", "css", "non-tech"]} />
+            <TechList list={[...techMocks.potential, "html"]} />
         )
 
         const techCards = container.querySelectorAll("li")
-        expect(techCards).toHaveLength(2)
+        expect(techCards).toHaveLength(1)
+    })
+
+    it("should not render list items for identifiers not in the list", () => {
+        const { container } = render(<TechList list={["non-tech"]} />)
+
+        const techCards = container.querySelectorAll("li")
+        expect(techCards).toHaveLength(0)
     })
 })
