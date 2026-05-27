@@ -2,7 +2,8 @@ import { NextSeo } from "next-seo"
 import { pageSeo } from "./seo"
 
 import * as S from "./styles"
-import { Blackboard, TechList } from "components"
+import { Blackboard } from "components"
+import { ListSection } from "./sub-components"
 import {
     knownTechs,
     knowledgeTechs,
@@ -17,25 +18,22 @@ export const SkillsTemplate = () => {
 
             <Blackboard>
                 <S.Wrapper>
-                    <S.ListBox>
-                        <S.TitleList>Main technologies I master</S.TitleList>
-                        <TechList list={knownTechs} />
-                    </S.ListBox>
-
-                    <S.ListBox>
-                        <S.TitleList>Other technologies I've tried</S.TitleList>
-                        <TechList list={knowledgeTechs} />
-                    </S.ListBox>
-
-                    <S.ListBox>
-                        <S.TitleList>I'm studying right now</S.TitleList>
-                        <TechList list={studyingTechs} />
-                    </S.ListBox>
-
-                    <S.ListBox>
-                        <S.TitleList>I plan to study next</S.TitleList>
-                        <TechList list={potentialTechs} />
-                    </S.ListBox>
+                    <ListSection
+                        title="Main technologies I master"
+                        list={knownTechs}
+                    />
+                    <ListSection
+                        title="Other technologies I've tried"
+                        list={knowledgeTechs}
+                    />
+                    <ListSection
+                        title="I'm studying right now"
+                        list={studyingTechs}
+                    />
+                    <ListSection
+                        title="I plan to study next"
+                        list={potentialTechs}
+                    />
                 </S.Wrapper>
             </Blackboard>
         </>
