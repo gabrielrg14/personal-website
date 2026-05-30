@@ -1,7 +1,7 @@
 import * as S from "./styles"
 import Link from "next/link"
 
-type LinkItemProps = {
+export type LinkItemProps = {
     title: string
     href: string
     ariaLabel: string

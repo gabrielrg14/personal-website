@@ -3,7 +3,7 @@ import { IRepository } from "interfaces"
 import { LinkItem } from "./LinkItem"
 import { Globe, MarkGithub } from "styled-icons/octicons"
 
-type RepositoryLinksProps = {
+export type RepositoryLinksProps = {
     repository: IRepository
 }
 

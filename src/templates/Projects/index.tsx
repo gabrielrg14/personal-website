@@ -6,7 +6,7 @@ import { IRepository } from "interfaces"
 import { TechList } from "components"
 import { RepositoryDescription, RepositoryTitle } from "./sub-components"
 
-type ProjectsTemplateProps = {
+export type ProjectsTemplateProps = {
     repositories: IRepository[]
 }
 

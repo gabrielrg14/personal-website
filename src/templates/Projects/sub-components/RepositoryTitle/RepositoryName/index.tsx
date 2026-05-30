@@ -1,7 +1,7 @@
 import * as S from "./styles"
 import { formatRepositoryName } from "utils"
 
-type RepositoryNameProps = {
+export type RepositoryNameProps = {
     name: string
 }
 

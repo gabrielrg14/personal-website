@@ -3,7 +3,7 @@ import { IRepository } from "interfaces"
 import { RepositoryName } from "./RepositoryName"
 import { RepositoryLinks } from "./RepositoryLinks"
 
-type RepositoryTitleProps = {
+export type RepositoryTitleProps = {
     repository: IRepository
 }
 

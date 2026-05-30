@@ -59,14 +59,34 @@ const tailwindInterfaces: IRepository = {
     owner: userMock.user
 }
 
+const sharppenApiV2: IRepository = {
+    id: 828745560,
+    name: "sharppen-api-v2",
+    html_url: "https://github.com/gabrielrg14/sharppen-api-v2",
+    homepage: "",
+    topics: [
+        "api-rest",
+        "nestjs",
+        "postgresql",
+        "prisma",
+        "prisma-orm",
+        "typescript"
+    ],
+    description:
+        "API v2 of the Social Network SharpPen, focused on the interactions between Colleges and their Students.",
+    owner: userMock.user
+}
+
 export const repositoryMocks = {
     pokedex,
     travelTheWorld,
     tailwindInterfaces,
-    list: [pokedex, travelTheWorld, tailwindInterfaces],
+    sharppenApiV2,
+    list: [pokedex, travelTheWorld, tailwindInterfaces, sharppenApiV2],
     arrayList: [
         [pokedex.name, pokedex],
         [travelTheWorld.name, travelTheWorld],
-        [tailwindInterfaces.name, tailwindInterfaces]
+        [tailwindInterfaces.name, tailwindInterfaces],
+        [sharppenApiV2.name, sharppenApiV2]
     ]
 }

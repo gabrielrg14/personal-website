@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type RepositoryDescriptionProps = {
+export type RepositoryDescriptionProps = {
     description: string
 }
 
