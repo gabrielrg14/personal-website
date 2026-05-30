@@ -4,7 +4,7 @@ import { mediaQueries as media } from "utils"
 import "react-vertical-timeline-component/style.min.css"
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
 
-export const TimelineElement = styled(VerticalTimelineElement)`
+export const Wrapper = styled(VerticalTimelineElement)`
     .vertical-timeline-element-content {
         box-shadow: none;
     }
@@ -31,19 +31,4 @@ export const TimelineElement = styled(VerticalTimelineElement)`
             padding: var(--default-size) 0;
         `}
     }
-`
-
-export const Title = styled.h1`
-    font-size: var(--lg-size) !important;
-    color: var(--highlight-color);
-`
-
-export const Company = styled.h2`
-    font-size: var(--md-size) !important;
-    color: var(--light-color) !important;
-    margin: var(--xs-size) 0;
-`
-
-export const Description = styled.p`
-    margin: var(--default-size) 0 var(--xs-size) 0 !important;
 `
