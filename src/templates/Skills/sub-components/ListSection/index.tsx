@@ -1,7 +1,7 @@
 import * as S from "./styles"
 import { TechList } from "components"
 
-type ListSectionProps = {
+export type ListSectionProps = {
     title: string
     list: string[]
 }

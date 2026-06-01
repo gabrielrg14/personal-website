@@ -29,12 +29,10 @@ describe("<TechList />", () => {
     })
 
     it("should render list items only for identifiers in the list", () => {
-        const { container } = render(
-            <TechList list={[...techMocks.potential, "html"]} />
-        )
+        const { container } = render(<TechList list={techMocks.known} />)
 
         const techCards = container.querySelectorAll("li")
-        expect(techCards).toHaveLength(1)
+        expect(techCards).toHaveLength(techMocks.known.length)
     })
 
     it("should not render list items for identifiers not in the list", () => {

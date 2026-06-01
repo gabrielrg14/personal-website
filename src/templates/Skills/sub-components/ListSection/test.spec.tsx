@@ -1,17 +1,22 @@
 import { render, screen } from "@testing-library/react"
 import { techMocks } from "test/mocks"
 
-import { ListSection } from "."
+import { ListSection, ListSectionProps } from "."
 
 jest.mock("components", () => ({
     TechList: ({ list }: { list: string[] }) => (
-        <div data-testid="tech-list">{list.join(",")}</div>
+        <ul data-testid="tech-list">{list.join(", ")}</ul>
     )
 }))
 
 describe("<ListSection />", () => {
+    const defaultProps: ListSectionProps = {
+        title: "Known Technologies",
+        list: techMocks.known
+    }
+
     it("should render an empty list", () => {
-        render(<ListSection title="Empty Technologies" list={[]} />)
+        render(<ListSection {...defaultProps} list={[]} />)
 
         const techList = screen.getByTestId("tech-list")
 
@@ -20,46 +25,28 @@ describe("<ListSection />", () => {
     })
 
     it("should render the passed list", () => {
-        const list = techMocks.known
-
-        render(<ListSection title="Known Technologies" list={list} />)
+        render(<ListSection {...defaultProps} />)
 
         expect(screen.getByTestId("tech-list")).toHaveTextContent(
-            list.join(",")
+            "html, css, javascript"
         )
     })
 
     it("should render title heading", () => {
-        render(
-            <ListSection
-                title={"Knowledge Technologies"}
-                list={techMocks.knowledge}
-            />
-        )
+        render(<ListSection {...defaultProps} />)
 
         expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument()
     })
 
     it("should render heading with correct text", () => {
-        const title = "Potential Technologies"
-
-        render(<ListSection title={title} list={techMocks.potential} />)
+        render(<ListSection {...defaultProps} />)
 
         const heading = screen.getByRole("heading", { level: 1 })
-        expect(heading.textContent).toBe(title)
-    })
-
-    it("should render title and list", () => {
-        const title = "Studying Technologies"
-
-        render(<ListSection title={title} list={techMocks.studying} />)
-
-        expect(screen.getByText(title)).toBeInTheDocument()
-        expect(screen.getByTestId("tech-list")).toBeInTheDocument()
+        expect(heading.textContent).toBe("Known Technologies")
     })
 
     it("should render TechList component", () => {
-        render(<ListSection title="TechList" list={techMocks.known} />)
+        render(<ListSection {...defaultProps} />)
 
         expect(screen.getByTestId("tech-list")).toBeInTheDocument()
     })
