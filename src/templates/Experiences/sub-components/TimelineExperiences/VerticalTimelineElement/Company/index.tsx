@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type CompanyProps = {
+export type CompanyProps = {
     company: string
 }
 

@@ -6,7 +6,7 @@ import { Company } from "./Company"
 import { Description } from "./Description"
 import { Briefcase } from "@styled-icons/octicons/Briefcase"
 
-type VerticalTimelineElementProps = {
+export type VerticalTimelineElementProps = {
     experience: ITimeline
 }
 

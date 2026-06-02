@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type TitleProps = {
+export type TitleProps = {
     title: string
 }
 
