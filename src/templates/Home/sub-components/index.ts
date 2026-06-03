@@ -1,0 +1,5 @@
+export * from "./Avatar"
+export * from "./Bio"
+export * from "./IconInfo"
+export * from "./Name"
+export * from "./Pill"

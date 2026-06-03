@@ -3,6 +3,7 @@ import { pageSeo } from "./seo"
 
 import * as S from "./styles"
 import { IUser } from "interfaces"
+import { Avatar, Bio, IconInfo, Name, Pill } from "./sub-components"
 import { Organization, Location } from "@styled-icons/octicons"
 
 type HomeTemplateProps = {
@@ -15,37 +16,26 @@ export const HomeTemplate = ({ user }: HomeTemplateProps) => {
             <NextSeo {...pageSeo} />
 
             <S.Wrapper>
-                <S.Avatar>
-                    {user.avatar_url && (
-                        <S.AvatarImage
-                            src={user.avatar_url}
-                            height={250}
-                            width={250}
-                            priority
-                            alt="Avatar image"
-                        />
-                    )}
-                </S.Avatar>
+                <Avatar url={user.avatar_url} />
 
-                <S.BlackPillText>
-                    <S.Name>{user.name}</S.Name>
-                </S.BlackPillText>
+                <Pill variant="dark">
+                    <Name text={user.name} />
+                </Pill>
 
-                <S.PillText>
-                    <S.Bio>{user.bio}</S.Bio>
-                </S.PillText>
+                <Pill>
+                    <Bio text={user.bio} />
+                </Pill>
 
-                <S.BlackPillText>
-                    <S.InfoRow>
-                        <Organization size={20} />
-                        <S.Info>{user.company}</S.Info>
-                    </S.InfoRow>
-
-                    <S.InfoRow>
-                        <Location size={20} />
-                        <S.Info>{user.location}</S.Info>
-                    </S.InfoRow>
-                </S.BlackPillText>
+                <Pill variant="dark">
+                    <IconInfo
+                        icon={<Organization size={20} />}
+                        info={user.company}
+                    />
+                    <IconInfo
+                        icon={<Location size={20} />}
+                        info={user.location}
+                    />
+                </Pill>
             </S.Wrapper>
         </>
     )
