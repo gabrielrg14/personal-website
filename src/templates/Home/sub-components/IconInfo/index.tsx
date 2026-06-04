@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type IconInfoProps = {
+export type IconInfoProps = {
     icon: React.ReactNode
     info: string
 }

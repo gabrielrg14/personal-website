@@ -6,7 +6,7 @@ import { IUser } from "interfaces"
 import { Avatar, Bio, IconInfo, Name, Pill } from "./sub-components"
 import { Organization, Location } from "@styled-icons/octicons"
 
-type HomeTemplateProps = {
+export type HomeTemplateProps = {
     user: IUser
 }
 

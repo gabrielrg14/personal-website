@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type NameProps = {
+export type NameProps = {
     text: string
 }
 

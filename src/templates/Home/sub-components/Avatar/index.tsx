@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type AvatarProps = {
+export type AvatarProps = {
     url: string
 }
 

@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type PillProps = {
+export type PillProps = {
     variant?: "light" | "dark"
     children: React.ReactNode
 }

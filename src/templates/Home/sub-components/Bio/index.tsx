@@ -1,6 +1,6 @@
 import * as S from "./styles"
 
-type BioProps = {
+export type BioProps = {
     text: string
 }
 
