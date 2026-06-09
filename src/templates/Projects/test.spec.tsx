@@ -15,8 +15,8 @@ jest.mock("components", () => ({
 }))
 
 jest.mock("./sub-components", () => ({
-    RepositoryTitle: () => <div data-testid="repository-title" />,
-    RepositoryDescription: () => <p data-testid="repository-description" />
+    RepositoryDescription: () => <p data-testid="repository-description" />,
+    RepositoryTitle: () => <div data-testid="repository-title" />
 }))
 
 describe("<ProjectsTemplate />", () => {
