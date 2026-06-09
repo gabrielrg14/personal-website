@@ -42,9 +42,19 @@ export const Icon = styled.div`
 
 export const Text = styled.span`
     flex: 1;
+    justify-content: center;
 
     :last-child {
         text-align: right;
+    }
+`
+
+export const HeartIcon = styled.span`
+    ${StyledIconBase} {
+        color: var(--highlight-color);
+        width: var(--default-size);
+        margin-bottom: 2px;
+        padding: 0 3px;
     }
 `
 
