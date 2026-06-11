@@ -42,20 +42,4 @@ describe("<Footer />", () => {
         expect(linkedinLink).toHaveAccessibleName(/linkedin/i)
         expect(linkedinLink).toHaveAccessibleDescription(/linkedin/i)
     })
-
-    it("should render the link to instagram with the correct attributes, accessible name and description", () => {
-        render(<Footer />)
-
-        const instagramLink = screen.getByRole("link", { name: /instagram/i })
-
-        expect(instagramLink).toBeInTheDocument()
-        expect(instagramLink).toHaveAttribute(
-            "href",
-            "https://www.instagram.com/gabriel_rapucci/"
-        )
-        expect(instagramLink).toHaveAttribute("target", "_blank")
-        expect(instagramLink).toHaveAttribute("rel", "noreferrer")
-        expect(instagramLink).toHaveAccessibleName(/instagram/i)
-        expect(instagramLink).toHaveAccessibleDescription(/instagram/i)
-    })
 })

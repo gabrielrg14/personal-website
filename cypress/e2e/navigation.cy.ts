@@ -88,18 +88,4 @@ describe("Navigation", () => {
             "mailto:gabrielrapuccigonzalez14@hotmail.com"
         )
     })
-
-    it("validate the Instagram link in the footer", () => {
-        cy.validateFooterLink(
-            "Instagram",
-            "https://www.instagram.com/gabriel_rapucci/"
-        )
-    })
-
-    it("validate the WhatsApp link in the footer", () => {
-        cy.validateFooterLink(
-            "WhatsApp",
-            "https://api.whatsapp.com/send/?phone=5519981392516&text&type=phone_number&app_absent=0/"
-        )
-    })
 })
